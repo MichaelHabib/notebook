@@ -1,0 +1,282 @@
+﻿Wordpress Beginner Guide 2017 - 2018
+
+
+What is Wordpress
+"WordPress is open source software you can use to create a beautiful website, blog, or app."
+
+This is NOT a step by step tutorial, I simply provide general info and list links to important documentation, blogs, themes and plugins. 
+
+#General Information
+Wordpress.org : https://wordpress.org/ 
+Wordpress popular plugins : https://wordpress.org/plugins/browse/popular/
+Wordpress popular themes: https://wordpress.org/themes/browse/popular/
+Check Michael habib's Favorited items on wordpress.org
+
+https://codex.wordpress.org/Main_Page
+https://codex.wordpress.org/Site_Design_and_Layout 
+https://codex.wordpress.org/Theme_Development 
+https://codex.wordpress.org/Child_Themes
+
+#How to install wordpress using quick installer? (link to post)
+
+
+#Recomended Themes & Plugins
+
+#Plugins:
+
+##Security
+
+##Backup & Maintenance
+
+##SEO & SMO
+
+##Social Media Integration
+
+##Inhancement
+
+##Authentication & User Mangement
+
+##Visual Website Builders
+
+##Features:
+Sidebar manager
+
+
+#Plugins for special businesses cases
+
+##Cafe Software
+
+##Booking Software
+
+##eListing Software
+
+
+#Themes: 
+
+##SiteOrigin Vantage (Free)
+• Pros:
+   ◇ Free.
+      Works well with SiteOrigin Page Builder
+• Cons:
+
+##UnderStrap: Underscores starter theme + Bootstrap 4 (Free)
+• Pros:
+   ◇  Has a sample child theme to get started quickly.
+   ◇ Few built in options.
+
+• Cons
+   ◇ Aimed at developers and does not include pretty css for production sites.
+
+
+##Sparkling
+• Pros:
+• • Free theme with all color & layout options included.
+
+• Cons:
+• • Needs more page templates.
+
+##Paid Themes
+Divi (Paid) 
+Provided by Elegant Themes ...(ToDo) Test & Provide more info. 
+
+Avada (Paid) 
+Priced at $60 with over 300,000 sales. (ToDo) Test & Provide more info.
+
+Components.underscores.me theme generator by WP
+
+Customizr (non-bootstrap) 
+
+
+#Themes & Plugins Providers
+https://themefuse.com (premium) 
+Pricing:
+• $60 for single site
+• $100 for all themes and unlimited sites.
+• $250 life time access & updates.
+
+Elegent Themes 
+Pricing:
+• $70 for access to all themes and updates for a year.
+• $90 Access to all themes & plugins with updates for one year
+• $250 lifetime access & updates.
+
+https://siteorigin.com/theme/ 
+Pricing:
+Notes:
+• These thems work well with SiteOrigin Builder
+
+https://woocommerce.com/
+
+Genesis
+themeum (free + premium)
+
+
+
+
+#Bookmarks: Study & use info to create new and/or update this page.
+
+Useful Themes Related Blog Articles
+ColorLib - Best WP themes library ToDo: Read & summarize 
+21-best-wordpress-starter-themes-for-developers 
+https://www.codeinwp.com/blog/best-free-wordpress-themes/ 
+https://www.freshdesignweb.com/free-bootstrap-wordpress-themes/
+
+
+============================
+
+What is Wordpress
+"WordPress is open source software you can use to create a beautiful website, blog, or app."
+
+#Docs
+https://wordpress.org/ 
+Check Michael habib's Favorited items on wordpress.org
+
+#Themes
+
+##Free Themes:
+vantage : By SiteOrigin
+• Pros:
+   ◇ Free.
+   ◇ Works well with SiteOrigin Page Builder
+• Cons:
+   ◇ 
+
+UnderStrap: Underscores starter theme + Bootstrap 4
+• Pros:
+   ◇  Has a sample child theme to get started quickly.
+   ◇ Few built in options.
+
+• Cons
+   ◇ Aimed at developers and does not include pretty css for production sites.
+
+
+Sparkling
+• Pros:
+• • Free theme with all color & layout options included.
+
+• Cons:
+• • Needs more page templates.
+
+Components.underscores.me theme generator by WP
+
+Customizr (non-bootstrap) 
+
+I thought you may need it & I also found Elegant market Place , still in the process of confirming their quality https://elegantmarketplace.com
+
+
+Flat Theme:
+• Pros
+1. *Offers many side options built in such as testimonials, sliders, teams, projects, ...
+2. *Has a sample child theme making development of new themes much faster.
+• Cons:
+• #Does not allow color change in GUI and colors assigned by class on elements.
+
+##Paid Themes
+Divi (Paid) 
+Provided by Elegant Themes ...(ToDo) Test & Provide more info. 
+
+Avada (Paid) 
+Priced at $60 with over 300,000 sales. (ToDo) Test & Provide more info.
+
+Theme Providers
+https://themefuse.com (premium) 
+Pricing:
+• $60 for single site
+• $100 for all themes and unlimited sites.
+• $250 life time access & updates.
+
+Elegent Themes 
+Pricing:
+• $70 for access to all themes and updates for a year.
+• $90 Access to all themes & plugins with updates for one year
+• $250 lifetime access & updates.
+• Also checkout Elegant market Place: https://elegantmarketplace.com/
+Third Party Elegant Themes Software:
+• http://www.divithemeexamples.com/divi-layouts/
+• http://www.divithemeexamples.com/divi-showcase-category/free-divi-child-themes/
+• https://elegantdivilayouts.com/
+• http://divicreative.com
+• https://divicake.com/
+• https://besuperfly.com/shop/
+• https://quiroz.co/divi-tutorials-much/divi-layout-kits/
+
+
+
+https://siteorigin.com/theme/ 
+Pricing:
+Notes:
+• These thems work well with SIteOrigin
+
+https://woocommerce.com/
+
+Genesis
+themeum (free + premium)
+
+Useful Themes Related Blog Articles
+ColorLib - Best WP themes library ToDo: Read & summarize 
+21-best-wordpress-starter-themes-for-developers 
+https://www.codeinwp.com/blog/best-free-wordpress-themes/ 
+https://www.freshdesignweb.com/free-bootstrap-wordpress-themes/
+
+Theme Development
+
+Docs
+https://codex.wordpress.org/Theme_Development 
+https://codex.wordpress.org/Site_Design_and_Layout 
+https://codex.wordpress.org/Child_Themes
+
+Tools:
+https://en-au.wordpress.org/plugins/options-framework/
+
+Plugins
+• View Top Rated Plugins
+• Wordpress SQLite Plugin
+• Enhanced Text Widget
+• Image Widget
+• Page Builder by SiteOrigin
+• All In One WP Security & Firewall
+• Simple Image Sizes
+(Filter the list below)
+ManageWP - Worker: by ManageWP – 4.2.19
+Akismet Anti-Spam: by Automattic – 3.3.2
+All 404 Redirect to Homepage: by Fakhri Alsadi – 1.7
+Demo Sticky Bar: by B3multimedia – 1.0.0
+Bloom: by Elegant Themes – 1.2.4
+Contact Form 7: by Takayuki Miyoshi – 4.8
+Divi 100 Article Cards: by Elegant Themes – 0.0.4
+Divi 100 Hamburger Menu: by Elegant Themes – 0.0.1
+Divi 100 Login Page: by Elegant Themes – 0.0.1
+Divi Switch: by divi.space – 2.3.6
+Woo Layout Injector: by Sean Barton - Tortoise IT – 3.4
+Easy Theme and Plugin Upgrades: by Chris Jean – 2.0.0
+Elegant Themes Support: by Elegant Themes – 1.3
+Elegant Themes Updater: by Elegant Themes – 1.0
+Facebook for WooCommerce: by Facebook – 1.3.2
+Groups WooCommerce: by itthinx – 1.9.6
+Groups: by itthinx – 2.2.0
+Heartbeat Control: by Jeff Matson – 1.0.3
+Monarch Plugin: by Elegant Themes – 1.3.6
+Really Simple CAPTCHA: by Takayuki Miyoshi – 2.0
+WooCommerce Customer/Order CSV Export: by SkyVerge – 4.3.5
+WooCommerce PayPal Powered by Braintree Gateway: by WooCommerce – 2.0.3
+WooCommerce Order Status Control: by SkyVerge – 1.8.0
+WooCommerce USPS Shipping: by WooCommerce – 4.4.6 – 4.4.7 is available
+WooCommerce Subscriptions: by Prospress Inc. – 2.2.7
+WooCommerce: by Automattic – 3.0.8
+WordPress HTTPS: by Mike Ems – 3.3.6
+Yoast SEO: by Team Yoast – 4.9
+
+
+• Wordpress Ebay RSS
+
+Paid Plugins:
+• SiteOrigin Prmuim > Many great add-ons• $35/year/site or $99/year/unlimited sites
+
+
+#Bookmarks: Study & use info to create new and/or update this page.
+https://premium.wpmudev.org/blog/essential-wordpress-plugins/?utm_expid=3606929-105.kKHVTz43T_CV513Vo9oSow.0&utm_referrer=https%3A%2F%2Fwww.google.com.au%2F
+
+
+
+#Bookmarks: Study & use info to create new and/or update this page.
+https://premium.wpmudev.org/blog/essential-wordpress-plugins/?utm_expid=3606929-105.kKHVTz43T_CV513Vo9oSow.0&utm_referrer=https%3A%2F%2Fwww.google.com.au%2F

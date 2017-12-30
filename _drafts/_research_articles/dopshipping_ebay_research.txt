@@ -1,0 +1,191 @@
+﻿Ebay
+
+Affiliate Advice & Docs
+• http://pages.ebay.com/affiliate/faq1.html
+• Ebay Partner Network user Manual
+• Ebay Partner Network
+• http://www.ebay.com/gds/How-To-Legally-Sell-An-Affiliate-Product-On-Ebay-com-/10000000002559011/g.html
+• https://developer.ebay.com/my/keys
+• Link Generator Info
+• Ebay Feed Plugin for Wordpress!
+
+
+========================
+
+
+Saved Sellers:
+http://www.ebay.com.au/myb/SavedSellers
+• Product source:• CH
+• AU
+• MA Malaysia
+
+
+
+• Tech (Smartphones, Computers and consumables)• AU http://www.ebay.com.au/usr/7272wil• Over 1200 phones ! Sells Phones & accessories only.
+
+• AU http://www.ebay.com.au/usr/oz_digital_online• Based in china. Contact to check all product location.
+
+• AU http://www.ebay.com.au/usr/dailychoices15?rt=nc
+• AU http://www.ebay.com.au/usr/mobileciti_estore?_trksid=p2047675.l2559
+• AU elite_electronics_au
+• AU http://www.ebay.com.au/usr/my-phonez• my-phones with search filter for mobile phones other then apple
+
+• AU http://www.ebay.com.au/usr/hi_tech_deals• Also sells other things such as gardening and mobile accessories.
+
+• AU http://www.ebay.com.au/usr/wireless1_eshop• Sells some phones but mostly other electronics ...
+
+• AU http://www.ebay.com.au/usr/electronics_ozoz• Also sells clothing, garden tools and much more .. very good variety
+
+• AU ?? http://www.ebay.com.au/usr/phoneinc_estore
+• CH http://www.ebay.com.au/usr/perfect_mission?_trksid=p2047675.l2559• From China warehouse. Check T & C before using. Lot's of details to read through !
+
+• AU http://www.ebay.com.au/usr/oz_deal• Might be CH source but 100% Melbourne Office.
+
+• CH http://www.ebay.com.au/usr/oceania_deal• AU warehouse? delivery date may indicate fake warehouse location !
+
+• AU or MA? http://www.ebay.com.au/usr/tradeworkz• Need to check product origin before recommending. Most of theme seem to be from Sydney!
+
+
+
+• Electrical Components:• AU http://www.ebay.com.au/usr/learcnc
+• AU
+• CH
+• CH: http://stores.ebay.com.au/52pistore/
+
+
+• Mobile Phone Accessories+• AU http://www.ebay.com.au/usr/af2018
+• AU http://www.ebay.com.au/usr/techacc-au
+
+
+• Outdoor, Camping and Off-Grid supplies (Solar Panels, Generators, Tools, Appliances, ...)• AU http://www.ebay.com.au/usr/bit_deals
+• AU http://www.ebay.com.au/usr/outback-equip
+• CH http://www.ebay.com.au/usr/ktmall-au
+
+
+
+• Fashion:• AU
+• AU
+• AU http://www.ebay.com.au/usr/electronics_ozoz• Also mobiles, mobile accessories, clothing, garden tools and much more .. very good variety
+
+• CH http://www.ebay.com.au/usr/97kentrepot
+• CH
+
+
+• Home & Garden:• AU http://www.ebay.com.au/usr/electronics_ozoz• Also mobiles, mobile accessories, clothing, garden tools and much more .. very good variety
+
+
+========================
+
+
+http://rest.ebay.com/epn/v1/find/item.rss? 
+keyword=%28_%2C_%29 
+&categoryId1=9355 
+&sortOrder=PricePlusShippingLowest 
+&programid=4 
+&campaignid=5338008307 
+&toolid=10039 
+&maxPrice=500 
+&minPrice=30 
+&listingType1=AuctionWithBIN 
+&listingType2=FixedPrice 
+&lgeo=1 
+&sellerId1=SellerHere 
+&sellerId2=SellerHere 
+&sellerId3=SellerHere 
+&sellerId4=SellerHere 
+&sellerId5=SellerHere 
+&sellerId6=SellerHere 
+&sellerId7=SellerHere 
+&sellerId8=SellerHere 
+&sellerId9=SellerHere 
+&feedType=rss
+
+
+========================
+
+
+Dealing with vendors:
+
+Email Template
+
+Hi, 
+I saw your listing on DropShipping Australia & i'm interested in your products. I'm a website & graphic designer by trade and now wish to build my own online businesses instead of just doing that for my clients!
+These are the main questions I have regarding the products & transactions: 
+- Do you accept orders via email ? if not, what's your process for making orders? 
+- Are prices for me as a reseller the same as what's on your website? 
+- Do you buy the products directly from manufacturer or the brand's primary distributor? 
+- Do you provide a software or a method of accessing your products list & stock ? 
+- Is shipping free ? and if not, which is your parcel delivery company? 
+- Do delivers include your own branding or is this blind drop shipping ? 
+- Do you market your business directly to my customers? 
+- Can I use pass on your warranty to my customers?
+Any other information you have for me as a new dropshipper would be much appreciated. Looking forward to hear from you soon. 
+Michael.
+
+Dropshipping Inventory Directories:
+• wholesalecentral FREE• Notes:• Seems to providew mostly US sellers.
+• Worldwide Brands:• Established 1999
+   ◇ Thousands of wholesalers. 32 suppliers located in Australia. We also have many other suppliers located around the world that are willing to work with Australian retailers.
+   ◇ Over 10 million products
+   ◇ Price: $299 for a lifetime membership
+• SaleHoo• Established 2005
+   ◇ Over 8,000 suppliers
+   ◇ Price: $67 per year
+• Ali Baba• 
+
+DropShipping Related Links
+https://wholesalesuiteplugin.com/9-dropship-directories-can-list-store/
+
+
+
+========================
+
+
+Drop Shipping Guides
+Shopify: Multi page guide by shopify. Highly Recommended. 
+https://www.shopify.com.au/guides/dropshipping
+Shopify: The Definitive Guide to Dropshipping with AliExpress 
+https://www.shopify.com.au/blog/117607173-the-definitive-guide-to-dropshipping-with-aliexpress
+
+Tools
+
+Product Sales Stats
+http://www.watchcount.com/searches.php 
+http://pages.ebay.com/marketplace_research/ (paid) 
+http://www.ebay.co.uk/ Selling
+
+Finding misspelled listing
+http://fatfingers.com/
+
+
+
+========================
+
+
+
+========================
+
+
+
+========================
+
+
+
+========================
+
+
+
+========================
+
+
+
+========================
+
+
+
+========================
+
+
+
+========================
+
