@@ -11,6 +11,7 @@ Wordpress.org : https://wordpress.org/
 Wordpress popular plugins : https://wordpress.org/plugins/browse/popular/
 Wordpress popular themes: https://wordpress.org/themes/browse/popular/
 Check Michael habib's Favorited items on wordpress.org
+https://profiles.wordpress.org/michaelhabib16#content-favorites
 
 https://codex.wordpress.org/Main_Page
 https://codex.wordpress.org/Site_Design_and_Layout 
@@ -130,6 +131,7 @@ What is Wordpress
 #Docs
 https://wordpress.org/ 
 Check Michael habib's Favorited items on wordpress.org
+https://profiles.wordpress.org/michaelhabib16#content-favorites
 
 #Themes
 

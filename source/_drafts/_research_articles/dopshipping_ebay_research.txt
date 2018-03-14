@@ -77,27 +77,27 @@ http://www.ebay.com.au/myb/SavedSellers
 ========================
 
 
-http://rest.ebay.com/epn/v1/find/item.rss? 
-keyword=%28_%2C_%29 
-&categoryId1=9355 
-&sortOrder=PricePlusShippingLowest 
-&programid=4 
-&campaignid=5338008307 
-&toolid=10039 
-&maxPrice=500 
-&minPrice=30 
-&listingType1=AuctionWithBIN 
-&listingType2=FixedPrice 
-&lgeo=1 
-&sellerId1=SellerHere 
-&sellerId2=SellerHere 
-&sellerId3=SellerHere 
-&sellerId4=SellerHere 
-&sellerId5=SellerHere 
-&sellerId6=SellerHere 
-&sellerId7=SellerHere 
-&sellerId8=SellerHere 
-&sellerId9=SellerHere 
+http://rest.ebay.com/epn/v1/find/item.rss?
+keyword=%28_%2C_%29
+&categoryId1=9355
+&sortOrder=PricePlusShippingLowest
+&programid=4
+&campaignid=5338008307
+&toolid=10039
+&maxPrice=500
+&minPrice=30
+&listingType1=AuctionWithBIN
+&listingType2=FixedPrice
+&lgeo=1
+&sellerId1=SellerHere
+&sellerId2=SellerHere
+&sellerId3=SellerHere
+&sellerId4=SellerHere
+&sellerId5=SellerHere
+&sellerId6=SellerHere
+&sellerId7=SellerHere
+&sellerId8=SellerHere
+&sellerId9=SellerHere
 &feedType=rss
 
 
@@ -108,18 +108,18 @@ Dealing with vendors:
 
 Email Template
 
-Hi, 
+Hi,
 I saw your listing on DropShipping Australia & i'm interested in your products. I'm a website & graphic designer by trade and now wish to build my own online businesses instead of just doing that for my clients!
-These are the main questions I have regarding the products & transactions: 
-- Do you accept orders via email ? if not, what's your process for making orders? 
-- Are prices for me as a reseller the same as what's on your website? 
-- Do you buy the products directly from manufacturer or the brand's primary distributor? 
-- Do you provide a software or a method of accessing your products list & stock ? 
-- Is shipping free ? and if not, which is your parcel delivery company? 
-- Do delivers include your own branding or is this blind drop shipping ? 
-- Do you market your business directly to my customers? 
+These are the main questions I have regarding the products & transactions:
+- Do you accept orders via email ? if not, what's your process for making orders?
+- Are prices for me as a reseller the same as what's on your website?
+- Do you buy the products directly from manufacturer or the brand's primary distributor?
+- Do you provide a software or a method of accessing your products list & stock ?
+- Is shipping free ? and if not, which is your parcel delivery company?
+- Do delivers include your own branding or is this blind drop shipping ?
+- Do you market your business directly to my customers?
 - Can I use pass on your warranty to my customers?
-Any other information you have for me as a new dropshipper would be much appreciated. Looking forward to hear from you soon. 
+Any other information you have for me as a new dropshipper would be much appreciated. Looking forward to hear from you soon.
 Michael.
 
 Dropshipping Inventory Directories:
@@ -131,7 +131,10 @@ Dropshipping Inventory Directories:
 • SaleHoo• Established 2005
    ◇ Over 8,000 suppliers
    ◇ Price: $67 per year
-• Ali Baba• 
+• Ali Baba
+- Ali Express
+- http://www.wholesale2b.com/
+- https://au.oberlo.com/
 
 DropShipping Related Links
 https://wholesalesuiteplugin.com/9-dropship-directories-can-list-store/
@@ -142,16 +145,16 @@ https://wholesalesuiteplugin.com/9-dropship-directories-can-list-store/
 
 
 Drop Shipping Guides
-Shopify: Multi page guide by shopify. Highly Recommended. 
+Shopify: Multi page guide by shopify. Highly Recommended.
 https://www.shopify.com.au/guides/dropshipping
-Shopify: The Definitive Guide to Dropshipping with AliExpress 
+Shopify: The Definitive Guide to Dropshipping with AliExpress
 https://www.shopify.com.au/blog/117607173-the-definitive-guide-to-dropshipping-with-aliexpress
 
 Tools
 
 Product Sales Stats
-http://www.watchcount.com/searches.php 
-http://pages.ebay.com/marketplace_research/ (paid) 
+http://www.watchcount.com/searches.php
+http://pages.ebay.com/marketplace_research/ (paid)
 http://www.ebay.co.uk/ Selling
 
 Finding misspelled listing
@@ -188,4 +191,3 @@ http://fatfingers.com/
 
 
 ========================
-
