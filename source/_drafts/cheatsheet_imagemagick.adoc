@@ -1,0 +1,10 @@
+
+= Cheatsheet : imagemagick
+Sample code & useful links related to imagemagick
+
+
+== Sample commands for converting images
+convert '*.jpg' -resize 1200 -set filename:new '%t_w1200' %[filename:new].jpg
+
+== Useful Links
+http://www.imagemagick.org/script/command-line-processing.php
