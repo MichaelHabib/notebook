@@ -4,7 +4,10 @@ Sample code & useful links related to imagemagick
 
 
 == Sample commands for converting images
-convert '*.jpg' -resize 1200 -set filename:new '%t_w1200' %[filename:new].jpg
+find . -name "*.jpg" -exec convert -resize 1200x -quality 85% {} /tmp/{} \;
+mogrify -path . -resize 1920x1920 -format "_resized-1920x1920.jpg" -quality 80 *.jpg
+
+convert "*.jpg" -resize 1200x1200 -set filename:new "%t_w1200" %[filename:new].jpg
 
 == Useful Links
 http://www.imagemagick.org/script/command-line-processing.php
