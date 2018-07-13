@@ -1,0 +1,10 @@
+
+- git init <dir>
+- git clone <repo>
+- git config user.name <name>
+- git add <file or dir>
+- git commis -m "<message>"
+- git commit --amend
+- git diff
+
+- git
