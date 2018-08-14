@@ -1,0 +1,26 @@
+= Ubuntu : Network Shared Folder.
+The purpose of this document is to showcase methods of sharing & possibly mounting folders across networks.
+
+
+== Using NFS
+
+=== NFS Server
+- install NFS server `sudo apt-get install nfs-kernel-server`
+- update `/etc/exports` to include the following:
+----
+/shared/folders/parent 192.168.0.0/24(rw,fsid=0,insecure,no_subtree_check,async)
+/shared/folders/parent/child 192.168.0.0/24(rw,nohide,insecure,no_subtree_check,async)
+----
+
+restart
+`service nfs restart`
+
+==== Useful NFS Server Commands
+`service nfs reload`
+
+
+
+=== NFS Client
+
+Sample code for mounting NFS folder:
+`sudo mount -t nfs4 -o proto=tcp,port=2049 192.168.0.112:/ /home/michael/_mh-pc2_media`
