@@ -33,10 +33,10 @@ The goal of this research is to find an optimal way to store and organize person
 - shared-fs/ (for shared file system folders like google driver, dropbox or any other local or external network fs)
 
 
-<<<<<<< HEAD
+
 === Document Types
 =======
 == Useful Links
 - https://www.convinceandconvert.com/content-marketing/content-to-fill-calendar/[ 105 Types of Content to Fill Up Your Editorial Calendar]
 - https://contentmarketinginstitute.com/2016/04/fresh-content-formats[8 Ways to Take a Fresh Approach to Content Formats]
->>>>>>> ca080f811dac3510131dfc8fce8a016002f256b5
+
