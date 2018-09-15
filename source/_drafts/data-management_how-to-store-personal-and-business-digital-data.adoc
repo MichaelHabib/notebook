@@ -29,3 +29,6 @@ The goal of this research is to find an optimal way to store and organize person
   ** software-category_software-name/:
 
 - shared-fs/ (for shared file system folders like google driver, dropbox or any other local or external network fs)
+
+
+=== Document Types
