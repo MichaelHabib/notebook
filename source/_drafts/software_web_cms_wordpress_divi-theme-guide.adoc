@@ -1,0 +1,21 @@
+= Wordpress - Divi Theme Guide
+
+
+
+== Setup 
+
+
+== Divi Development environment
+=== Useful Links
+https://www.elegantthemes.com/documentation/developers/divi-development-environment/
+
+== Child Theme
+=== Useful Links
+https://www.elegantthemes.com/blog/divi-resources/divi-child-theme
+
+
+
+== Module Development
+
+=== useful Links
+
