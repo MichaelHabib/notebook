@@ -1,4 +1,4 @@
-
+= Web Development Automation 
 
 == Useful Links
 https://blog.karenmenezes.com/2018/may/12/front-end-setup-ubuntu-18/
@@ -30,6 +30,3 @@ npm install -g shelljs
 
 ### install usefull front-end dev frameworks and tools
 npm install bootstrap@4.0.0-beta.2
-
-
-## BOWER
