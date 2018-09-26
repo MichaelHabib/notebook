@@ -2,6 +2,21 @@
 The purpose of this document is to showcase methods of sharing & possibly mounting folders across networks.
 
 
+== Using FTP:
+
+- install `sudo apt install curlftpfs`
+- create mountpoint folder `sudo mkdir /mnt/ftpmount` 
+- mout the ftp folder using `sudo curlftpfs -o allow_other UserName:PASS@domain.com /mnt/ftpmount`
+** the `-o allow_other` allows non-root users to access a folder mounted by root.
+
+
+== Using WebDav
+
+- install webdav client `sudo apt install davfs2`
+- On debian based disretos, run the followingcommand to allow non-root users to mount webdav folders `sudo dpkg-reconfigure davfs2`
+- sudo mount -t davfs -0 uid=user,gui=users,mod=775 http://DOMAIN/webdav /mnt/FOLDER
+
+
 == Using NFS
 
 === NFS Server
@@ -12,8 +27,7 @@ The purpose of this document is to showcase methods of sharing & possibly mounti
 /shared/folders/parent/child 192.168.0.0/24(rw,nohide,insecure,no_subtree_check,async)
 ----
 
-restart
-`service nfs restart`
+- restart nfs : `service nfs restart`
 
 ==== Useful NFS Server Commands
 `service nfs reload`
@@ -24,3 +38,6 @@ restart
 
 Sample code for mounting NFS folder:
 `sudo mount -t nfs4 -o proto=tcp,port=2049 192.168.0.112:/ /home/michael/_mh-pc2_media`
+
+
+

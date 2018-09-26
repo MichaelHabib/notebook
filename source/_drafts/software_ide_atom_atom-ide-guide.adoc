@@ -1,0 +1,25 @@
+= Atom IDE Guide
+.A hackable text editor for the 21st Century
+
+== Download & Installation:
+Download from https://atom.io/
+
+== Recommeded Plugins:
+=== General Tools
+
+apm install teletype platformio-ide-terminal api-docs atom-nodejs-snippets atom-beautify
+
+=== Atom Plugins for CSS, LessCSS and SCSS Development
+- CSS, LessCSS & SCSS syntax highlighting seems to be supported by default.
+
+
+=== Atom Plugins for JS & NodeJS Development
+
+
+
+=== Atom Plugins for PHP Development
+apm install ide-php atom-autocomplete-php
+
+
+
+=== Atom Plugins for Python Development

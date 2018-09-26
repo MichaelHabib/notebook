@@ -1,0 +1,9 @@
+== Keyboard mouse on ubuntu.
+Using the keyboard to controll the mouse pointer
+
+
+== Usefull Links
+https://sourceforge.net/projects/gizmod/
+https://askubuntu.com/questions/276413/control-mouse-with-keyboard-and-web-browsing
+
+
