@@ -1,4 +1,6 @@
+= Git Guide
 
+== Important Commands
 - git init <dir>
 - git clone <repo>
 - git config user.name <name>
@@ -7,4 +9,6 @@
 - git commit --amend
 - git diff
 
-- git
+
+== Useful Links
+https://github.com/MichaelHabib/git-t1
