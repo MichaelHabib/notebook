@@ -7,8 +7,9 @@ Download from https://atom.io/
 == Recommeded Plugins:
 === General Tools
 
-apm install -s teletype platformio-ide-terminal project-manager project-plus project-view  atom-beautify ask-stack git-time-machine highlight-selected file-icons
+apm install -s teletype platformio-ide-terminal project-manager project-plus atom-beautify ask-stack git-time-machine highlight-selected file-icons
 apm install -s api-docs atom-nodejs-snippets emmet
+apm install -s project-view 
 
 === Atom Plugins for CSS, LessCSS and SCSS Development
 - CSS, LessCSS & SCSS syntax highlighting seems to be supported by default.
