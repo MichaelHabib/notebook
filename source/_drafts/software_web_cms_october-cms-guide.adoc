@@ -10,13 +10,13 @@ composer create-project october/october myoctober
 cd ./myoctober
 php artisan october:install
 ```
-To access the backend, add `/bhackend` to your root domain (unless you changed the default backend tour during installation).
+To access the backend, add `/backend` to your root domain (unless you changed the default backend tour during installation).
 
 === Setting up the scheduler
 For scheduled tasks to operate correctly, you should add the following Cron entry to your server. Editing the crontab is commonly performed with the command `crontab -e`.
 `* * * * * php /path/to/artisan schedule:run >> /dev/null 2>&1`
 
-=== Configuration
+=== Understanding The Basics
 
 ==== Active Theme
 The active theme is set with the activeTheme parameter in the config/cms.php file or with the Theme Selector on the System > CMS > Front-end Theme back-end page. The theme set with the Theme Selector overrides the value in the config/cms.php file.
@@ -47,17 +47,25 @@ themes/
 ```
 
 
-== Pages & Content
+== Templates Hierarchy
+
+[plantuml]
+----
+
+
+----
 
 == Plugins
 
-== Themes
-* Theme development docs: https://octobercms.com/docs/themes/development
 
 === How to create templates?
-pages, partials and layout templates can include up to 3 sections: configuration, PHP code, and Twig markup. Sections are separated with the ``==`` sequence. For example:
+pages, partials and layout templates can include up to 3 sections: configuration,
+PHP code, and Twig markup. Sections are separated with the `==` sequence. For example:
+Notes:
+* The config section uses .INI format with string values enclosed in quotes.
+* The PHP section can have optional opening & closing tags. Also. only functions & name spaces are allowed.
 
-```
+----
 url = "/blog"
 layout = "default"
 ==
@@ -71,22 +79,36 @@ function onStart()
     <h4>{{ post.title }}</h4>
     {{ post.content }}
 {% endfor %}
-```
-Notes:
-* The config section uses .INI format with string values enclosed in quotes.
-* The PHP section can have optional opening & closing tags. Also. only functions & name spaces are allowed.
-
+----
 
 
 for more information, visit https://octobercms.com/docs/cms/themes
 
+== Theme Development
+- Theme development docs: https://octobercms.com/docs/themes/development
 
+== Page execution life cycle handlers
+
+. Layout onInit() function.
+. Page onInit() function.
+. Layout onStart() function.
+. Layout components onRun() method.
+. Layout onBeforePageStart() function.
+. Page onStart() function.
+. Page components onRun() method.
+. Page onEnd() function.
+. Layout onEnd() function.
 
 == Internals
 
-== Routing
-=== Parser
+=== Routing
+
+==== Parser
 https://octobercms.com/docs/services/parser
+== Problems & Solutions:
+
+=== .htaccess & 403 error on bitnami server :
+`Options +FollowSymLinks` apache options must be added to the .htaccess file.
 
 
 == Useful Links
