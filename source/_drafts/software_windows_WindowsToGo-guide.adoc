@@ -1,9 +1,28 @@
- 
+= Creating a Windows To Go Drive
 
-== Links - Info
+== Download windows ISO
+
+The following website can help find & download a windows ISO image.
+https://tb.rg-adguard.net/public.php
+http://windowsiso.net/
+https://www.heidoc.net/joomla/technology-science/microsoft/67-microsoft-windows-iso-download-tool
+
+ 
+== Download & Run YUMI the Multiboot Creator
+https://www.pendrivelinux.com/yumi-multiboot-usb-creator/
+
+== Installation:
+- Select the drive you wish to use as the Windows To GO pariton / drive.
+- Select Windows To GO in the list of OS options.
+- Select the windows ISO image to install from.
+- Confirm & wait.
+
+
+== Links 
 https://social.technet.microsoft.com/wiki/contents/articles/6991.windows-to-go-step-by-step.aspx
 https://technet.microsoft.com/en-au/library/gg318049%28v=ws.10%29.aspx?f=255&MSPPError=-2147217396
 
+http://theoven.org/index.php?topic=2569.0
 
 == Software:
 https://www.easyuefi.com/wintousb/
