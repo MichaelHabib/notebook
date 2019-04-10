@@ -1,11 +1,11 @@
 = Shared Accommodation System
 :toc:
-:icons: font
+
 
 == Notes :
 === General Task List
-- *Shared space*  : Vacuum the lounge room, kitchen, corridor, ...
-- *Shower* clean the walls, floor & bathtub.
+- *Shared space*  : Vacuum & Mop the lounge room, kitchen, corridor, ...
+- *Shower* clean the walls, mirror, floor & bathtub.
 - *Laundry*: Clean the wishing machine from any dry cleaning powder & empty the filter. 
 - *Kitchen*: Clean benches.
 - *Kitchen*: Clean ovens / stove top (full cleanup including the top & sides).
@@ -13,7 +13,7 @@
 - *Kitchen*: Clean the microwave inside & out.
 - *Toilet*: Complete cleaning (Brush the inside bowl & wipe the seats )
 - *Rubbish*: Empty all bins from the kitchen, bathrooms , lounge room , ... 
-
+- *Outdoors*: Sweeping outside the house.
 
 
 
