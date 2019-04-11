@@ -4,16 +4,6 @@
 
 == Notes :
 === General Task List
-- *Shared space*  : Vacuum & Mop the lounge room, kitchen, corridor, ...
-- *Shower* clean the walls, mirror, floor & bathtub.
-- *Laundry*: Clean the wishing machine from any dry cleaning powder & empty the filter. 
-- *Kitchen*: Clean benches.
-- *Kitchen*: Clean ovens / stove top (full cleanup including the top & sides).
-- *Kitchen*: Clean the fridges inside & out.
-- *Kitchen*: Clean the microwave inside & out.
-- *Toilet*: Complete cleaning (Brush the inside bowl & wipe the seats )
-- *Rubbish*: Empty all bins from the kitchen, bathrooms , lounge room , ... 
-- *Outdoors*: Sweeping outside the house.
 
 
 
@@ -39,8 +29,13 @@
 - Bathroom Bush.
 - Toilet Cleaning Chemical.
 - Toilet Bush.
+- Gloves (L or M).
+- Rubbish Bags.
 
 *If you need resources to accomplish the tasks, ask other tenants or landlord for advice / support.*
 
 == Documents
-<<shared-accommodation-system_kitchen-cleanup-rules.adoc#, Kitchen Cleanup Rules>>
+- <<shared-accommodation-system_rooms-and-name.adoc#, Rooms & Name>>
+- <<shared-accommodation-system_weekly-cleanup.adoc#, Weekly Cleanup>>
+- <<shared-accommodation-system_kitchen-cleanup-rules.adoc#, Kitchen Cleanup Rules>>
+- <<shared-accommodation-system_rubbish-bin-rules.adoc#, Rubbish Bin Rules>>

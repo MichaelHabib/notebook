@@ -1,0 +1,28 @@
+= Rooms & Names
+
+== Rooms & Names
+[cols="1a,5a", options="header"]
+|===
+|Room Number | Tenants Name
+|R1 | 
+|R2 | 
+|R3 | 
+|R4 | 
+|R5 | 
+|R6 | 
+|R7 | 
+|R8 | 
+
+|===
+
+== Notes & Reminders
+- Make sure doors are locked before going to your room and before leaving the house.
+- Keep noise to minimal between 10pm & 6am .
+
+== Landlord Contact Details.
+[cols="1a,5a"]
+|===
+|Name: |
+|Phone: |
+|Email: |
+|===

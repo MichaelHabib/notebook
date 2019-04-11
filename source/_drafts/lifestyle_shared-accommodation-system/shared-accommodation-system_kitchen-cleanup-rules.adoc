@@ -1,5 +1,7 @@
 = Kitchen Clean-Up Rules
 
+image:_assets/keep-kitchen-clean.png[]
+
 == - Clean surfaces after use (benches, tables, stove top, ...)
 == - Clean utensils after use.
 == - Rinse out dish sponges & table cloths after use.
