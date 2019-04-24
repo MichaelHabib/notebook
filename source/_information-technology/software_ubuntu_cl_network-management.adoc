@@ -1,0 +1,24 @@
+
+== How to scan device on network?
+Source: https://askubuntu.com/a/588786
+Arp-scan works great for me too...
+
+If using Wi-Fi:
+
+sudo arp-scan -l --interface=wlan0
+
+-or if using ethernet:
+
+sudo arp-scan -l --interface=eth0
+
+(this last is practically identical to what Rajesh Rajendran posted; the -l standing for --localnet)
+
+If you don't have arp-scan (it doesn't come with Ubuntu by default), just pull up a terminal and type:
+
+sudo apt-get install arp-scan
+
+
+== How to list existing network interfaces on ubuntu 18+ ?
+ip link
+
+

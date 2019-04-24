@@ -4,7 +4,7 @@ The goal of this research is to find an optimal way to store and organize person
 
 == Notes related to Personal Data
 - projects/
-    ** project-cat_project-name/
+** project-cat_project-name/
 
 - resources/
 
