@@ -12,3 +12,55 @@ Windfarm: flying wind farm + tower mounted turbine
 thorium reactor
 Tide Power
 Concentrating Solar Thermal & storing heat as melted salt.
+
+
+== To Organize
+
+    • Online resources:
+        ◦ Youtube:
+            ▪ https://www.youtube.com/watch?v=QwNSa_8ro_Y&list=PL28E70CF9A21B8ADC
+        ◦ Blogs:
+        ◦ Wiki
+    • Info on V + A + W + WH + AM …
+        ◦ http://www.energymatters.com.au/components/batteries/
+        ◦ http://www.fridge-and-solar.net/index.htm
+        ◦ http://www.powerstream.com/battery-capacity-calculations.htm
+    • 
+    • Glossary / Key
+        ◦ Volts
+        ◦ Amps
+        ◦ WATT
+        ◦ Current
+    • Types of Batteries:
+        ◦ NiMH Batteries
+        ◦ NiCD Battries
+        ◦ Lead accid
+        ◦ Li-ion = lithium ion
+        ◦ Lithim ion polymer 
+        ◦ 
+    • Math!?:
+
+=== Solar
+
+    • To Do:
+    • Questions:
+        ◦ How light is absorbed ?
+            ▪ https://www2.pvlighthouse.com.au/resources/courses/altermatt/The%20PV%20Principle/Absorption%20of%20light.aspx
+        ◦ What are the types of solar cells?
+
+
+
+    • Heat based energy:
+        ◦ To research:
+            ▪ Heat and energy recovery systems
+            ▪ thermal energy recovery system (TERS)
+            ▪ Turbochargers ?
+
+=== Mini PCs
+    • Mini PC options:
+        ◦ ODROID-XU4 ($120)
+        ◦ Radxa Rock
+        ◦ Cubieboard4 ($144)
+        ◦ Banana pi m3 2gb ram
+        ◦ HummingBoard
+        ◦ Orange PI
