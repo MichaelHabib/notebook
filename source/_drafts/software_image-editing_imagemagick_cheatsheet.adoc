@@ -1,4 +1,4 @@
-
+	
 = Cheatsheet : imagemagick
 Sample code & useful links related to imagemagick
 
