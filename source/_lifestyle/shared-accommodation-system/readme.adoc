@@ -1,0 +1,41 @@
+= Shared Accommodation System
+:toc:
+
+
+== Notes :
+=== General Task List
+
+
+
+=== Reminders to tenants:
+- Make sure doors are locked before leaving the house or going to your room.
+- Rubbish to be placed outside every ( Monday , Tuesday, Wednesday, Thursday, Friday ) NIGHT .
+- Rubbish MUST be placed in rubbish bags to avoid bad smells & attraction of insects. 
+- Food to be wrapped before placing in the fridge using cling wrap or bags. 
+- Shared items such as utensils, oven, stove top, fridges & tables to be cleaned after use.
+- Cleaning cloths & sponges to be washed right after usage.
+- Toilet & showers to be kept clean at all time. (Remove any rubbish, dirt or soap)
+
+
+=== Shared Resources
+- Cling Wrap.
+- Foil.
+- Dish Sponges.
+- Dish Washing Liquid.
+- Oven / Stove top cleaning chemical.
+- Table Cloths.
+- Vacuum bags / filters.
+- Bathroom Cleaning Chemical.
+- Bathroom Bush.
+- Toilet Cleaning Chemical.
+- Toilet Bush.
+- Gloves (L or M).
+- Rubbish Bags.
+
+*If you need resources to accomplish the tasks, ask other tenants or landlord for advice / support.*
+
+== Documents
+- <<shared-accommodation-system_rooms-and-name.adoc#, Rooms & Name>>
+- <<shared-accommodation-system_weekly-cleanup.adoc#, Weekly Cleanup>>
+- <<shared-accommodation-system_kitchen-cleanup-rules.adoc#, Kitchen Cleanup Rules>>
+- <<shared-accommodation-system_rubbish-bin-rules.adoc#, Rubbish Bin Rules>>

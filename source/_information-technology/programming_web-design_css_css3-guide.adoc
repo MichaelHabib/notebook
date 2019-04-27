@@ -1,0 +1,20 @@
+= CSS3 Guide
+
+== Intro 
+
+== Syntax 
+
+== Box Models 
+
+== Display Behavior 
+
+== Design Methodologies 
+
+- Object-Oriented CSS (OOCSS)
+- Block, Element, Modifier (BEM)
+- Scalable and Modular Architecture for CSS (SMACSS)
+- SUIT CSS
+- Systematic CSS
+
+
+== Useful Links 

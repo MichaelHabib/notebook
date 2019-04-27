@@ -1,0 +1,37 @@
+	
+= Cheatsheet : imagemagick
+Sample code & useful links related to imagemagick
+
+
+== Working code examples
+```
+find . -maxdepth 1 -name "*.jpg"  -exec convert -resize 1200x -quality 80%  -set filename:f '%[t]-%[w]x%[h].%[e]' {} temp/'%[filename:f]' \;
+```
+
+or using a for loop
+
+[source,bash]
+```
+for f in *.JPG; do
+    	printf "Resize $f\n"
+ 	convert "$f" -resize 1200x -quality 80% -set filename:f '%[t]-%[w]x%[h].%[e]' {} temp/'%[filename:f]'
+done
+
+```
+
+
+== Useful Links
+- Imagemagic Website :
+http://www.imagemagick.org/script/command-line-processing.php
+- Sample ImageMagic wrapper on github:
+** https://github.com/streamio/streamio-magick
+** https://github.com/superevil6/imageMagickShrink
+
+
+
+
+== Temp & Sample Code
+
+mogrify -path . -resize 1920x1920 -format "_resized-1920x1920.jpg" -quality 80 *.jpg
+convert "*.jpg" -resize 1200x1200 -set filename:new "%t_w1200" %[filename:new].jpg
+mogrify -path ./temp -resize 1920x -set filename:f '%[t]-w%[w]h%[h].%[e]' -format "%[filename:f]" -quality 80 ./*.{jpg,png}
