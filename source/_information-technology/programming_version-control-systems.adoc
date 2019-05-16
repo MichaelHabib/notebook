@@ -1,0 +1,17 @@
+
+
+== Composer
+Source : https://madewithlove.be/tilde-and-caret-constraints/
+There are also some syntactic sugar operators like ~ (tilde) and ^ (caret).
+
+    ~4.1.3 means >=4.1.3,<4.2.0,
+    ~4.1 means >=4.1.0,<5.0.0 (most used),
+    ~0.4 means >=0.4.0,<1.0.0,
+    ~4 means >=4.0.0,<5.0.0.
+
+The caret sign is slightly different:
+
+    ^4.1.3 (most used) means >=4.1.3,<5.0.0,
+    ^4.1 means >=4.1.0,<5.0.0, same as ~4.1 but:
+    ^0.4 means >=0.4.0,<0.5.0, this is different from ~0.4 and is more useful for defining backwards compatible version ranges.
+    ^4 means >=4.0.0,<5.0.0 which is the same as ~4 and 4.*.
