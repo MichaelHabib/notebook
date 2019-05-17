@@ -14,9 +14,8 @@ apm install -s teletype platformio-ide-terminal project-manager project-plus ato
 apm install -s ask-stack git-time-machine highlight-selected file-icons
 apm install -s api-docs atom-nodejs-snippets emmet
 apm install -s project-view
-apm install -s docblockr
-apm install -s apm install docblockr
-
+apm install -s docblockr 
+apm install -s language-plantuml language-plantuml
 
 ----
 === Atom Plugins for CSS, LessCSS and SCSS Development
