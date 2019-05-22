@@ -1,0 +1,15 @@
+
+= PlantUML Guide using Asciidoc
+
+
+== Class Diagrams
+http://plantuml.com/class-diagram
+
+=== Basic Syntax
+[plantuml, diagram-classes, png]
+----
+ClassA1 <|-- ClassB1
+Class ClassB2 extends ClassA2{
+
+}
+----
