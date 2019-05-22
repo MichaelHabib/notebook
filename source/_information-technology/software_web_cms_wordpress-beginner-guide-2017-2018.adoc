@@ -292,6 +292,7 @@ Paid Plugins:
 https://premium.wpmudev.org/blog/essential-wordpress-plugins/?utm_expid=3606929-105.kKHVTz43T_CV513Vo9oSow.0&utm_referrer=https%3A%2F%2Fwww.google.com.au%2F
 
 == Conding Standards
+
 - Class_Name
 - function_name($param_one)
 - $variable_name
