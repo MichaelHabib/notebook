@@ -6,6 +6,7 @@
 http://plantuml.com/class-diagram
 
 === Basic Syntax
+
 [plantuml, diagram-classes, png]
 ----
 ClassA1 <|-- ClassB1
