@@ -90,3 +90,10 @@ opcache.enable_cli=1
 ```
 
 - MUST restart the server using `./ctlscript.sh` to restart PHP to apply the changes.
+
+== Mutiple App Instancessudo ./bitnami-wordpress-VERSION-module-linux-x64-installer.run --wordpress_instance_name
+.Wordpress
+```
+sudo ./bitnami-wordpress-VERSION-module-linux-x64-installer.run --wordpress_instance_name NEW_BLOG_NAME
+```
+https://docs.bitnami.com/installer/apps/wordpress/configuration/install-several-wordpress-modules/
