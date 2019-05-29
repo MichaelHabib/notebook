@@ -41,7 +41,7 @@ Include installdir/apps/myapp/conf/htaccess.conf
 Alias /myapp/ "installdir/apps/myapp/htdocs/"
 Alias /myapp "installdir/apps/myapp/htdocs"
 
-Include "installdir/apps/myapp/conf/httpd-app.conf"
+Include "installdir/apps/myapp/conf/ht+Indexestpd-app.conf"
 ```
 
 - `httpd-vhosts.conf` _seems to be unsed on localhost! Will need a proper server setup?_
@@ -77,7 +77,7 @@ Include "installdir/apps/myapp/conf/httpd-vhosts.conf"
 
 == Disable PHP Caching on Bitnami Server
 
-- Comment out the following lines in `installdir/installdir`
+- Comment out the following lines in `installdir//home/michael/workspace/apps/bitnami-lamp/apache2/conf/httpd.conf`
 ```
 Include conf/pagespeed.conf
 Include conf/pagespeed_libraries.conf
@@ -91,6 +91,9 @@ opcache.enable_cli=1
 
 - MUST restart the server using `./ctlscript.sh` to restart PHP to apply the changes.
 
+== Apache Options:
+=== File index / File Browsing :
+add the option `+Indexes` to the Options in `httpd-app.conf`
 == Mutiple App Instancessudo ./bitnami-wordpress-VERSION-module-linux-x64-installer.run --wordpress_instance_name
 .Wordpress
 ```
