@@ -13,10 +13,6 @@
     }
   ],
   "license": "MIT",
-  "support": {
-    "email": "",
-    "irc": ""
-  },
   "autoload": {
     "psr-4": {
       "": [
