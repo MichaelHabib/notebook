@@ -1,0 +1,53 @@
+= PHP Composer Guide (PHP Package Manager)
+
+== JSON FIle Samples
+- https://getcomposer.org/doc/04-schema.md[Composer JSON Schema]
+[source,JSON]
+----
+{
+  "name": "jimsgroup/jims-enfold-testing-by-mh",
+  "authors": [
+    {
+      "name": "Michael Habib",
+      "email": "michael.habib@jims.net"
+    }
+  ],
+  "license": "MIT",
+  "support": {
+    "email": "",
+    "irc": ""
+  },
+  "autoload": {
+    "psr-4": {
+      "": [
+        "src/"
+      ]
+    },
+    "files": [],
+    "classmap": [],
+    "exclude-from-classmap": [
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "": []
+    }
+  },
+  "require": {
+    "yahnis-elsts/plugin-update-checker": "^4.6"
+  },
+  "require-dev": {
+    "kint-php/kint": "^3.2"
+  },
+  "suggest": {
+  },
+  "conflict": {
+  },
+  "replace": {
+  }
+}
+
+----
+
+== Useful Links
+- https://getcomposer.org/doc
