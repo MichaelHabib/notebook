@@ -1,0 +1,17 @@
+= CentOS Web Server Usage Guide
+
+== Apache Server :
+Enable apache on startup
+`sudo systemctl enable httpd.service`
+
+Restart apache : 
+`sudo systemctl restart httpd.service`
+
+Reload apache config :
+`sudo systemctl reload httpd.service`
+
+
+
+
+
+
