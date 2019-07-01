@@ -11,15 +11,9 @@ Reload apache config :
 `sudo systemctl reload httpd.service`
 
 == MySQL
-
-service mysqld start
-/etc/init.d/mysqld start
-
-service mysqld stop
-/etc/init.d/mysqld stop
-
-service mysqld restart
-/etc/init.d/mysqld restart
+`sudo systemctl start mysqld`
+`sudo systemctl stop mysqld`
+`sudo systemctl restart mysqld`
 
 
 
