@@ -17,6 +17,14 @@ Reload apache config :
 
 `sudo systemctl restart mysqld`
 
+MySQL User Management :
+----
+CREATE USER 'NAME'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PASS';
+GRANT ALL PRIVILEGES ON * . * TO 'NAME'@'localhost';
+FLUSH PRIVILEGES;
+
+----
+
 
 
 
