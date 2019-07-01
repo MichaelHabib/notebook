@@ -12,8 +12,11 @@ Reload apache config :
 
 == MySQL
 `sudo systemctl start mysqld`
+
 `sudo systemctl stop mysqld`
+
 `sudo systemctl restart mysqld`
+
 
 
 
