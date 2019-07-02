@@ -29,7 +29,28 @@ Roots project include 3 sub projects :
 
 
 === Folder Structure
+----
+├── composer.json
+├── .env
+├── config
+│   ├── application.php
+│   └── environments
+│       ├── development.php
+│       ├── staging.php
+│       └── production.php
+├── vendor
+└── web
+    ├── app
+    │   ├── mu-plugins
+    │   ├── plugins
+    │   ├── themes
+    │   └── uploads
+    ├── wp-config.php
+    ├── index.php
+    └── wp
 
+
+----
 
 
 
