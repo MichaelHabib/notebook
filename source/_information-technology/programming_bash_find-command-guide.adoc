@@ -4,5 +4,5 @@
 
 .Find directores , format output by using `-exec` & append to file using `>> FileName`
 ----
-find ${pwd} -maxdepth 1 -type d -exec echo "\"text_prefix + %f \"\n" >> _fileList.txt {} \;
+find ${pwd} -maxdepth 1 -type d -exec echo "\"wpackagist-plugin/{}\" : \"*\" , " >> "_fileList.txt" \;
 ----
