@@ -1,0 +1,41 @@
+= Wordpress Roots Guide
+
+From https://roots.io/
+"Tools for modern WordPress development "
+
+Roots project include 3 sub projects :
+
+[width="100%" cols='1,4']
+|====
+|https://roots.io/bedrock/[Bedrock] 
+|WordPress boilerplate to organize your WordPress project better, improve configuration files, and manage plugins with Composer. 
+
+|https://roots.io/sage/[Sage] 
+|WordPress starter theme that lets you build better themes faster with improved development tools. 
+
+|https://roots.io/trellis/[Trellis] 
+|WordPress development and production servers done right. Automatically create and provision a server to host a WordPress site. 
+|====
+
+
+== Bedrock
+
+=== Quick Start Guide :
+
+- Install Bedrock WP:
+** `composer create-project roots/bedrock`
+- Add Plugins:
+** 
+
+
+=== Folder Structure
+
+
+
+
+
+== Sage
+
+
+
+== Trellis
