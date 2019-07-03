@@ -1,6 +1,12 @@
 
+== Version Control Systems
+- Git
+- CVS Version Control
+- SVN
 
-== Composer
+== Version Naming Conventions
+
+=== Major.Minor.Patch
 Source : https://madewithlove.be/tilde-and-caret-constraints/
 There are also some syntactic sugar operators like ~ (tilde) and ^ (caret).
 
