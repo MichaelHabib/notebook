@@ -1,0 +1,23 @@
+= PHP Symfony Framework Guide
+
+https://symfony.com/
+
+
+== Useful Bundles
+
+=== by Symfony 
+----
+composer require symfony/flex
+composer require symfony/form
+composer require symfony/validator
+composer require symfony/property-access
+composer require symfony/http-foundation
+composer require symfony/http-client
+
+----
+
+=== by Friends of Symfony
+----
+composer require friendsofsymfony/rest-bundle
+
+----
