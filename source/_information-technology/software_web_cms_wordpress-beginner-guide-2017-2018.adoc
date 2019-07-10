@@ -26,6 +26,14 @@ https://codex.wordpress.org/Child_Themes
 - Sage / roots
 - 
 
+== File permission 
+set folder to 755 and files to 644
+----
+find . -type d -exec chmod 755 {} +
+find . -type f -exec chmod 644 {} +
+----
+
+
 #How to install wordpress using quick installer? (link to post)
 
 
