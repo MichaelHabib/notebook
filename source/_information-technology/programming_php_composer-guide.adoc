@@ -15,6 +15,7 @@
   "license": "MIT",
   "config": {
     "optimize-autoloader": true,
+    "classmap-authoritative": true,
     "platform": {
     }
   },
