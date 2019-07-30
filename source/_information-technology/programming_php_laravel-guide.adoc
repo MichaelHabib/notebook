@@ -1,5 +1,64 @@
 = Laravel Guide
 
+== Folder Structure
+
+= Test Folder Structure
+
+
+[.tree]
+- Laravel Root
+** app
+** config
+*** config.yaml
+
+
 == Usefull Links
-- Using Laravel Componetes outside of Laravel https://github.com/mattstauffer/Torch
-- 
+- Using Laravel components outside of Laravel https://github.com/mattstauffer/Torch
+- Folder Structre Explained : https://www.tutorialspoint.com/laravel/laravel_application_structure
+
+
+
+++++
+<style>
+.tree, .tree * {
+font-size: 16px
+}
+.tree ul,
+.tree li,
+.tree ol
+{
+margin : 0px;
+ list-style-type: none;
+}
+
+.tree ul,
+.tree ol {
+    border-left: 1px dashed #444;
+    padding: 10px 10px;
+
+}
+
+.tree * ul,
+.tree * ol
+{
+    margin-left : 5px;
+    margin-top: -10px;
+}
+.tree li {
+    padding: 5px 10px;
+    position: relative;
+}
+.tree li:last-child {
+margin-bottom: -30px
+}
+.tree li:before {
+    content: "";
+    border-top: 1px dashed #555;
+    width: 16px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+}
+</style>
+++++
