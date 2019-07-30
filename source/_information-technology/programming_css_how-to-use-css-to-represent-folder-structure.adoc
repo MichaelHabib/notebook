@@ -14,26 +14,34 @@ margin : 0px;
  list-style-type: none;
 }
 
+.tree ul,
+.tree ol {
+    border-left: 1px dashed #444;
+    padding: 10px 10px;
+
+}
+
 .tree * ul,
 .tree * ol
 {
-margin-left : -10px;
+    margin-left : 5px;
+    margin-top: -10px;
 }
-.tree ul,
-.tree ol {
-border-left: 1px solid #444;
-padding: 2px 10px;
-}
-
 .tree li {
-    padding: 2px 10px;
+    padding: 5px 10px;
     position: relative;
 }
+.tree li:last-child {
+margin-bottom: -30px
+}
 .tree li:before {
-    content: "--";
+    content: "";
+    border-top: 1px dashed #555;
+    width: 16px;
+    display: block;
     position: absolute;
-    top 4px;
-    left: -5px;
+    top: 20px;
+    left: -10px;
 }
 </style>
 
