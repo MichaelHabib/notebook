@@ -2,14 +2,32 @@
 
 == Folder Structure
 
-= Test Folder Structure
-
-
 [.tree]
-- Laravel Root
+
+- `app/` : Is the application folder and contains all the code.
+** Console
+** Events
+** Exceptions
+** Http
+** Providers
+- `bootstrap/`
+** app.php : application bootstrap
+- `config/`
+** app.php
+** mail.php
+** filesystem.php
+** services.php : storing third party credentials .
+- `database/`
+- `public/`
+- `resources/`
+** scss/
+** views/ : HTML and template files.
+- `routes/`
+- `storage/`
 ** app
-** config
-*** config.yaml
+** framework
+** logs
+- `tests/`
 
 
 == Usefull Links
@@ -35,6 +53,7 @@ margin : 0px;
 .tree ol {
     border-left: 1px dashed #444;
     padding: 10px 10px;
+    margin-bottom: 20px;
 
 }
 
@@ -49,7 +68,7 @@ margin : 0px;
     position: relative;
 }
 .tree li:last-child {
-margin-bottom: -30px
+margin-bottom: -35px
 }
 .tree li:before {
     content: "";
