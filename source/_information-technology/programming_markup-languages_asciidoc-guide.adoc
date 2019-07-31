@@ -3,6 +3,14 @@
 == About AsciiDoc
 
 == Syntax
+== Document Options
+[source,asciidoc]
+----
+:sectnums:
+:sectnumlevels: 5
+----
+
+
 === Headers
 Use one or multiple `=` to indicate header level. The number of `=` characters indicate the header level , for example:  `==` indicates h2 while `===` indicates h3, and so on ..
 
