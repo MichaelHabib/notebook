@@ -1,0 +1,12 @@
+= General PHP development guide.
+
+== Notes:
+- The key to understanding modern PHP frameworks is to understand the PSR standards listed at https://www.php-fig.org/psr/
+
+== Useful Links
+=== Orgs 
+- https://www.php-fig.org/
+
+
+=== Blogs
+- https://matthiasnoback.nl
