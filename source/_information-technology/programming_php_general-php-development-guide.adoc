@@ -3,7 +3,23 @@
 == Notes:
 - The key to understanding modern PHP frameworks is to understand the PSR standards listed at https://www.php-fig.org/psr/
 
-== Useful Links
+
+== Design Patterns:
+- https://github.com/domnikl/DesignPatternsPHP
+- https://github.com/ChristopheCIATTI/DesignPatternsPHP
+- https://github.com/kamranahmedse/design-patterns-for-humans
+- https://github.com/eimg/design-patterns-php
+
+=== Service Container: 
+==== Notes:
+- Depend on abstractions and not concretins
+
+==== Links
+- Explained in context of Laravel : https://medium.com/@NahidulHasan/laravel-ioc-container-why-we-need-it-and-how-it-works-a603d4cef10f
+- 
+
+
+== Other Useful Links
 === Orgs 
 - https://www.php-fig.org/
 
