@@ -6,6 +6,7 @@
 
 == Design Patterns:
 - https://github.com/domnikl/DesignPatternsPHP
+- https://refactoring.guru/design-patterns/php
 - https://github.com/ChristopheCIATTI/DesignPatternsPHP
 - https://github.com/kamranahmedse/design-patterns-for-humans
 - https://github.com/eimg/design-patterns-php
@@ -21,6 +22,7 @@
 
 == Other Useful Links
 === Orgs 
+- https://refactoring.guru/design-patterns/php
 - https://www.php-fig.org/
 
 
