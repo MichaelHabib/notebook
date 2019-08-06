@@ -4,11 +4,29 @@
 
 == Syntax
 == Document Options
+
 [source,asciidoc]
+----
+:favicon: ./images/favicon/favicon.png
+----
+
+[source,asciidoc]
+.Experimental Features such as UI Macros
+----
+:experimental:
+----
+
+[source,asciidoc]
+.Numbered Headers
 ----
 :sectnums:
 :sectnumlevels: 5
-:experimental:
+----
+
+[source,asciidoc]
+.Font Icons by Font Awesome
+----
+:icons: font
 ----
 
 
@@ -197,6 +215,15 @@ IaaS:::
 
 |===
 
+=== UI Macros (Experimental)
+https://asciidoctor.org/docs/user-manual/#user-interface-macros
+----
+kbd:[F11]
+menu:View[Zoom > Reset]
+btn:[OK] 
+icon:tags[role="blue",size=2x]
+icon:heart[role="red",size=fw,rotate=90, flip=vertical]
+----
 
 === Includes
 
