@@ -283,7 +283,53 @@ All options can be found on the manpage by running `asciidoc --help manpage`
          [3]PLUGIN COMMANDS).
 ```
 
+== Custom CSS
 
+.Custom UI Macros Menus Styles
+[.custom-ui-macro-menu-css-v1]
+menu:Left Bar Menu[Tags > New > some]
+++++
+<style>
+.custom-ui-macro-menu-css-v1 .menuseq .menu,
+. custom-ui-macro-menu-css-v1.menuseq .submenu,
+.custom-ui-macro-menu-css-v1 .menuseq .menuitem{
+    padding: 5px;
+    border: 1px dotted #ddd;
+}
+.custom-ui-macro-menu-css-v1 .menuseq .menu{
+    background: hsl(20,20%,90%);
+}
+.custom-ui-macro-menu-css-v1 .menuseq .submenu{
+  background: hsl(200,20%,90%);
+}
+.custom-ui-macro-menu-css-v1 .menuseq .menuitem{
+  background: hsl(160,20%,90%);
+}
+
+</style>
+<style>
+body{
+	background: #f9f9f9;
+}
+#content{
+    max-width: 1200px;
+}
+.sect1{
+	background: #f4f4f4;
+	padding: 20px;
+}
+.sect1+.sect1{
+	border-top: 1px solid #eee;
+}
+.sect2{
+	background: #fff;
+	padding: 20px;
+}
+.sect2+.sect2 {
+	border-top: 1px dotted #e5e5e5;
+}
+</style>
+++++
 
 
 == Useful Links
