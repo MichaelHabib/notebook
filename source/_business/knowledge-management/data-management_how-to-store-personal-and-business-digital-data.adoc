@@ -33,6 +33,20 @@ The goal of this research is to find an optimal way to store and organize person
 - shared-fs/ (for shared file system folders like google driver, dropbox or any other local or external network fs)
 
 
+== Categorization Criteria : How to categories information ?
+
+
+Document tags ?!
+By Department: IT, Finance, Legal, HR, Marketing, Sales, Production, Operations, Customer Service, R&D
+By Document Type :  Changelog, Contract, Tutorial (Detailed Instructions), Guide (Simple Instructions), Manual, Template, Form, Source Code, Plan, Intro / Description, Diagram.
+By Intended User : Customer, User (System user)(Internal or External), Developer (Internal or External)
+By Software Category : Website, CMS, Plugin, Add-on, Theme, Child Theme,
+By Software name: Wordpress, FMS, ...
+Usage examples
+For a page with the title "How to access Wordpress & edit content guide", add tags → IT, Guide, User, Developer, Wordpress, CMS .
+
+
+
 
 === Document Types
 
