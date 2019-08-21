@@ -185,12 +185,18 @@ IaaS:::
 - Number of values assigned to `[cols="1,2,3"]` indicates the number of columns.
 - The values can be alignment instructions or styling information (ToDo: can they be both?). Available styles are : `d` for default paragraph formatting, `a` for AsciiDOc, `e` for Italicized text, `h` for header style, `l` for literal block formatting, `m` for monospaced content, `s` for bold text and `v` for verse styling. 
 
+==== Example options:
+----
+[cols="2h,4a"]
+
+----
+
 [cols="a,a",separator="~"]
 |===
 ~ Code ~ Output
 ~
 ----
-|===
+!===
 |Col1 |Col2
 
 |R1C1
@@ -199,7 +205,7 @@ IaaS:::
 |R2C1
 |R2C2
 
-|===
+!===
 ----
 ~ 
 !===
