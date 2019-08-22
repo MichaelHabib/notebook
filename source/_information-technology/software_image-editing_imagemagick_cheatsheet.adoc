@@ -4,17 +4,13 @@ Sample code & useful links related to imagemagick
 
 
 == Working code examples
-```
-find . -maxdepth 1 -name "*.jpg"  -exec convert -resize 1200x -quality 80%  -set filename:f '%[t]-%[w]x%[h].%[e]' {} temp/'%[filename:f]' \;
-```
-
-or using a for loop
 
 [source,bash]
 ```
+mkdir -p ./_temp;
 for f in *.JPG; do
-    	printf "Resize $f\n"
- 	convert "$f" -resize 1200x -quality 80% -set filename:f '%[t]-%[w]x%[h].%[e]' {} temp/'%[filename:f]'
+    	printf "Resize $f\n";
+ 	convert "$f" -resize 1200x -quality 80% -set filename:f '%[t]-%[w]x%[h].%[e]' _temp/'%[filename:f]'
 done
 
 ```
@@ -31,7 +27,10 @@ http://www.imagemagick.org/script/command-line-processing.php
 
 
 == Temp & Sample Code
+```
+find . -maxdepth 1 -name "*.jpg"  -exec convert -resize 1200x -quality 80%  -set filename:f '%[t]-%[w]x%[h].%[e]' {} temp/'%[filename:f]' \;
 
 mogrify -path . -resize 1920x1920 -format "_resized-1920x1920.jpg" -quality 80 *.jpg
 convert "*.jpg" -resize 1200x1200 -set filename:new "%t_w1200" %[filename:new].jpg
 mogrify -path ./temp -resize 1920x -set filename:f '%[t]-w%[w]h%[h].%[e]' -format "%[filename:f]" -quality 80 ./*.{jpg,png}
+```
