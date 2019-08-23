@@ -11,18 +11,22 @@
 - https://github.com/kamranahmedse/design-patterns-for-humans
 - https://github.com/eimg/design-patterns-php
 
+=== Builder Pattern
+
+
 === Service Container: 
 ==== Notes:
 - Depend on abstractions and not concretins
 
 ==== Links
 - Explained in context of Laravel : https://medium.com/@NahidulHasan/laravel-ioc-container-why-we-need-it-and-how-it-works-a603d4cef10f
-- 
-
+- Hand-written service containers https://matthiasnoback.nl/2019/03/hand-written-service-containers/
+- A simple do-it-yourself PHP service container http://dqxtech.net/blog/2014-06-13/simple-do-it-yourself-php-service-container
 
 == Other Useful Links
 === Orgs 
 - https://refactoring.guru/design-patterns/php
+- https://sourcemaking.com/design_patterns/
 - https://www.php-fig.org/
 
 
