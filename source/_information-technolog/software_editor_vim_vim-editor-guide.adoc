@@ -58,8 +58,8 @@ Plugin 'mattn/emmet-vim'
 
 |====
 |Key |Usage
-
-
+| kbd:[u] |undo
+| kbd:[C+R] |redo
 |====
 
 == Remapped Keys and Usage
@@ -69,7 +69,18 @@ Plugin 'mattn/emmet-vim'
 
 |====
 == Useful Links:
+
+.Vim Alternitaves
+- https://github.com/syl20bnr/spacemacs
+- NeoVim
+
+.Setup & Config Ideas  
 - https://dev.to/allanmacgregor/vim-is-the-perfect-ide-e80
-- 
+- https://github.com/liuchengxu/space-vim
+
+.Key Mapping
+- https://vim.fandom.com/wiki/Mapping_keys_in_Vim_-_Tutorial_(Part_1)
+
+
 
 ----
