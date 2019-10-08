@@ -130,7 +130,9 @@ Source: https://github.com/joshnh/Git-Commands/blob/master/README.md
 [cols="a,a",separator="~"]
 |===
 ~ Command ~ Description 
-~ `git tag -a TagName -m "TagMessage"` ~
+~ `git tag -a TagName -m "TagMessage"` ~ add tag locally only
+~ `git push --tags` ~push all tags
+~ `git push origin <tag_name>` ~ push a specific tag
 ~ `git tag -d TagName` ~ Delete *local* tag
 ~ `git push --delete TagName` ~ Delete *REMOTE* tag
 |===
