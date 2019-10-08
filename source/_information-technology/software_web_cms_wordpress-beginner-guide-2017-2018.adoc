@@ -6,25 +6,18 @@ What is Wordpress
 
 This is NOT a step by step tutorial, I simply provide general info and list links to important documentation, blogs, themes and plugins. 
 
-#General Information
-Wordpress.org : https://wordpress.org/ 
-Wordpress popular plugins : https://wordpress.org/plugins/browse/popular/
-Wordpress popular themes: https://wordpress.org/themes/browse/popular/
-Check Michael habib's Favorited items on wordpress.org
-https://profiles.wordpress.org/michaelhabib16#content-favorites
+== Useful Links
+=== General Information
+- Wordpress.org : https://wordpress.org/ 
+- Check Michael habib's Favorited items on wordpress.org : https://profiles.wordpress.org/michaelhabib16#content-favorites
+- https://codex.wordpress.org/Main_Page
 
-https://codex.wordpress.org/Main_Page
-https://codex.wordpress.org/Site_Design_and_Layout 
-https://codex.wordpress.org/Theme_Development 
-https://codex.wordpress.org/Child_Themes
+=== Repos
+- https://github.com/jessuppi
 
-== Plugin Frameworks
+=== WP Frameworks
 - http://wppb.io/
-
-
-== Theme Frameworks
 - Sage / roots
-- 
 
 == File permission 
 set folder to 755 and files to 644
