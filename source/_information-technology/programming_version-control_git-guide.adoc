@@ -137,6 +137,19 @@ Source: https://github.com/joshnh/Git-Commands/blob/master/README.md
 
 
 === Submudules
+sample `.gitmodules` files
+----
+[submodule "src/JimsGroup/WP_Framework"]
+	path = src/JimsGroup/WP_Framework
+	url = git@github.com:michaelhabibjims/WP_Framework.git
+	branch = master
+[submodule "src/JimsGroup/FMS_WP_Auth"]
+	path = src/JimsGroup/FMS_WP_Auth
+	url = git@github.com:michaelhabibjims/FMS_WP_Auth.git
+	branch = master
+
+----
+==== Useful Links
 https://github.blog/2016-02-01-working-with-submodules/
 
 === Inspection & Comparison
@@ -185,7 +198,7 @@ https://github.blog/2016-02-01-working-with-submodules/
 
 
 # OS generated files #
-######################
+##################################################
 **/.DS_Store
 **/.DS_Store?
 **/._*
@@ -195,7 +208,7 @@ https://github.blog/2016-02-01-working-with-submodules/
 **/Thumbs.db
 
 # Packages #
-############
+##################################################
 # it's better to unpack these files and commit the raw source
 # git has its own built in compression methods
 **/*.7z
