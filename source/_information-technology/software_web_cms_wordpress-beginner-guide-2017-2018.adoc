@@ -26,6 +26,19 @@ find . -type d -exec chmod 755 {} +
 find . -type f -exec chmod 644 {} +
 ----
 
+== WP REST API
+=== Links
+- https://developer.wordpress.org/rest-api
+- https://developer.wordpress.org/rest-api/reference/posts/
+- Custom Routes: https://developer.wordpress.org/reference/functions/register_rest_route/
+
+=== Code Samples
+----
+DominName/wp-json/wp/v2/posts?per_page=3&orderby=date&order=desc&status=publish
+
+---
+
+
 == ToDo
 
 #How to install wordpress using quick installer? (link to post)
