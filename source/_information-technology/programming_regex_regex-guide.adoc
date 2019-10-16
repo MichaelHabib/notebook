@@ -14,6 +14,11 @@
 - `[0-9]` matches a single character between 0 and 9, using the range `-` in the character class `[]`
 - `arm[^y]` negate the the character class . Matches `armies` but not `army'
 
+.Groups
+- Explanations :
+** https://stackoverflow.com/questions/3512471/what-is-a-non-capturing-group-in-regular-expressions
+- `(group-item1|or|item-2)` Capturing Group : 
+- `(?:group-item1|or|item-2)` non-Capturing Group : 
 
 == Useful Links: 
 - https://www.regular-expressions.info/quickstart.html
