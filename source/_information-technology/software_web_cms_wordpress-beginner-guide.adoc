@@ -1,4 +1,4 @@
-= Wordpress Beginner Guide 2017 - 2018
+= Wordpress Beginner Guide
 
 
 What is Wordpress
@@ -11,6 +11,17 @@ This is NOT a step by step tutorial, I simply provide general info and list link
 - Wordpress.org : https://wordpress.org/ 
 - Check Michael habib's Favorited items on wordpress.org : https://profiles.wordpress.org/michaelhabib16#content-favorites
 - https://codex.wordpress.org/Main_Page
+
+=== Must Habe Plugins
+- W3 Cache
+- WP Mail SMTP ?
+- Duplicate Post
+- Simple Image Sizes
+- Debugbar ?
+- User Role Editor 
+- Redirection
+- CC Childrent Pages
+- Contact Form 7
 
 === Repos
 - https://github.com/jessuppi
