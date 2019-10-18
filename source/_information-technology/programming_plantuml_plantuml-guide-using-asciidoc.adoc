@@ -5,7 +5,7 @@
 == Class Diagrams
 http://plantuml.com/class-diagram
 
-[
+
 [plantuml]
 ----
 ClassA1 <|-- ClassB1
