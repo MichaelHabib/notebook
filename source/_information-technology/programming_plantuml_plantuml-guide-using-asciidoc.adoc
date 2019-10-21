@@ -1,12 +1,11 @@
 
 = PlantUML Guide using Asciidoc
-
+http://plantuml.com/
 
 == Class Diagrams
-http://plantuml.com/class-diagram
 
 
-[plantuml]
+[plantuml,x,png]
 ----
 ClassA1 <|-- ClassB1
 	note right: ClassB# extends ClassA#
@@ -14,6 +13,9 @@ ClassA1 <|-- ClassB1
 ClassA2 *-- ClassB2
 	note right: ClassB# composes ClassA#
 ----
+
+
+---
 
 [plantuml]
 ----
@@ -25,6 +27,9 @@ Class09 -- Class10
 
 ----
 
+---
+
+
 [plantuml]
 ----
 Class11 <|.. Class12
@@ -34,6 +39,8 @@ Class17 ..|> Class18
 Class19 <--* Class20
 ----
 
+---
+
 [plantuml]
 ----
 Class21 #-- Class22
@@ -42,3 +49,169 @@ Class25 }-- Class26
 Class27 +-- Class28
 Class29 ^-- Class30
 ----
+---
+
+=== Activity Diagrams
+[cols=2]
+|===
+
+a|
+[plantuml,x,svg]
+----
+
+start
+while(WhileCondition) is (FALSE)
+  :ProcessIfFalse;
+endwhile (TRUE)
+
+#lightgreen:continu1;
+
+if(ConditionA) then (True)
+  :ProcessForConA;
+elseif(ConditionB) then (True)
+  :ProcessForConB;
+endif
+
+#lightgreen:continue2;
+
+repeat
+  :ProcessToRepeat;
+repeat while (RepeatConidition) is (TRUE)
+-> FalseLabel;
+
+#lightgreen:continue3;
+
+if (ConA) then (Orange)
+  -[#Orange,dotted]->
+  :Process Orange;
+elseif (ConB) then (GreenBold)
+  -[#green,bold]->
+  :Process GreenBold;
+endif
+
+#lightgreen:continue4;
+
+repeat
+  :StartProcessToRepeat;
+  if (X > 10) then (TRUE)
+    :print x is > 10;
+    detach
+
+  elseif (X < 10) then (TRUE)
+    :print x is NOT > 10;
+    detach
+
+  else (Undefined)
+  endif
+repeat while (x == Undefined) is (TRUE)
+
+end
+
+----
+a|
+----
+
+start
+while(WhileCondition) is (FALSE)
+  :ProcessIfFalse;
+endwhile (TRUE)
+
+#lightgreen:continu1;
+
+if(ConditionA) then (True)
+  :ProcessForConA;
+elseif(ConditionB) then (True)
+  :ProcessForConB;
+endif
+
+#lightgreen:continue2;
+
+repeat
+  :ProcessToRepeat;
+repeat while (RepeatConidition) is (TRUE)
+-> FalseLabel;
+
+#lightgreen:continue3;
+
+if (ConA) then (Orange)
+  -[#Orange,dotted]->
+  :Process Orange;
+elseif (ConB) then (GreenBold)
+  -[#green,bold]->
+  :Process GreenBold;
+endif
+
+#lightgreen:continue4;
+
+repeat
+  :StartProcessToRepeat;
+  if (X > 10) then (TRUE)
+    :print x is > 10;
+    detach
+
+  elseif (X < 10) then (TRUE)
+    :print x is NOT > 10;
+    detach
+
+  else (Undefined)
+  endif
+repeat while (x == Undefined) is (TRUE)
+
+end
+
+----
+
+|===
+
+[cols=2,separator="~"]
+|===
+
+a~
+[plantuml,x,svg]
+----
+|Swim Lane 1|
+start
+:Step 1 in Lane 1;
+
+|#eee|Swim Lane 2|
+:Step 1 in Lane 2;
+
+|Swim Lane 1|
+:Step 2 in Lane 1;
+
+|Swim Lane 2|
+:Step 2 in Lane 2;
+(A)
+detach
+
+|Swim Lane 3|
+(A)
+:Step 1 in Lane 3;
+
+stop
+----
+
+a~
+----
+|Swim Lane 1|
+start
+:Step 1 in Lane 1;
+
+|#eee|Swim Lane 2|
+:Step 1 in Lane 2;
+
+|Swim Lane 1|
+:Step 2 in Lane 1;
+
+|Swim Lane 2|
+:Step 2 in Lane 2;
+(A)
+detach
+
+|Swim Lane 3|
+(A)
+:Step 1 in Lane 3;
+
+stop
+----
+|===
