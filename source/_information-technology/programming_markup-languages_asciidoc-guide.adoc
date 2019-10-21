@@ -221,6 +221,13 @@ IaaS:::
 
 |===
 
+=== Col / Row Span
+
+.To span 2 columns and 1 row
+----
+2.1| ColContent
+----
+
 === UI Macros (Experimental)
 https://asciidoctor.org/docs/user-manual/#user-interface-macros
 ----
