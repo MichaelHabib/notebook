@@ -1,34 +1,39 @@
-= Wordpress Beginner Guide
-
-
-What is Wordpress
-"WordPress is open source software you can use to create a beautiful website, blog, or app."
+= Wordpress Developer Guide
 
 This is NOT a step by step tutorial, I simply provide general info and list links to important documentation, blogs, themes and plugins. 
 
 == Useful Links
 === General Information
 - Wordpress.org : https://wordpress.org/ 
-- Check Michael habib's Favorited items on wordpress.org : https://profiles.wordpress.org/michaelhabib16#content-favorites
 - https://codex.wordpress.org/Main_Page
+- Michael habib's Favorited items on wordpress.org : https://profiles.wordpress.org/michaelhabib16#content-favorites
 
-=== Must Habe Plugins
-- W3 Cache
-- WP Mail SMTP ?
+=== Must Have Plugins
 - Duplicate Post
+- W3 Cache
+- Contact Form 7
 - Simple Image Sizes
 - Debugbar ?
-- User Role Editor 
 - Redirection
+
+
+=== Recommended Plugins
+- User Role Editor 
 - CC Childrent Pages
-- Contact Form 7
+- WP Mail SMTP ?
 
-=== Repos
+=== Repos of Plugins & Frameworks (Not listed on WordPress marketplace)
 - https://github.com/jessuppi
-
-=== WP Frameworks
 - http://wppb.io/
 - Sage / roots
+
+== Conding Standards
+*I* do not use the WP coding standards, but instead use PSR standards, regardless, here are the WP coding standards for referance.
+- Class_Name
+- function_name($param_one)
+- $variable_name
+- CONST_NAME
+
 
 == File permission 
 set folder to 755 and files to 644
@@ -46,7 +51,6 @@ find . -type f -exec chmod 644 {} +
 === Code Samples
 ----
 DominName/wp-json/wp/v2/posts?per_page=3&orderby=date&order=desc&status=publish
-
 ----
 
 
