@@ -53,6 +53,15 @@ find . -type f -exec chmod 644 {} +
 DominName/wp-json/wp/v2/posts?per_page=3&orderby=date&order=desc&status=publish
 ----
 
+== Actions Hooks
+
+=== Triggnering Context & Order
+.Ordered earliest to latest
+- `muplugins_loaded`
+- `plugin_loaded`
+- `init`
+- `wp_loaded`                          
+- `wp`
 
 == ToDo
 
