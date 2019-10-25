@@ -171,7 +171,7 @@ https://github.blog/2016-02-01-working-with-submodules/
 **/node_modules_local
 
 # IDE & Dev Tools File to ignore
-**/nbproject/
+**/nbproject
 **/*.sublime-*
 **/.project
 **/Vagrantfile
@@ -195,7 +195,6 @@ https://github.blog/2016-02-01-working-with-submodules/
 # File-system cruft and temporary files
 **/.*.swp
 **/.buildpath
-**/.idea
 **/.swp
 **/__*
 
