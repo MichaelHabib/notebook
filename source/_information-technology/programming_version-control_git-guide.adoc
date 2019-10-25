@@ -171,11 +171,12 @@ https://github.blog/2016-02-01-working-with-submodules/
 **/node_modules_local
 
 # IDE & Dev Tools File to ignore
-**/nbproject/private/
+**/nbproject/
 **/*.sublime-*
 **/.project
 **/Vagrantfile
 **/.vagrant*
+**/.idea/
 
 # PHP files and folders
 **/vendor
