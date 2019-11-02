@@ -1,60 +1,69 @@
-﻿Wordpress Beginner Guide 2017 - 2018
+﻿= Wordpress Beginner Guide 2019-2020
 
 
-What is Wordpress
+== What is Wordpress
 "WordPress is open source software you can use to create a beautiful website, blog, or app."
 
 This is NOT a step by step tutorial, I simply provide general info and list links to important documentation, blogs, themes and plugins. 
 
-#General Information
-Wordpress.org : https://wordpress.org/ 
-Wordpress popular plugins : https://wordpress.org/plugins/browse/popular/
-Wordpress popular themes: https://wordpress.org/themes/browse/popular/
-Check Michael habib's Favorited items on wordpress.org
-https://profiles.wordpress.org/michaelhabib16#content-favorites
+== General Information
+- Wordpress.org : https://wordpress.org/ 
+- Wordpress popular plugins : https://wordpress.org/plugins/browse/popular/
+- Wordpress popular themes: https://wordpress.org/themes/browse/popular/
+- https://profiles.wordpress.org/michaelhabib16#content-favorites[Check Michael habib's Favorited items on wordpress.org]
 
+== Useful Links 
 https://codex.wordpress.org/Main_Page
 https://codex.wordpress.org/Site_Design_and_Layout 
 https://codex.wordpress.org/Theme_Development 
 https://codex.wordpress.org/Child_Themes
 
-#How to install wordpress using quick installer? (link to post)
+== How to install wordpress using quick installer? (link to post)
 
 
-#Recomended Themes & Plugins
+== Using wp-cli (Command Line)
+----
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+alias wp='./wp-cli.phar' &> wp.bashalias
+----
+to use `wp [OPTIONS]` in the terminal, run `source ./wp.bashlais` .
 
-#Plugins:
 
-##Security
 
-##Backup & Maintenance
+== Recomended Themes & Plugins
 
-##SEO & SMO
+== Plugins:
 
-##Social Media Integration
+=== Security
 
-##Inhancement
+=== Backup & Maintenance
 
-##Authentication & User Mangement
+=== SEO & SMO
 
-##Visual Website Builders
+=== Social Media Integration
 
-##Features:
+=== Inhancement
+
+=== Authentication & User Mangement
+
+=== Visual Website Builders
+
+=== Features:
 Sidebar manager
 
 
-#Plugins for special businesses cases
-
-##Cafe Software
-
-##Booking Software
-
-##eListing Software
 
 
-#Themes: 
+=== Cafe Software Plugin
 
-## Sage Theme Framework
+=== Booking Software Plugin 
+
+=== eListing Software Plugin
+
+
+== Themes: 
+
+===  Sage Theme Framework
 - Sage is a WordPress starter theme with a modern development workflow.
 - https://github.com/roots/sage
 - Sass for stylesheets
@@ -67,13 +76,13 @@ Sidebar manager
 
 
 
-##SiteOrigin Vantage (Free)
+=== SiteOrigin Vantage (Free)
 • Pros:
    ◇ Free.
       Works well with SiteOrigin Page Builder
 • Cons:
 
-##UnderStrap: Underscores starter theme + Bootstrap 4 (Free)
+=== UnderStrap: Underscores starter theme + Bootstrap 4 (Free)
 • Pros:
    ◇  Has a sample child theme to get started quickly.
    ◇ Few built in options.
@@ -82,26 +91,26 @@ Sidebar manager
    ◇ Aimed at developers and does not include pretty css for production sites.
 
 
-##Sparkling
+=== Sparkling
 • Pros:
 • • Free theme with all color & layout options included.
 
 • Cons:
 • • Needs more page templates.
 
-##Paid Themes
-Divi (Paid) 
+=== Divi (Paid) 
 Provided by Elegant Themes ...(ToDo) Test & Provide more info. 
 
-Avada (Paid) 
+=== Avada (Paid) 
 Priced at $60 with over 300,000 sales. (ToDo) Test & Provide more info.
 
+=== Underscore
 Components.underscores.me theme generator by WP
 
-Customizr (non-bootstrap) 
+=== Customizr (non-bootstrap) 
 
 
-#Themes & Plugins Providers
+== Themes & Plugins Providers
 https://themefuse.com (premium) 
 Pricing:
 • $60 for single site
@@ -127,7 +136,7 @@ themeum (free + premium)
 
 
 
-#Bookmarks: Study & use info to create new and/or update this page.
+== Bookmarks: Study & use info to create new and/or update this page.
 
 Useful Themes Related Blog Articles
 ColorLib - Best WP themes library ToDo: Read & summarize 
