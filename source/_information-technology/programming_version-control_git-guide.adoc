@@ -1,0 +1,245 @@
+= Git Guide
+
+== Important Commands
+- git init <dir>
+- git clone <repo>
+- git config user.name <name>
+- git add <file or dir>
+- git commis -m "<message>"
+- git commit --amend
+- git diff
+
+
+== Personal Config
+
+`git config --global user.name "Michael Habib"` 
+
+`git config --global user.email 1233256+MichaelHabib@users.noreply.github.com` 
+
+
+== Git Commands
+
+Source: https://github.com/joshnh/Git-Commands/blob/master/README.md 
+
+=== Getting & Creating Projects
+
+[cols="a,a",separator="~"]
+|===
+~ Command ~ Description 
+
+~ `git init` ~ Initialize a local Git repository 
+
+~ `git clone ssh://git@github.com/[username]/[repository-name].git` ~ Create a local copy of a remote repository 
+|===
+
+
+=== Useful Commands
+
+[cols="a,a",separator="~"]
+|===
+~ `git status && git add -A && git commit -a -m "updated ..." && git push _origin _master` 
+
+~ `git config --global user.email "EMAIL@HOST" && git config --global user.name "Your Name" 
+
+~ `git config --global push.default simple` 
+|===
+
+
+=== Configuration
+
+[cols="a,a",separator="~"]
+|===
+~ Command ~ Description 
+
+~ 'git config [<file-option>] [type] [--show-origin] [-z|--null] name [value [value_regex]]` ~
+~ `git config [<file-option>] [type] --add name value` ~
+~ `git config [<file-option>] [type] --replace-all name value [value_regex]` ~
+~ `git config [<file-option>] [type] [--show-origin] [-z|--null] --get name [value_regex]` ~
+~ `git config [<file-option>] [type] [--show-origin] [-z|--null] --get-all name [value_regex]`~
+~ `git config [<file-option>] [type] [--show-origin] [-z|--null] [--name-only] --get-regexp name_regex [value_regex]`~
+~ `git config [<file-option>] [type] [-z|--null] --get-urlmatch name URL`~
+~ `git config [<file-option>] --unset name [value_regex]`~
+~ `git config [<file-option>] --unset-all name [value_regex]`~
+~ `git config [<file-option>] --rename-section old_name new_name`~
+~ `git config [<file-option>] --remove-section name`~
+~ `git config [<file-option>] [--show-origin] [-z|--null] [--name-only] -l | --list`~
+~ `git config [<file-option>] --get-color name [default]`~
+~ `git config [<file-option>] --get-colorbool name [stdout-is-tty]`~ 
+~ `git config [<file-option>] -e `| --edit 
+|===
+
+
+=== Basic Snapshotting
+
+[cols="a,a",separator="~"]
+|===
+~ Command ~ Description 
+
+~ `git status` ~ Check status 
+~ `git add [file-name.txt]` ~ Add a file to the staging area 
+~ `git add -A` ~ Add all new and changed files to the staging area 
+~ `git commit -m "[commit message]"` ~ Commit changes 
+~ `git rm -r [file-name.txt]` ~ Remove a file (or folder) 
+~ `git reset [file-name]` ~ Remove all files or specified file. 
+~ `git rm -r --cached fileOrFolder` ~ Untrack file or folder.
+|===
+
+
+=== Branching & Merging
+
+[cols="a,a",separator="~"]
+|===
+~ Command ~ Description 
+
+~ `git branch` ~ List branches (the asterisk denotes the current branch) 
+~ `git branch -a` ~ List all branches (local and remote) 
+~ `git branch [branch name]` ~ Create a new branch 
+~ `git branch -d [branch name]` ~ Delete a branch 
+~ `git push origin --delete [branchName]` ~ Delete a remote branch 
+~ `git checkout -b [branch name]` ~ Create a new branch and switch to it 
+~ `git checkout -b [branch name] origin/[branch name]` ~ Clone a remote branch and switch to it 
+~ `git checkout [branch name]` ~ Switch to a branch 
+~ `git checkout -` ~ Switch to the branch last checked out 
+~ `git checkout -- [file-name.txt]` ~ Discard changes to a file 
+~ `git merge [branch name]` ~ Merge a branch into the active branch 
+~ `git merge [source branch] [target branch]` ~ Merge a branch into a target branch 
+~ `git stash` ~ Stash the changes in a dirty working directory away 
+~ `git stash clear` ~ Remove all the stashed states 
+~ `git pull origin master --allow-unrelated-histories`~ Pull remote with unrelated histories into local repo. (follow with `git push origin master -f` to force uplod to remote.
+|===
+
+
+=== Sharing & Updating Projects
+
+[cols="a,a",separator="~"]
+|===
+~ Command ~ Description 
+
+~ `git push origin [branch name]` ~ Push a branch to your remote repository 
+~ `git push -u origin [branch name]` ~ Push changes to remote repository (and remember the branch) 
+~ `git push` ~ Push changes to remote repository (remembered branch) 
+~ `git push origin --delete [branch name]` ~ Delete a remote branch 
+~ `git pull` ~ Update local repository to the newest commit 
+~ `git pull origin [branch name]` ~ Pull changes from remote repository 
+~ `git remote add origin ssh://git@github.com/[username]/[repository-name].git` ~ Add a remote repository 
+~ `git remote set-url origin ssh://git@github.com/[username]/[repository-name].git` ~ Set a repository's origin branch to SSH 
+|===
+
+=== Tags & Releases
+
+[cols="a,a",separator="~"]
+|===
+~ Command ~ Description 
+~ `git tag -a TagName -m "TagMessage"` ~ add tag locally only
+~ `git push --tags` ~push all tags
+~ `git push origin <tag_name>` ~ push a specific tag
+~ `git tag -d TagName` ~ Delete *local* tag
+~ `git push --delete TagName` ~ Delete *REMOTE* tag
+|===
+
+
+=== Submudules
+sample `.gitmodules` files
+----
+[submodule "src/JimsGroup/WP_Framework"]
+	path = src/JimsGroup/WP_Framework
+	url = git@github.com:michaelhabibjims/WP_Framework.git
+	branch = master
+[submodule "src/JimsGroup/FMS_WP_Auth"]
+	path = src/JimsGroup/FMS_WP_Auth
+	url = git@github.com:michaelhabibjims/FMS_WP_Auth.git
+	branch = master
+
+----
+==== Useful Links
+https://github.blog/2016-02-01-working-with-submodules/
+
+=== Inspection & Comparison
+
+[cols="a,a",separator="~"]
+|===
+~ Command ~ Description 
+
+~ `git log` ~ View changes 
+~ `git log --summary` ~ View changes (detailed) 
+~ `git diff [source branch] [target branch}` ~ Preview changes before merging 
+|===
+
+== Generic .gitignore template
+----
+# Project Ignore Rules
+**/node_modules_local
+
+# IDE & Dev Tools File to ignore
+**/nbproject
+**/*.sublime-*
+**/.project
+**/Vagrantfile
+**/.vagrant*
+**/.idea/
+
+# PHP files and folders
+**/vendor
+
+# Common developer tools
+**/composer.phar
+**/php-cs-fixer.phar
+**/scrutinizer.phar
+
+# Node & Front-end Dev
+**/.sass-cache
+**/bower_components
+**/node_modules
+**/npm-debug.log
+
+# File-system cruft and temporary files
+**/.*.swp
+**/.buildpath
+**/.swp
+**/__*
+
+
+# OS generated files #
+##################################################
+**/.DS_Store
+**/.DS_Store?
+**/._*
+**/.Spotlight-V100
+**/.Trashes
+**/ehthumbs.db
+**/Thumbs.db
+
+# Packages #
+##################################################
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+**/*.7z
+**/*.dmg
+**/*.gz
+**/*.iso
+**/*.jar
+**/*.rar
+**/*.tar
+**/*.zip
+
+
+
+# Credit & Sources
+## https://gist.github.com/octocat/9257657
+## https://stackoverflow.com/questions/18393498/gitignore-all-the-ds-store-files-in-every-folder-and-subfolder
+
+
+----
+
+== Change Log:
+- changed my github public email.
+- Started using .adoc instead of .md files.
+- Added `**/` to all ignore rules in order for them to apply to all subfolders.
+
+
+
+
+== Useful Links
+- https://github.com/MichaelHabib/git-t1
+- https://itnext.io/become-a-git-pro-in-just-one-blog-a-thorough-guide-to-git-architecture-and-command-line-interface-93fbe9bdb395
+- Dynamic git message : https://stackoverflow.com/questions/35010953/how-to-automatically-generate-commit-message

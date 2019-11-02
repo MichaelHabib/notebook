@@ -5,16 +5,21 @@
 Download from https://atom.io/
 
 == Recommeded Plugins:
-=== General Tools
 
+== Atom Settings Sync
+https://atom.io/packages/sync-settings
+https://gist.github.com/MichaelHabib/52d47542c87a404b44a68f1958c9bc31
+
+=== General Tools
 [source,bash]
 ----
-
+apm install -s settings-sync
 apm install -s teletype platformio-ide-terminal project-manager project-plus atom-beautify editorconfig
 apm install -s ask-stack git-time-machine highlight-selected file-icons
 apm install -s api-docs atom-nodejs-snippets emmet
 apm install -s project-view
-
+apm install -s docblockr 
+apm install -s language-plantuml language-plantuml
 
 ----
 === Atom Plugins for CSS, LessCSS and SCSS Development

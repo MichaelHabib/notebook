@@ -1,0 +1,7 @@
+= Google Analytics Beginner Guide
+
+== Hierartchy of Ogranizations, accounts, users, properties nad views.
+- Organization
+- Account
+- Properties
+- View

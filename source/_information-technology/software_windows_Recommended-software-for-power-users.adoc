@@ -1,0 +1,12 @@
+= Windows Recommended Software for Power Users
+
+== File Managers
+- Q-Dir
+
+== Terminals
+- MobaXtrem
+
+
+== Bootable Device Makes
+- YUMI
+- Rufus

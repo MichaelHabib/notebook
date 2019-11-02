@@ -1,0 +1,83 @@
+= Laravel Guide
+
+== Folder Structure
+
+[.tree]
+
+- `app/` : Is the application folder and contains all the code.
+** Console
+** Events
+** Exceptions
+** Http
+** Providers
+- `bootstrap/`
+** app.php : application bootstrap
+- `config/`
+** app.php
+** mail.php
+** filesystem.php
+** services.php : storing third party credentials .
+- `database/`
+- `public/`
+- `resources/`
+** scss/
+** views/ : HTML and template files.
+- `routes/`
+- `storage/`
+** app
+** framework
+** logs
+- `tests/`
+
+
+== Usefull Links
+- Using Laravel components outside of Laravel https://github.com/mattstauffer/Torch
+- Folder Structre Explained : https://www.tutorialspoint.com/laravel/laravel_application_structure
+
+
+
+++++
+<style>
+.tree, .tree * {
+font-size: 16px
+}
+.tree ul,
+.tree li,
+.tree ol
+{
+margin : 0px;
+ list-style-type: none;
+}
+
+.tree ul,
+.tree ol {
+    border-left: 1px dashed #444;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+
+}
+
+.tree * ul,
+.tree * ol
+{
+    margin-left : 5px;
+    margin-top: -10px;
+}
+.tree li {
+    padding: 5px 10px;
+    position: relative;
+}
+.tree li:last-child {
+margin-bottom: -35px
+}
+.tree li:before {
+    content: "";
+    border-top: 1px dashed #555;
+    width: 16px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+}
+</style>
+++++

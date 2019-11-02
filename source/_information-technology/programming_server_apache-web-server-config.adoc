@@ -1,0 +1,51 @@
+= Apache Web Server Config
+
+
+== Code Samples
+.Redirect all calls to https:
+----
+RewriteEngine On
+RewriteCond %{HTTPS} !on
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+----
+
+.Conditional rewrite for development and procution (wordpress htaccess example)
+----
+<IfModule mod_rewrite.c>
+
+    #Development
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{HTTP_HOST} ^webtest1.com
+    RewriteRule . /~michael/wordpress/public_html_jimsmowing.ca/index.php [L]
+
+    #Production
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.php [L]
+
+</IfModule>
+----
+
+.Modify directory listing options:
+----
+indexOptions NameWidth=200 FancyIndexing FoldersFirst HTMLTable IconsAreLinks VersionSort
+
+----
+
+.Define a variable
+
+.Logic : if/else
+----
+<If "%{HTTP_HOST} == 'webtest1.com'">
+#    [E=BaseURL:"/~michael/wordpress/public_html_jimsmowing.ca/"]
+</If>
+<Else>
+#     [E=!BaseURL]
+
+</Else>
+----

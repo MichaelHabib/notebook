@@ -1,69 +1,107 @@
-﻿= Wordpress Beginner Guide 2019-2020
-
-
-== What is Wordpress
-"WordPress is open source software you can use to create a beautiful website, blog, or app."
+= Wordpress Developer Guide
 
 This is NOT a step by step tutorial, I simply provide general info and list links to important documentation, blogs, themes and plugins. 
 
-== General Information
+== Useful Links
+=== General Information
 - Wordpress.org : https://wordpress.org/ 
-- Wordpress popular plugins : https://wordpress.org/plugins/browse/popular/
-- Wordpress popular themes: https://wordpress.org/themes/browse/popular/
-- https://profiles.wordpress.org/michaelhabib16#content-favorites[Check Michael habib's Favorited items on wordpress.org]
+- https://codex.wordpress.org/Main_Page
+- Michael habib's Favorited items on wordpress.org : https://profiles.wordpress.org/michaelhabib16#content-favorites
 
-== Useful Links 
-https://codex.wordpress.org/Main_Page
-https://codex.wordpress.org/Site_Design_and_Layout 
-https://codex.wordpress.org/Theme_Development 
-https://codex.wordpress.org/Child_Themes
+=== Must Have Plugins
+- Duplicate Post
+- W3 Cache
+- Contact Form 7
+- Simple Image Sizes
+- Debugbar ?
+- Redirection
 
-== How to install wordpress using quick installer? (link to post)
+
+=== Recommended Plugins
+- User Role Editor 
+- CC Childrent Pages
+- WP Mail SMTP ?
+
+=== Repos of Plugins & Frameworks (Not listed on WordPress marketplace)
+- https://github.com/jessuppi
+- http://wppb.io/
+- Sage / roots
+
+== Conding Standards
+*I* do not use the WP coding standards, but instead use PSR standards, regardless, here are the WP coding standards for referance.
+- Class_Name
+- function_name($param_one)
+- $variable_name
+- CONST_NAME
 
 
-== Using wp-cli (Command Line)
+== File permission 
+set folder to 755 and files to 644
 ----
-curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-alias wp='./wp-cli.phar' &> wp.bashalias
+find . -type d -exec chmod 755 {} +
+find . -type f -exec chmod 644 {} +
 ----
-to use `wp [OPTIONS]` in the terminal, run `source ./wp.bashlais` .
+
+== WP REST API
+=== Links
+- https://developer.wordpress.org/rest-api
+- https://developer.wordpress.org/rest-api/reference/posts/
+- Custom Routes: https://developer.wordpress.org/reference/functions/register_rest_route/
+
+=== Code Samples
+----
+DominName/wp-json/wp/v2/posts?per_page=3&orderby=date&order=desc&status=publish
+----
+
+== Actions Hooks
+
+=== Triggnering Context & Order
+.Ordered earliest to latest
+- `muplugins_loaded`
+- `plugin_loaded`
+- `init`
+- `wp_loaded`                          
+- `wp`
+
+== ToDo
+
+#How to install wordpress using quick installer? (link to post)
 
 
+#Recomended Themes & Plugins
 
-== Recomended Themes & Plugins
+#Plugins:
 
-== Plugins:
+##Security
 
-=== Security
+##Backup & Maintenance
 
-=== Backup & Maintenance
+##SEO & SMO
 
-=== SEO & SMO
+##Social Media Integration
 
-=== Social Media Integration
+##Inhancement
 
-=== Inhancement
+##Authentication & User Mangement
 
-=== Authentication & User Mangement
+##Visual Website Builders
 
-=== Visual Website Builders
-
-=== Features:
+##Features:
 Sidebar manager
 
 
+#Plugins for special businesses cases
+
+##Cafe Software
+
+##Booking Software
+
+##eListing Software
 
 
-=== Cafe Software Plugin
+#Themes: 
 
-=== Booking Software Plugin 
-
-=== eListing Software Plugin
-
-
-== Themes: 
-
-===  Sage Theme Framework
+## Sage Theme Framework
 - Sage is a WordPress starter theme with a modern development workflow.
 - https://github.com/roots/sage
 - Sass for stylesheets
@@ -76,13 +114,13 @@ Sidebar manager
 
 
 
-=== SiteOrigin Vantage (Free)
+##SiteOrigin Vantage (Free)
 • Pros:
    ◇ Free.
       Works well with SiteOrigin Page Builder
 • Cons:
 
-=== UnderStrap: Underscores starter theme + Bootstrap 4 (Free)
+##UnderStrap: Underscores starter theme + Bootstrap 4 (Free)
 • Pros:
    ◇  Has a sample child theme to get started quickly.
    ◇ Few built in options.
@@ -91,26 +129,26 @@ Sidebar manager
    ◇ Aimed at developers and does not include pretty css for production sites.
 
 
-=== Sparkling
+##Sparkling
 • Pros:
 • • Free theme with all color & layout options included.
 
 • Cons:
 • • Needs more page templates.
 
-=== Divi (Paid) 
+##Paid Themes
+Divi (Paid) 
 Provided by Elegant Themes ...(ToDo) Test & Provide more info. 
 
-=== Avada (Paid) 
+Avada (Paid) 
 Priced at $60 with over 300,000 sales. (ToDo) Test & Provide more info.
 
-=== Underscore
 Components.underscores.me theme generator by WP
 
-=== Customizr (non-bootstrap) 
+Customizr (non-bootstrap) 
 
 
-== Themes & Plugins Providers
+#Themes & Plugins Providers
 https://themefuse.com (premium) 
 Pricing:
 • $60 for single site
@@ -136,7 +174,7 @@ themeum (free + premium)
 
 
 
-== Bookmarks: Study & use info to create new and/or update this page.
+#Bookmarks: Study & use info to create new and/or update this page.
 
 Useful Themes Related Blog Articles
 ColorLib - Best WP themes library ToDo: Read & summarize 
@@ -300,7 +338,10 @@ Paid Plugins:
 #Bookmarks: Study & use info to create new and/or update this page.
 https://premium.wpmudev.org/blog/essential-wordpress-plugins/?utm_expid=3606929-105.kKHVTz43T_CV513Vo9oSow.0&utm_referrer=https%3A%2F%2Fwww.google.com.au%2F
 
+== Conding Standards
 
-
-#Bookmarks: Study & use info to create new and/or update this page.
-https://premium.wpmudev.org/blog/essential-wordpress-plugins/?utm_expid=3606929-105.kKHVTz43T_CV513Vo9oSow.0&utm_referrer=https%3A%2F%2Fwww.google.com.au%2F
+- Class_Name
+- function_name($param_one)
+- $variable_name
+- CONST_NAME
+- getter & setters at the end of class definition ?

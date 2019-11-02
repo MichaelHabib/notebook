@@ -1,0 +1,12 @@
+= Vimium Guide
+https://vimium.github.io/
+
+== Keymapping
+|===
+|c | Caret Mode
+|v | visual mode
+|V | line visual mode
+|y | yank = copy
+|p | paste to SE search
+|h+j+k+l | movement
+|===

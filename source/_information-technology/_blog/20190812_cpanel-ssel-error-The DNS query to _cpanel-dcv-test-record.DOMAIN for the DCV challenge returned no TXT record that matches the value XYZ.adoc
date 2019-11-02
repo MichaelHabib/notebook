@@ -1,0 +1,6 @@
+= 20190812_cpanel-ssel-error-The DNS query to _cpanel-dcv-test-record.DOMAIN for the DCV challenge returned no TXT record that matches the value XYZ
+
+This issue occurs when the domain is not hosted on the same CPanel account as the domain. The solution is to disable autoSSL on the erroring account and enabled it on the CPanel account that hosts the domain DNS records.
+
+https://forums.cpanel.net/threads/autossl-dns-dcv-returned-no-txt-record.635277/
+https://forums.cpanel.net/threads/autossl-free-certficate-vs-paid-cpanel-certificate.586362/

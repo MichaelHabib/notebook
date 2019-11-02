@@ -1,0 +1,10 @@
+= Bash Find Command Guide
+
+== Code Samples
+
+.Find directores , format output by using `-exec` & append to file using `>> FileName`
+----
+find DirName -name  "*.java"  
+
+find ${pwd} -maxdepth 1 -type d -exec echo "\"wpackagist-plugin/{}\" : \"*\" , " >> "_fileList.txt" \;
+----

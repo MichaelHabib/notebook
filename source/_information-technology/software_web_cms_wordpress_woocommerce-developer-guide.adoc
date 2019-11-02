@@ -1,0 +1,19 @@
+= WooCommerce Developer Guide
+
+== Action Hooks
+
+== Filter Hooks
+
+== Notices
+----
+<?php
+wc_add_notice( 'This is a Success notice', 'success' );
+wc_add_notice( 'This is a Error notice', 'error' );
+wc_add_notice( 'This is a \'Notice\' notice\'', 'notice' );
+
+woocommerce_show_messages();
+wc_print_notices(); 
+
+
+?>
+----

@@ -3,6 +3,33 @@
 == About AsciiDoc
 
 == Syntax
+== Document Options
+
+[source,asciidoc]
+----
+:favicon: ./images/favicon/favicon.png
+----
+
+[source,asciidoc]
+.Experimental Features such as UI Macros
+----
+:experimental:
+----
+
+[source,asciidoc]
+.Numbered Headers
+----
+:sectnums:
+:sectnumlevels: 5
+----
+
+[source,asciidoc]
+.Font Icons by Font Awesome
+----
+:icons: font
+----
+
+
 === Headers
 Use one or multiple `=` to indicate header level. The number of `=` characters indicate the header level , for example:  `==` indicates h2 while `===` indicates h3, and so on ..
 
@@ -158,12 +185,18 @@ IaaS:::
 - Number of values assigned to `[cols="1,2,3"]` indicates the number of columns.
 - The values can be alignment instructions or styling information (ToDo: can they be both?). Available styles are : `d` for default paragraph formatting, `a` for AsciiDOc, `e` for Italicized text, `h` for header style, `l` for literal block formatting, `m` for monospaced content, `s` for bold text and `v` for verse styling. 
 
+==== Example options:
+----
+[cols="2h,4a"]
+
+----
+
 [cols="a,a",separator="~"]
 |===
 ~ Code ~ Output
 ~
 ----
-|===
+!===
 |Col1 |Col2
 
 |R1C1
@@ -172,7 +205,7 @@ IaaS:::
 |R2C1
 |R2C2
 
-|===
+!===
 ----
 ~ 
 !===
@@ -188,6 +221,22 @@ IaaS:::
 
 |===
 
+=== Col / Row Span
+
+.To span 2 columns and 1 row
+----
+2.1| ColContent
+----
+
+=== UI Macros (Experimental)
+https://asciidoctor.org/docs/user-manual/#user-interface-macros
+----
+kbd:[F11]
+menu:View[Zoom > Reset]
+btn:[OK] 
+icon:tags[role="blue",size=2x]
+icon:heart[role="red",size=fw,rotate=90, flip=vertical]
+----
 
 === Includes
 
@@ -247,7 +296,53 @@ All options can be found on the manpage by running `asciidoc --help manpage`
          [3]PLUGIN COMMANDS).
 ```
 
+== Custom CSS
 
+.Custom UI Macros Menus Styles
+[.custom-ui-macro-menu-css-v1]
+menu:Left Bar Menu[Tags > New > some]
+++++
+<style>
+.custom-ui-macro-menu-css-v1 .menuseq .menu,
+. custom-ui-macro-menu-css-v1.menuseq .submenu,
+.custom-ui-macro-menu-css-v1 .menuseq .menuitem{
+    padding: 5px;
+    border: 1px dotted #ddd;
+}
+.custom-ui-macro-menu-css-v1 .menuseq .menu{
+    background: hsl(20,20%,90%);
+}
+.custom-ui-macro-menu-css-v1 .menuseq .submenu{
+  background: hsl(200,20%,90%);
+}
+.custom-ui-macro-menu-css-v1 .menuseq .menuitem{
+  background: hsl(160,20%,90%);
+}
+
+</style>
+<style>
+body{
+	background: #f9f9f9;
+}
+#content{
+    max-width: 1200px;
+}
+.sect1{
+	background: #f4f4f4;
+	padding: 20px;
+}
+.sect1+.sect1{
+	border-top: 1px solid #eee;
+}
+.sect2{
+	background: #fff;
+	padding: 20px;
+}
+.sect2+.sect2 {
+	border-top: 1px dotted #e5e5e5;
+}
+</style>
+++++
 
 
 == Useful Links
