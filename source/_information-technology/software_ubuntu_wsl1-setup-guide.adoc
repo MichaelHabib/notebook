@@ -1,0 +1,20 @@
+
+== Recommended Windows software
+- MobaXterm 
+- 
+
+== Install WSL1
+
+
+== Install GUI software inside WSL1
+----
+sudo apt install dbus-x11
+sudo dbus-uuidgen --ensure
+
+
+----
+
+
+== Credits
+- https://nickjanetakis.com/blog/using-wsl-and-mobaxterm-to-create-a-linux-dev-environment-on-windows
+- https://token2shell.com/howto/x410/setting-up-wsl-for-linux-gui-apps/
