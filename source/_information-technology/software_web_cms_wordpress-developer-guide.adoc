@@ -55,6 +55,7 @@ DominName/wp-json/wp/v2/posts?per_page=3&orderby=date&order=desc&status=publish
 
 == Hooks
 https://adambrown.info/p/wp_hooks/hook
+https://codex.wordpress.org/Plugin_API/Action_Reference
 
 === Triggnering Context & Order
 .Ordered earliest to latest
@@ -64,6 +65,13 @@ https://adambrown.info/p/wp_hooks/hook
 - `wp_loaded`                          
 - `wp`
 
+== Themes
+
+=== Useful Functions
+----
+add_theme_support()
+
+----
 
 == ToDo
 
