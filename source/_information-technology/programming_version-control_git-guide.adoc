@@ -1,14 +1,21 @@
 = Git Guide
 
 == Important Commands
-- git init <dir>
-- git clone <repo>
-- git config user.name <name>
-- git add <file or dir>
-- git commis -m "<message>"
-- git commit --amend
-- git diff
+----
+git init <dir>
+git clone <repo>
+git config user.name <name>
+git add <file or dir>
+git commis -m "<message>"
+git commit --amend
+git diff
+----
+== Impotant Configurations
+----
+git config --global core.excludesfile ~/config/git/.gitignore
 
+
+----
 
 == Personal Config
 

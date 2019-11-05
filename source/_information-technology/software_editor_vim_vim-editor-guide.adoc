@@ -2,6 +2,13 @@
 :experimental:
 :iconfont:
 
+== Examples
+
+.Auto generate parent folders of current file.
+----
+mkdir -p %:h
+----
+
 == Installation & Setup
 Install Vundle plugin manager:
 https://github.com/VundleVim/Vundle.vim
