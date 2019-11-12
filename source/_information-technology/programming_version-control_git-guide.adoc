@@ -12,7 +12,7 @@ git diff
 ----
 == Impotant Configurations
 ----
-git config --global core.excludesfile ~/config/git/.gitignore
+git config --global core.excludesfile ~/.config/git/.gitignore
 
 
 ----
