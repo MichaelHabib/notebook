@@ -9,18 +9,22 @@ This is NOT a step by step tutorial, I simply provide general info and list link
 - Michael habib's Favorited items on wordpress.org : https://profiles.wordpress.org/michaelhabib16#content-favorites
 
 === Must Have Plugins
-- Duplicate Post
-- W3 Cache
-- Contact Form 7
-- Simple Image Sizes
-- Debugbar ?
-- Redirection
 
+.WP CLI command  
+----
+wp plugin install \
+woocommerce \
+cc-child-pages \
+contact-form-7 \
+easy-wp-smtp \
+simple-image-sizes \
+w3-cache \
+all-in-one-wp-security-and-firewall \
+user-role-editor \
+duplicate-post \
+query-monitor
 
-=== Recommended Plugins
-- User Role Editor 
-- CC Childrent Pages
-- WP Mail SMTP ?
+----
 
 === Repos of Plugins & Frameworks (Not listed on WordPress marketplace)
 - https://github.com/jessuppi
