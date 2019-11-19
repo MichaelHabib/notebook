@@ -58,6 +58,8 @@ wp post create --post_type=page --post_status="publish" --post_title="About"
 wp post create --post_type=page --post_status="publish" --post_title="Contact"
 wp post create --post_type=page --post_status="publish" --post_title="Services"
 wp post create --post_type=page --post_status="publish" --post_title="Terms & Conditions"
+wp post create --post_type=page --post_status="publish" --post_title="Privacy Policy"
+
 
 wp menu create "Primary Menu"
 wp menu location assign primary-menu primary
