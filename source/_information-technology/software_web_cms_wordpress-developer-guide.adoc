@@ -18,7 +18,7 @@ cc-child-pages \
 contact-form-7 \
 easy-wp-smtp \
 simple-image-sizes \
-w3-cache \
+w3-total-cache \
 all-in-one-wp-security-and-firewall \
 user-role-editor \
 duplicate-post \
