@@ -8,30 +8,12 @@ This is NOT a step by step tutorial, I simply provide general info and list link
 - https://codex.wordpress.org/Main_Page
 - Michael habib's Favorited items on wordpress.org : https://profiles.wordpress.org/michaelhabib16#content-favorites
 
-=== Must Have Plugins
-
-.WP CLI command  
-----
-wp plugin install \
-woocommerce \
-cc-child-pages \
-contact-form-7 \
-easy-wp-smtp \
-simple-image-sizes \
-w3-total-cache \
-all-in-one-wp-security-and-firewall \
-user-role-editor \
-duplicate-post \
-query-monitor
-
-----
-
 === Repos of Plugins & Frameworks (Not listed on WordPress marketplace)
 - https://github.com/jessuppi
 - http://wppb.io/
 - Sage / roots
 
-== Conding Standards
+== Coding Standards
 *I* do not use the WP coding standards, but instead use PSR standards, regardless, here are the WP coding standards for referance.
 - Class_Name
 - function_name($param_one)
@@ -46,6 +28,47 @@ find . -type d -exec chmod 755 {} +
 find . -type f -exec chmod 644 {} +
 ----
 
+== Initial setup with WP CLI
+
+=== Installation
+----
+wp core download
+----
+
+=== Must Have Plugins
+----
+wp plugin install \
+woocommerce \
+cc-child-pages \
+contact-form-7 \
+easy-wp-smtp \
+simple-image-sizes \
+w3-total-cache \
+updraftplus \
+all-in-one-wp-security-and-firewall \
+user-role-editor \
+duplicate-post \
+query-monitor
+----
+
+== Content Generation
+----
+wp post create --post_type=page --post_status="publish" --post_title="Home"
+wp post create --post_type=page --post_status="publish" --post_title="About"
+wp post create --post_type=page --post_status="publish" --post_title="Contact"
+wp post create --post_type=page --post_status="publish" --post_title="Services"
+wp post create --post_type=page --post_status="publish" --post_title="Terms & Conditions"
+
+wp menu create "Primary Menu"
+wp menu location assign primary-menu primary
+
+wp menu create "Secondary Menu"
+
+wp menu create "Sidebar Menu"
+
+wp menu create "Footer Menu"
+
+----
 == WP REST API
 === Links
 - https://developer.wordpress.org/rest-api
@@ -69,12 +92,11 @@ https://codex.wordpress.org/Plugin_API/Action_Reference
 - `wp_loaded`                          
 - `wp`
 
-== Themes
 
+== Themes
 === Useful Functions
 ----
 add_theme_support()
-
 ----
 
 == ToDo
