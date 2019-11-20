@@ -7,10 +7,11 @@ Sample code & useful links related to imagemagick
 
 [source,bash]
 ```
-mkdir -p ./_temp;
+
 for f in *.JPG; do
+	mkdir -p ./_temp;
     	printf "Resizing $f\n started ...";
- 	    convert "$f" -resize 1200x -quality 80% -set filename:f '${image_date_simple}-%[t]-%[w]x%[h].%[e]' _temp/'%[filename:f]'
+ 	    convert "$f" -resize 1200x -quality 80% -set filename:f '%[f]-%[t]-%[w]x%[h].%[e]' _temp/'%[filename:f]'
         printf "Resizing $f\n complete.";
 done
 
