@@ -1,0 +1,62 @@
+
+= template_marketing_online_online-presence-setup-guide
+Document Purpose: provide a brief for client & a guide for markets to follow when setting up online presence.
+
+
+
+== Online Identity & Social Media Presence Brief:
+.Social media platforms to be setup are:
+- Facebook
+- Instagram
+- Google+
+- LinkedIn
+- Pinterest
+- Twitter
+
+.Setting up social media profiles includes:
+- Updating content such as trading hours, profile pictures and profile cover images.
+- Providing you (the client) with access to your social media profiles.
+
+
+== Social Media Setup Guide
+
+.General Info
+
+.Business Info
+- Business Name
+- Business Location
+- Hide address ? YEs/No
+- About the business / Business Info: 
+- 
+
+.Notes :
+- If any information is missing, please ask for the information & DO NOT leave things incomplete!
+
+.Facebook Page
+- Create profile if not already created.
+- Use the business information provided.
+- Update business name
+- Update trading hours.
+- Update address. Mark as “We deliver to customers…or hide address” to hide the address IF instructed (look for “from home” or “mobile business” in the business info)
+- Sort facebook tabs as following : About - Services - Reviews - then the rest after.
+- Update “About Business / Business Info”.
+
+
+.Instagram 
+- Create profile if not already created.
+- Use the business information provided.
+- Update About Business section
+- Update business name
+
+
+
+.Google+
+- Create profile if not already created.
+- Use the business information provided.
+- Update business name
+- Update trading hours.
+- Update address. Mark as “We deliver to customers…or hide address” to hide the address IF instructed (look for “from home” or “mobile business” in the business info)
+- Update “About Business / Business Info”.
+
+
+

@@ -1,0 +1,11 @@
+= Odoo for Restaurants - Requirements
+
+== ToDo
+copy requirements from local_ws/uits_awafi/*-requirements.adoc
+
+
+- Product Bundles : https://www.odoo.com/apps/modules/12.0/product_bundle_all/
+- Product Modifiers on POS : https://apps.odoo.com/apps/modules/12.0/pos_order_customization/
+- Product Modifiers on Website : https://apps.odoo.com/apps/modules/12.0/product_custom_options/
+
+- Tax /GST :

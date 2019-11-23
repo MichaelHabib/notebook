@@ -1,0 +1,27 @@
+= Odoo for Restaurants - Setup Guide.
+
+
+
+== Apps & Addons
+- E-commerce
+- Inventory
+- POS
+-
+
+
+== General Settings
+- Check Inventory > Configuration > Settings
+
+
+== Outlet Settings
+
+== Products Settings
+
+
+== E-Commerce Setup
+
+
+== POS Setup
+
+
+== Tax & Accounting
