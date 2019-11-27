@@ -6,7 +6,7 @@ Sample code & useful links related to imagemagick
 == Working code examples
 
 [source,bash]
-```
+----
 
 for f in *.JPG; do
 	mkdir -p ./_temp;
@@ -15,7 +15,16 @@ for f in *.JPG; do
         printf "Resizing $f\n complete.";
 done
 
-```
+----
+----
+      
+find . -maxdepth 1 -type f \
+	-regextype 'egrep' -iregex '\./.+\.(?:jpg|JPG|jpeg|JPEG|png|PNG)$' \
+	-exec convert "{}" -resize 1200x -quality 80% -set filename:f '%[f]-%[t]-%[w]x%[h].%[e]' _temp/'%[filename:f]' \;
+
+----
+
+== Failed attempts
 .Trying to use created date in filname, failed !.
 ----
 for f in *.JPG; do
@@ -33,6 +42,18 @@ done
 
 ----
 
+.With find & echo 
+----
+       
+       
+       	find . -maxdepth 1 -type f -regextype 'egrep' -iregex '\./.+\.(?:jpg|JPG|jpeg|JPEG|png|PNG)$' \
+        -exec \
+	printf "Resizing ${}\n started ..." && \
+	convert "{}" -resize 1200x -quality 80% -set filename:f '%[f]-%[t]-%[w]x%[h].%[e]' _temp/'%[filename:f]' &&
+        printf "Resizing ${}\n complete." \
+	\;
+
+----
 
 == Useful Links
 - Imagemagic Website :
