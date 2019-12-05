@@ -8,6 +8,15 @@ Sample code & useful links related to imagemagick
 [source,bash]
 ----
 
+ImagesWidth=1200; \
+ImagesFolder="_resized/${ImagesWidth}"; \
+mkdir -p $ImagesFolder;
+
+find . -maxdepth 1 -type f \
+	-regextype 'egrep' -iregex '\./.+\.(?:jpg|JPG|jpeg|JPEG|png|PNG)$' \
+	-exec convert "{}" -resize "${ImagesWidth}x" -quality 80% -set filename:f '%[f]-%[t]-%[w].%[e]' "${ImagesFolder}/%[filename:f]" \;
+	
+	
 for f in *.JPG; do
 	mkdir -p ./_temp;
     	printf "Resizing $f\n started ...";
@@ -15,12 +24,7 @@ for f in *.JPG; do
         printf "Resizing $f\n complete.";
 done
 
-----
-----
-      
-find . -maxdepth 1 -type f \
-	-regextype 'egrep' -iregex '\./.+\.(?:jpg|JPG|jpeg|JPEG|png|PNG)$' \
-	-exec convert "{}" -resize 1200x -quality 80% -set filename:f '%[f]-%[t]-%[w]x%[h].%[e]' _temp/'%[filename:f]' \;
+
 
 ----
 
