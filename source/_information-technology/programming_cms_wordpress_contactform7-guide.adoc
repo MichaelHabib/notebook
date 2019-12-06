@@ -1,0 +1,53 @@
+= WordPress : Contact Form 7 Guide
+
+
+
+== Examples
+=== Forms
+----
+
+<label> Your Name (required)
+    [text* your-name] </label>
+
+<label> Your Email (required)
+    [email* your-email] </label>
+
+<label> Subject
+    [text your-subject] </label>
+
+<label> Your Message
+    [textarea your-message] </label>
+
+[submit "Send"]
+
+----
+
+== Mail Templates
+----
+From: [your-name] <[your-email]>
+Subject: [your-subject]
+
+Message Body:
+[your-message]
+
+-- 
+- Website & Page Info
+[_url]
+
+[_site_title]
+[_site_url]
+[_site_admin_email]
+[_post_id]
+[_post_url]
+
+- User Info
+[_remote_ip]
+[_date]
+[_time]
+[_user_login] 
+
+- Submission Info
+[_serial_number]
+
+
+----
