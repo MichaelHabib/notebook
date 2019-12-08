@@ -1,8 +1,7 @@
-= Bliki
+= Notebook
 
-Content at link:/source[source/ folder]
 
 == ToDo
 - Use a CMS or a static site generator such as Hugo, Jekyll, or Antora .
 - Following file naming convention `category_subcategory_filename.adoc` 
-** check all files in source/ to make sure this convention is followed.
+* 
