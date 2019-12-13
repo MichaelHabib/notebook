@@ -42,7 +42,9 @@ woocommerce \
 cc-child-pages \
 contact-form-7 \
 easy-wp-smtp \
+post-smtp \
 simple-image-sizes \
+imagemagick-engine \
 w3-total-cache \
 updraftplus \
 all-in-one-wp-security-and-firewall \
