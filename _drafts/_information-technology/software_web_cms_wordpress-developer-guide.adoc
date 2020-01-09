@@ -50,6 +50,7 @@ updraftplus \
 all-in-one-wp-security-and-firewall \
 user-role-editor \
 duplicate-post \
+wp-force-login \
 query-monitor
 ----
 
