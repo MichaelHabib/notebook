@@ -41,7 +41,13 @@ Source: https://github.com/joshnh/Git-Commands/blob/master/README.md
 
 
 === Useful Commands
+=== Actions
+[cols="a,a,a"]
+|===
+|Action | Local | Remote
+| Create a branch | git branch <branch-name> | git push -u origin <branch-name>
 
+|===
 [cols="a,a",separator="~"]
 |===
 ~ `git status && git add -A && git commit -a -m "updated ..." && git push _origin _master` 
