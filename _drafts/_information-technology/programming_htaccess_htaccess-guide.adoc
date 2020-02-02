@@ -1,0 +1,13 @@
+= Htaccess Guide
+
+== Code Samples 
+[source,htaccess]
+----
+
+RewriteCond %{REQUEST_URI} ^(.*)TextToCheckFor(.*)?$
+RewriteCond %{QUERY_STRING} ^.*parameter=argument.*$
+RewriteRule ^(.*)$ – [R=403,L]
+
+
+
+----
