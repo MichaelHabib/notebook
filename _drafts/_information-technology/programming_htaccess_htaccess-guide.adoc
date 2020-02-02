@@ -21,3 +21,7 @@ RewriteRule ^(.*)$ – [R=403,L]
 </IfModule>
 
 ----
+
+
+== Useful Links
+- https://gist.github.com/ScottPhillips/1721489
