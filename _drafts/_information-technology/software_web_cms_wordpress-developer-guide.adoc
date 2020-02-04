@@ -1,11 +1,16 @@
 = Wordpress Developer Guide
 
-This is NOT a step by step tutorial, I simply provide general info and list links to important documentation, blogs, themes and plugins. 
+== What is Wordpress (AKA WP)
+WordPress (WordPress.org) is a content management system (CMS) written in PHP ...  https://en.wikipedia.org/wiki/WordPress[Source : Wikipidia]
+
+
 
 == Useful Links
 === General Information
-- Wordpress.org : https://wordpress.org/ 
-- https://codex.wordpress.org/Main_Page
+- https://wordpress.org/[Project website : Wordpress.org] 
+- https://wordpress.org/support/[Wordpress Documentation]
+- https://developer.wordpress.org/[WordPress Developer Documentation]
+
 - Michael habib's Favorited items on wordpress.org : https://profiles.wordpress.org/michaelhabib16#content-favorites
 
 === Repos of Plugins & Frameworks (Not listed on WordPress marketplace)
@@ -13,29 +18,45 @@ This is NOT a step by step tutorial, I simply provide general info and list link
 - http://wppb.io/
 - Sage / roots
 
-== Coding Standards
-*I* do not use the WP coding standards, but instead use PSR standards, regardless, here are the WP coding standards for referance.
-- Class_Name
-- function_name($param_one)
-- $variable_name
-- CONST_NAME
+== WordPress Coding Standards
+I'll only cover the important points, the rest can be found on https://make.wordpress.org/core/handbook/best-practices/coding-standards/
+=== PHP Coding Standards
+
+.Naming Convention
+[source,php]
+----
+class Class_Name {
+
+   private $variable_name = ""
+   const CONSTANT_NAME = ""
+   
+   public function function_name($some_variable){
+      
+   }
+}
+----
 
 
-== File permission 
-set folder to 755 and files to 644
+== Setting File permission
+The recommedned file permissions are  `755` for folders & `644` for files. 
+
+To correct WordPress file permission, you can run the following commands in the terminal at the root level of the project (Usually `public_html/`)
 ----
 find . -type d -exec chmod 755 {} +
 find . -type f -exec chmod 644 {} +
 ----
 
-== Initial setup with WP CLI
+== Working with WP CLI (WordPress Command Line Interface)
 
-=== Installation
+=== WP CLI Commands
+https://developer.wordpress.org/cli/commands/
+
+.Download WP using WP CLI
 ----
 wp core download
 ----
 
-=== Must Have Plugins
+.Install recommended plugins using WP CLI
 ----
 wp plugin install \
 woocommerce \
@@ -54,7 +75,7 @@ wp-force-login \
 query-monitor
 ----
 
-== Content Generation
+.Generate pages using WP CLI
 ----
 wp post create --post_type=page --post_status="publish" --post_title="Home"
 wp post create --post_type=page --post_status="publish" --post_title="About"
@@ -63,7 +84,10 @@ wp post create --post_type=page --post_status="publish" --post_title="Services"
 wp post create --post_type=page --post_status="publish" --post_title="Terms & Conditions"
 wp post create --post_type=page --post_status="publish" --post_title="Privacy Policy"
 
+----
 
+.Create menus using WP CLI
+----
 wp menu create "Primary Menu"
 wp menu location assign primary-menu primary
 
@@ -74,6 +98,7 @@ wp menu create "Sidebar Menu"
 wp menu create "Footer Menu"
 
 ----
+
 == WP REST API
 === Links
 - https://developer.wordpress.org/rest-api
