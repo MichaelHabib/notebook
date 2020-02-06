@@ -10,6 +10,9 @@ WordPress (WordPress.org) is a content management system (CMS) written in PHP ..
 - https://wordpress.org/[Project website : Wordpress.org] 
 - https://wordpress.org/support/[Wordpress Documentation]
 - https://developer.wordpress.org/[WordPress Developer Documentation]
+- https://www.codeinwp.com/blog/best-free-wordpress-themes/ 
+- https://www.freshdesignweb.com/free-bootstrap-wordpress-themes/
+- https://premium.wpmudev.org/blog/essential-wordpress-plugins/?utm_expid=3606929-105.kKHVTz43T_CV513Vo9oSow.0&utm_referrer=https%3A%2F%2Fwww.google.com.au%2F
 
 - Michael habib's Favorited items on wordpress.org : https://profiles.wordpress.org/michaelhabib16#content-favorites
 
@@ -17,6 +20,85 @@ WordPress (WordPress.org) is a content management system (CMS) written in PHP ..
 - https://github.com/jessuppi
 - http://wppb.io/
 - Sage / roots
+
+== Recomended Plugins
+
+=== Security
+
+=== Backup & Maintenance
+
+=== SEO
+
+=== Social Media Integration
+
+
+=== Authentication & User Mangement
+
+=== Visual Website Builders
+
+=== Enhancements & Additional Features 
+- Sidebar manager
+
+
+== Recomended Themes
+=== Sage Theme Framework
+- Sage is a WordPress starter theme with a modern development workflow.
+- https://github.com/roots/sage
+- Sass for stylesheets
+- Modern JavaScript
+- Webpack for compiling assets, optimizing images, and concatenating and minifying files
+- Browsersync for synchronized browser testing
+- Blade as a templating engine
+- Controller for passing data to Blade templates
+- CSS framework (optional): Bootstrap 4, Bulma, Foundation, Tachyons, Tailwind
+
+
+=== SiteOrigin Vantage (Free)
+- Works well with SiteOrigin Page Builder
+
+=== UnderStrap: Underscores starter theme + Bootstrap 4 (Free)
+- Has a sample child theme to get started quickly.
+- Aimed at developers and does not include pretty css for production sites.
+
+
+=== Sparkling
+
+- Free theme with all color & layout options included.
+
+
+=== Divi (Paid) 
+- Provided by Elegant Themes. 
+
+=== Avada (Paid) 
+- Priced at $60 with over 300,000 sales. (ToDo) Test & Provide more info.
+
+=== Components.underscores.me theme generator by WP
+
+=== Customizr (non-bootstrap) 
+
+=== WordPress Themes & Plugins Marketplaces
+==== https://themefuse.com (premium) 
+- Pricing:
+** $60 for single site
+** $100 for all themes and unlimited sites.
+** $250 life time access & updates.
+
+==== Elegent Themes 
+- Pricing:
+** $70 for access to all themes and updates for a year.
+** $90 Access to all themes & plugins with updates for one year
+** $250 lifetime access & updates.
+** Also checkout Elegant market Place: https://elegantmarketplace.com/
+
+- Third Party Elegant Themes Software:
+** http://www.divithemeexamples.com/divi-layouts/
+** http://www.divithemeexamples.com/divi-showcase-category/free-divi-child-themes/
+** https://elegantdivilayouts.com/
+** http://divicreative.com
+** https://divicake.com/
+** https://besuperfly.com/shop/
+** https://quiroz.co/divi-tutorials-much/divi-layout-kits/
+
 
 == WordPress Coding Standards
 I'll only cover the important points, the rest can be found on https://make.wordpress.org/core/handbook/best-practices/coding-standards/
@@ -114,237 +196,24 @@ DominName/wp-json/wp/v2/posts?per_page=3&orderby=date&order=desc&status=publish
 https://adambrown.info/p/wp_hooks/hook
 https://codex.wordpress.org/Plugin_API/Action_Reference
 
-=== Triggnering Context & Order
-.Ordered earliest to latest
-- `muplugins_loaded`
-- `plugin_loaded`
-- `init`
-- `wp_loaded`                          
-- `wp`
-
-
-== Themes
-=== Useful Functions
+.Commonly used action hooks.
 ----
-add_theme_support()
+muplugins_loaded
+plugin_loaded`
+init
+wp_loaded                          
+wp
 ----
 
-== ToDo
+.Commonly used filter hooks.
+----
 
-#How to install wordpress using quick installer? (link to post)
 
+----
+ 
 
-#Recomended Themes & Plugins
 
-#Plugins:
-
-##Security
-
-##Backup & Maintenance
-
-##SEO & SMO
-
-##Social Media Integration
-
-##Inhancement
-
-##Authentication & User Mangement
-
-##Visual Website Builders
-
-##Features:
-Sidebar manager
-
-
-#Plugins for special businesses cases
-
-##Cafe Software
-
-##Booking Software
-
-##eListing Software
-
-
-#Themes: 
-
-## Sage Theme Framework
-- Sage is a WordPress starter theme with a modern development workflow.
-- https://github.com/roots/sage
-- Sass for stylesheets
-- Modern JavaScript
-- Webpack for compiling assets, optimizing images, and concatenating and minifying files
-- Browsersync for synchronized browser testing
-- Blade as a templating engine
-- Controller for passing data to Blade templates
-- CSS framework (optional): Bootstrap 4, Bulma, Foundation, Tachyons, Tailwind
-
-
-
-##SiteOrigin Vantage (Free)
-• Pros:
-   ◇ Free.
-      Works well with SiteOrigin Page Builder
-• Cons:
-
-##UnderStrap: Underscores starter theme + Bootstrap 4 (Free)
-• Pros:
-   ◇  Has a sample child theme to get started quickly.
-   ◇ Few built in options.
-
-• Cons
-   ◇ Aimed at developers and does not include pretty css for production sites.
-
-
-##Sparkling
-• Pros:
-• • Free theme with all color & layout options included.
-
-• Cons:
-• • Needs more page templates.
-
-##Paid Themes
-Divi (Paid) 
-Provided by Elegant Themes ...(ToDo) Test & Provide more info. 
-
-Avada (Paid) 
-Priced at $60 with over 300,000 sales. (ToDo) Test & Provide more info.
-
-Components.underscores.me theme generator by WP
-
-Customizr (non-bootstrap) 
-
-
-#Themes & Plugins Providers
-https://themefuse.com (premium) 
-Pricing:
-• $60 for single site
-• $100 for all themes and unlimited sites.
-• $250 life time access & updates.
-
-Elegent Themes 
-Pricing:
-• $70 for access to all themes and updates for a year.
-• $90 Access to all themes & plugins with updates for one year
-• $250 lifetime access & updates.
-
-https://siteorigin.com/theme/ 
-Pricing:
-Notes:
-• These thems work well with SiteOrigin Builder
-
-https://woocommerce.com/
-
-Genesis
-themeum (free + premium)
-
-
-
-
-#Bookmarks: Study & use info to create new and/or update this page.
-
-Useful Themes Related Blog Articles
-ColorLib - Best WP themes library ToDo: Read & summarize 
-21-best-wordpress-starter-themes-for-developers 
-https://www.codeinwp.com/blog/best-free-wordpress-themes/ 
-https://www.freshdesignweb.com/free-bootstrap-wordpress-themes/
-
-
-============================
-
-What is Wordpress
-"WordPress is open source software you can use to create a beautiful website, blog, or app."
-
-#Docs
-https://wordpress.org/ 
-Check Michael habib's Favorited items on wordpress.org
-https://profiles.wordpress.org/michaelhabib16#content-favorites
-
-#Themes
-
-##Free Themes:
-vantage : By SiteOrigin
-• Pros:
-   ◇ Free.
-   ◇ Works well with SiteOrigin Page Builder
-• Cons:
-   ◇ 
-
-UnderStrap: Underscores starter theme + Bootstrap 4
-• Pros:
-   ◇  Has a sample child theme to get started quickly.
-   ◇ Few built in options.
-
-• Cons
-   ◇ Aimed at developers and does not include pretty css for production sites.
-
-
-Sparkling
-• Pros:
-• • Free theme with all color & layout options included.
-
-• Cons:
-• • Needs more page templates.
-
-Components.underscores.me theme generator by WP
-
-Customizr (non-bootstrap) 
-
-I thought you may need it & I also found Elegant market Place , still in the process of confirming their quality https://elegantmarketplace.com
-
-
-Flat Theme:
-• Pros
-1. *Offers many side options built in such as testimonials, sliders, teams, projects, ...
-2. *Has a sample child theme making development of new themes much faster.
-• Cons:
-• #Does not allow color change in GUI and colors assigned by class on elements.
-
-##Paid Themes
-Divi (Paid) 
-Provided by Elegant Themes ...(ToDo) Test & Provide more info. 
-
-Avada (Paid) 
-Priced at $60 with over 300,000 sales. (ToDo) Test & Provide more info.
-
-Theme Providers
-https://themefuse.com (premium) 
-Pricing:
-• $60 for single site
-• $100 for all themes and unlimited sites.
-• $250 life time access & updates.
-
-Elegent Themes 
-Pricing:
-• $70 for access to all themes and updates for a year.
-• $90 Access to all themes & plugins with updates for one year
-• $250 lifetime access & updates.
-• Also checkout Elegant market Place: https://elegantmarketplace.com/
-Third Party Elegant Themes Software:
-• http://www.divithemeexamples.com/divi-layouts/
-• http://www.divithemeexamples.com/divi-showcase-category/free-divi-child-themes/
-• https://elegantdivilayouts.com/
-• http://divicreative.com
-• https://divicake.com/
-• https://besuperfly.com/shop/
-• https://quiroz.co/divi-tutorials-much/divi-layout-kits/
-
-
-
-https://siteorigin.com/theme/ 
-Pricing:
-Notes:
-• These thems work well with SIteOrigin
-
-https://woocommerce.com/
-
-Genesis
-themeum (free + premium)
-
-Useful Themes Related Blog Articles
-ColorLib - Best WP themes library ToDo: Read & summarize 
-21-best-wordpress-starter-themes-for-developers 
-https://www.codeinwp.com/blog/best-free-wordpress-themes/ 
-https://www.freshdesignweb.com/free-bootstrap-wordpress-themes/
+ 
 
 Theme Development
 
@@ -395,19 +264,6 @@ WordPress HTTPS: by Mike Ems – 3.3.6
 Yoast SEO: by Team Yoast – 4.9
 
 
-• Wordpress Ebay RSS
+ 
 
-Paid Plugins:
-• SiteOrigin Prmuim > Many great add-ons• $35/year/site or $99/year/unlimited sites
-
-
-#Bookmarks: Study & use info to create new and/or update this page.
-https://premium.wpmudev.org/blog/essential-wordpress-plugins/?utm_expid=3606929-105.kKHVTz43T_CV513Vo9oSow.0&utm_referrer=https%3A%2F%2Fwww.google.com.au%2F
-
-== Conding Standards
-
-- Class_Name
-- function_name($param_one)
-- $variable_name
-- CONST_NAME
-- getter & setters at the end of class definition ?
+ 
