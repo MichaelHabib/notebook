@@ -1,0 +1,2 @@
+= Information Technology
+:page-layout: wiki/namespace/index
