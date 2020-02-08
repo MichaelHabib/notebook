@@ -1,17 +1,19 @@
 = Htaccess Guide
 
-== understanding htaccess
+== What is Htaccess ?
 
-- Most rules are composed of 'function' 'regex condition' 'action' . For example
-** 'RewriteRule ^index\.php$ other-file.php [L]' redirects quries from 'index.php/' to 'other-dile.php', both relative to document root.
+== Htaccess Basics
+
+- Most rules are composed of 'function'+'regex condition'+'action' . For example
+** `RewriteRule ^index\.php$ other-file.php [L]`` redirects quries from 'index.php/' to 'other-dile.php', both relative to document root.
 
 == Code Samples 
 [source,htaccess]
 ----
 
 <IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase /~michael/wordpress/wp1/
+RewriteEngine On
+RewriteBase /~michael/wordpress/wp1/
 
 RewriteCond %{REQUEST_URI} ^(.*)TextToCheckFor(.*)?$
 RewriteCond %{QUERY_STRING} ^.*parameter=argument.*$
