@@ -5,7 +5,7 @@
 == Htaccess Basics
 
 - Most rules are composed of 'function'+'regex condition'+'action' . For example
-** `RewriteRule ^index\.php$ other-file.php [L]`` redirects quries from 'index.php/' to 'other-dile.php', both relative to document root.
+** `RewriteRule ^index\.php$ other-file.php [L]` redirects quries from `index.php/` to `other-dile.php`, both relative to document root.
 
 == Code Samples 
 [source,htaccess]
