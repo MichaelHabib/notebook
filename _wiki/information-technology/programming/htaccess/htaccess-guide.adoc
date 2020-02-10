@@ -19,8 +19,13 @@ RewriteCond %{REQUEST_URI} ^(.*)TextToCheckFor(.*)?$
 RewriteCond %{QUERY_STRING} ^.*parameter=argument.*$
 RewriteRule ^(.*)$ – [R=403,L]
 
+# Simple redirects
+Redirect 301 /root-relative-path/ /new-root-relative-path
+Redirect 301 /root-relative-path/ https://example/new-path/
+
+
 # Redirect to new path & use regex group capture to pass on information to the new path . 
-RewriteRule ^(.*)/old-directory/(.*)$ $1/new-directory/$2 [R=301,L]
+RewriteRule /old-directory/(.*)$ /new-directory/$1 [R=301,L]
 
 
 </IfModule>
