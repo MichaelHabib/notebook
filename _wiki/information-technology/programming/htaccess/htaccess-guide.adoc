@@ -20,7 +20,7 @@ RewriteCond %{QUERY_STRING} ^.*parameter=argument.*$
 RewriteRule ^(.*)$ – [R=403,L]
 
 # Redirect to new path & use regex group capture to pass on information to the new path . 
-RewriteRule ^(.*)/old-directory/(.*)$ $1/new-directory/$2 [R,L]
+RewriteRule ^(.*)/old-directory/(.*)$ $1/new-directory/$2 [R=301,L]
 
 
 </IfModule>
