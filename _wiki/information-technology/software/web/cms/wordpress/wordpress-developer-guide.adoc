@@ -21,7 +21,42 @@ WordPress (WordPress.org) is a content management system (CMS) written in PHP ..
 - http://wppb.io/
 - Sage / roots
 
+
 == Recomended Plugins
+
+=== TEMP
+
+
+ManageWP - Worker: by ManageWP 
+Akismet Anti-Spam: by Automattic
+All 404 Redirect to Homepage: by Fakhri Alsadi
+Demo Sticky Bar: by B3multimedia
+Bloom: by Elegant Themes
+Contact Form 7: by Takayuki Miyoshi
+Divi 100 Article Cards: by Elegant Themes
+Divi 100 Hamburger Menu: by Elegant Themes
+Divi 100 Login Page: by Elegant Themes
+Divi Switch: by divi.space
+Woo Layout Injector: by Sean Barton - Tortoise IT
+Easy Theme and Plugin Upgrades: by Chris Jean
+Elegant Themes Support: by Elegant Themes
+Elegant Themes Updater: by Elegant Themes
+Facebook for WooCommerce: by Facebook
+Groups WooCommerce: by itthinx
+Groups: by itthinx
+Heartbeat Control: by Jeff Matson
+Monarch Plugin: by Elegant Themes
+Really Simple CAPTCHA: by Takayuki Miyoshi
+WooCommerce Customer/Order CSV Export: by SkyVerge
+WooCommerce PayPal Powered by Braintree Gateway: by WooCommerce
+WooCommerce Order Status Control: by SkyVerge
+WooCommerce USPS Shipping: by WooCommerce
+WooCommerce Subscriptions: by Prospress Inc
+WooCommerce: by Automattic 
+WordPress HTTPS: by Mike Ems 
+Yoast SEO: by Team Yoast 
+
+
 
 === Security
 
@@ -99,6 +134,28 @@ WordPress (WordPress.org) is a content management system (CMS) written in PHP ..
 ** https://besuperfly.com/shop/
 ** https://quiroz.co/divi-tutorials-much/divi-layout-kits/
 
+== How to Install & Configure WP ?
+
+=== Setting File permission
+The recommedned file permissions are  `755` for folders & `644` for files. 
+
+To correct WordPress file permission, you can run the following commands in the terminal at the root level of the project (Usually `public_html/`)
+----
+find . -type d -exec chmod 755 {} +
+find . -type f -exec chmod 644 {} +
+----
+
+
+== How to Create a WP Plugin?
+
+
+== How to Create a WP Theme ?
+=== Useful Links
+- https://codex.wordpress.org/Theme_Development 
+- https://codex.wordpress.org/Site_Design_and_Layout 
+- https://codex.wordpress.org/Child_Themes
+
+== How to Create a WP Child Theme ?
 
 == WordPress Coding Standards
 I'll only cover the important points, the rest can be found on https://make.wordpress.org/core/handbook/best-practices/coding-standards/
@@ -119,14 +176,6 @@ class Class_Name {
 ----
 
 
-== Setting File permission
-The recommedned file permissions are  `755` for folders & `644` for files. 
-
-To correct WordPress file permission, you can run the following commands in the terminal at the root level of the project (Usually `public_html/`)
-----
-find . -type d -exec chmod 755 {} +
-find . -type f -exec chmod 644 {} +
-----
 
 == Working with WP CLI (WordPress Command Line Interface)
 
@@ -172,11 +221,8 @@ wp post create --post_type=page --post_status="publish" --post_title="Privacy Po
 ----
 wp menu create "Primary Menu"
 wp menu location assign primary-menu primary
-
 wp menu create "Secondary Menu"
-
 wp menu create "Sidebar Menu"
-
 wp menu create "Footer Menu"
 
 ----
@@ -192,11 +238,10 @@ wp menu create "Footer Menu"
 DominName/wp-json/wp/v2/posts?per_page=3&orderby=date&order=desc&status=publish
 ----
 
-== Hooks
-https://adambrown.info/p/wp_hooks/hook
-https://codex.wordpress.org/Plugin_API/Action_Reference
+== Understanding WP Action & Filter Hooks 
 
-.Commonly used action hooks.
+
+=== Commonly used action hooks.
 ----
 muplugins_loaded
 plugin_loaded`
@@ -212,57 +257,12 @@ wp
 ----
  
 
-
+=== Useful Links
+https://adambrown.info/p/wp_hooks/hook
+https://codex.wordpress.org/Plugin_API/Action_Reference
  
 
-Theme Development
-
-Docs
-https://codex.wordpress.org/Theme_Development 
-https://codex.wordpress.org/Site_Design_and_Layout 
-https://codex.wordpress.org/Child_Themes
-
-Tools:
-https://en-au.wordpress.org/plugins/options-framework/
-
-Plugins
-• View Top Rated Plugins
-• Wordpress SQLite Plugin
-• Enhanced Text Widget
-• Image Widget
-• Page Builder by SiteOrigin
-• All In One WP Security & Firewall
-• Simple Image Sizes
-(Filter the list below)
-ManageWP - Worker: by ManageWP – 4.2.19
-Akismet Anti-Spam: by Automattic – 3.3.2
-All 404 Redirect to Homepage: by Fakhri Alsadi – 1.7
-Demo Sticky Bar: by B3multimedia – 1.0.0
-Bloom: by Elegant Themes – 1.2.4
-Contact Form 7: by Takayuki Miyoshi – 4.8
-Divi 100 Article Cards: by Elegant Themes – 0.0.4
-Divi 100 Hamburger Menu: by Elegant Themes – 0.0.1
-Divi 100 Login Page: by Elegant Themes – 0.0.1
-Divi Switch: by divi.space – 2.3.6
-Woo Layout Injector: by Sean Barton - Tortoise IT – 3.4
-Easy Theme and Plugin Upgrades: by Chris Jean – 2.0.0
-Elegant Themes Support: by Elegant Themes – 1.3
-Elegant Themes Updater: by Elegant Themes – 1.0
-Facebook for WooCommerce: by Facebook – 1.3.2
-Groups WooCommerce: by itthinx – 1.9.6
-Groups: by itthinx – 2.2.0
-Heartbeat Control: by Jeff Matson – 1.0.3
-Monarch Plugin: by Elegant Themes – 1.3.6
-Really Simple CAPTCHA: by Takayuki Miyoshi – 2.0
-WooCommerce Customer/Order CSV Export: by SkyVerge – 4.3.5
-WooCommerce PayPal Powered by Braintree Gateway: by WooCommerce – 2.0.3
-WooCommerce Order Status Control: by SkyVerge – 1.8.0
-WooCommerce USPS Shipping: by WooCommerce – 4.4.6 – 4.4.7 is available
-WooCommerce Subscriptions: by Prospress Inc. – 2.2.7
-WooCommerce: by Automattic – 3.0.8
-WordPress HTTPS: by Mike Ems – 3.3.6
-Yoast SEO: by Team Yoast – 4.9
-
+ 
 
  
 
