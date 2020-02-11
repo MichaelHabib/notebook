@@ -1,4 +1,6 @@
 = Wordpress Developer Guide
+:toc:
+:toclevels: 1
 
 == What is Wordpress (AKA WP)
 WordPress (WordPress.org) is a content management system (CMS) written in PHP ...  https://en.wikipedia.org/wiki/WordPress[Source : Wikipidia]
