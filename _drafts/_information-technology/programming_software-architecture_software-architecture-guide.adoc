@@ -1,0 +1,5 @@
+= Software Architecutre Guide
+
+
+== Useful Links
+- https://towardsdatascience.com/5-key-principles-of-software-architecture-e5379cb10fd5[5 Key Principles of Software Architecture]
