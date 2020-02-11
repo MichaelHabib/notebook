@@ -2,4 +2,6 @@
 
 
 == Useful Links
-- https://towardsdatascience.com/5-key-principles-of-software-architecture-e5379cb10fd5[5 Key Principles of Software Architecture]
+- https://medium.com/@semika[Semi Koen - Writer with interesting articles on Software Architecture]
+** https://towardsdatascience.com/architecting-for-the-ilities-6fae9d00bf6b[Architecting For The -ilities]
+** https://towardsdatascience.com/5-key-principles-of-software-architecture-e5379cb10fd5[5 Key Principles of Software Architecture]
