@@ -1,48 +1,104 @@
 
 = PlantUML Guide using Asciidoc
+:toc:
+:toclevel:2
 http://plantuml.com/
 
 == Class Diagrams
 
 
-[plantuml,x,png]
-----
-ClassA1 <|-- ClassB1
-	note right: ClassB# extends ClassA#
-
-ClassA2 *-- ClassB2
-	note right: ClassB# composes ClassA#
-----
-
-
 ---
 
-[plantuml]
+=== Association
+[plantuml,x,svg]
 ----
-Class01 <|-- Class02
-Class03 *-- Class04
-Class05 o-- Class06
-Class07 .. Class08
+ClassA -- ClassB
+note right of ClassA
+  ClassA is associated with ClassB
+  ---
+  Binary association relates two typed instances.
+  It is normally rendered as a solid line connecting two classifiers,
+  or a solid line connecting a single classifier to itself
+  (the two ends are distinct).
+  The line may consist of one or more connected segments.
+end note
+----
+---
+
+
+=== Composite Aggregation (Composition)
+[plantuml,x,svg]
+----
+ClassA --o ClassB
+note right of ClassA
+  ClassA associated with / containers one or more ClassB
+  ---
+  Composite aggregation (aka composition) is a "strong" form of aggregation.
+
+  Composition is depicted as binary association decorated with a filled black diamond at the aggregate (composite) end.
+end note
+----
+---
+
+=== Ownership of Association End
+- ToDo : No PlantUML option found for this type of association
+
+
+[plantuml,x,svg]
+----
+ClassA -- ClassB
+note right of ClassA
+  ClassA associated with / containers one or more ClassB
+  ---
+  Ownership of association ends by an associated classifier may be indicated graphically
+  by a small filled circle (aka dot). The dot is drawn at the point where line meets the classifier.
+  It could be interpreted as showing that the model includes a property of the type
+  represented by the classifier touched by the dot.
+  This property is owned by the classifier at the other end.
+
+end note
+----
+---
+
+=== Class Extension
+[plantuml,x,svg]
+----
+ClassA <|-- ClassB
+note right of ClassA
+  ClassB extends ClassA
+  ---
+
+end note
+----
+---
+
+=== Dependency
+[plantuml,x,svg]
+----
+ClassA <.. ClassB
+note right of ClassA
+  ClassB depends on  ClassA
+  ---
+
+end note
+----
+---
+
+
+=== Full Demo
+[plantuml,x,svg]
+----
 Class09 -- Class10
+Class05 o-- Class06
+Class03 *-- Class04
+Class01 <|-- Class02
+Class07 .. Class08
 
-----
-
----
-
-
-[plantuml]
-----
 Class11 <|.. Class12
-Class13 --> Class14
-Class15 ..> Class16
-Class17 ..|> Class18
+Class13 <-- Class14
+Class15 <.. Class16
 Class19 <--* Class20
-----
 
----
-
-[plantuml]
-----
 Class21 #-- Class22
 Class23 x-- Class24
 Class25 }-- Class26
@@ -50,6 +106,10 @@ Class27 +-- Class28
 Class29 ^-- Class30
 ----
 ---
+
+=== Credits & Sources
+- https://www.uml-diagrams.org/class-reference.html
+- https://plantuml.com/class-diagram
 
 === Activity Diagrams
 [cols=2]
