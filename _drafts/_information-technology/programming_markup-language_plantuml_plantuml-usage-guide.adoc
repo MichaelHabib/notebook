@@ -1,5 +1,5 @@
 
-= PlantUML Guide using Asciidoc
+= PlantUML Usage Guide
 :toc:
 :toclevel:2
 http://plantuml.com/
