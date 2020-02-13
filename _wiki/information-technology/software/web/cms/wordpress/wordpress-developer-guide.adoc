@@ -25,60 +25,51 @@ WordPress (WordPress.org) is a content management system (CMS) written in PHP ..
 
 
 == Recomended Plugins
-
-=== TEMP
-
-
-ManageWP - Worker: by ManageWP 
-Akismet Anti-Spam: by Automattic
-All 404 Redirect to Homepage: by Fakhri Alsadi
-Demo Sticky Bar: by B3multimedia
-Bloom: by Elegant Themes
-Contact Form 7: by Takayuki Miyoshi
-Divi 100 Article Cards: by Elegant Themes
-Divi 100 Hamburger Menu: by Elegant Themes
-Divi 100 Login Page: by Elegant Themes
-Divi Switch: by divi.space
-Woo Layout Injector: by Sean Barton - Tortoise IT
-Easy Theme and Plugin Upgrades: by Chris Jean
-Elegant Themes Support: by Elegant Themes
-Elegant Themes Updater: by Elegant Themes
-Facebook for WooCommerce: by Facebook
-Groups WooCommerce: by itthinx
-Groups: by itthinx
-Heartbeat Control: by Jeff Matson
-Monarch Plugin: by Elegant Themes
-Really Simple CAPTCHA: by Takayuki Miyoshi
-WooCommerce Customer/Order CSV Export: by SkyVerge
-WooCommerce PayPal Powered by Braintree Gateway: by WooCommerce
-WooCommerce Order Status Control: by SkyVerge
-WooCommerce USPS Shipping: by WooCommerce
-WooCommerce Subscriptions: by Prospress Inc
-WooCommerce: by Automattic 
-WordPress HTTPS: by Mike Ems 
-Yoast SEO: by Team Yoast 
-
-
-
+ 
 === Security
 
 === Backup & Maintenance
 
 === SEO
-
+- Yoast SEO
 === Social Media Integration
 
-
+- Monarch
 === Authentication & User Mangement
 
 === Visual Website Builders
 
+=== Forms
+- Contact Form 7
+- Bloom - Email opt-in plugin.
+
 === Enhancements & Additional Features 
 - Sidebar manager
-
+- ManageWP 
 
 == Recomended Themes
+
+=== SiteOrigin Vantage (Free)
+- Works well with SiteOrigin Page Builder
+
+
+=== Sparkling (Free)
+
+- Free theme with all color & layout options included.
+
+
+=== Divi (Paid) 
+- Provided by Elegant Themes. 
+
+=== Avada (Paid) 
+- Priced at $60 with over 300,000 sales. (ToDo) Test & Provide more info.
+
+
+=== Customizr (Freemium)
+
+
 === Sage Theme Framework
+- Aimed at developers.
 - Sage is a WordPress starter theme with a modern development workflow.
 - https://github.com/roots/sage
 - Sass for stylesheets
@@ -90,28 +81,13 @@ Yoast SEO: by Team Yoast
 - CSS framework (optional): Bootstrap 4, Bulma, Foundation, Tachyons, Tailwind
 
 
-=== SiteOrigin Vantage (Free)
-- Works well with SiteOrigin Page Builder
-
-=== UnderStrap: Underscores starter theme + Bootstrap 4 (Free)
+=== UnderStrap: Underscores starter theme + Bootstrap (Free)
+- Aimed at developers.
 - Has a sample child theme to get started quickly.
 - Aimed at developers and does not include pretty css for production sites.
 
-
-=== Sparkling
-
-- Free theme with all color & layout options included.
-
-
-=== Divi (Paid) 
-- Provided by Elegant Themes. 
-
-=== Avada (Paid) 
-- Priced at $60 with over 300,000 sales. (ToDo) Test & Provide more info.
-
 === Components.underscores.me theme generator by WP
-
-=== Customizr (non-bootstrap) 
+- Aimed at developers.
 
 === WordPress Themes & Plugins Marketplaces
 ==== https://themefuse.com (premium) 
@@ -130,6 +106,7 @@ Yoast SEO: by Team Yoast
 - Third Party Elegant Themes Software:
 ** http://www.divithemeexamples.com/divi-layouts/
 ** http://www.divithemeexamples.com/divi-showcase-category/free-divi-child-themes/
+** https://divi.space/
 ** https://elegantdivilayouts.com/
 ** http://divicreative.com
 ** https://divicake.com/
@@ -149,7 +126,35 @@ find . -type f -exec chmod 644 {} +
 
 
 == How to Create a WP Plugin?
+=== Simple Plugin
+- Create a file under WP root `/wp-content/plugins/my-plugin-name/my-plugin-name.php`
+- Add then modify the following code as needed
++
+[source,php]
+----
+<?php
 
+/**
+ * Plugin Name: MyPluginName
+ * Plugin URI: mypluginname.com
+ * Description: myplugindescription
+ * Version: 0.1.0
+ * Author: My Name
+ * Author URI: https://mywebsite.com
+ * */
+
+// Function containing my code
+my_plugin_name__function_name(){
+
+}
+/*
+- When to run the above function ? below example excutes the function on the plugins_loaded action hook.
+- Check out the WP Filter & Action Hooks section .
+- Other action hooks to condier are : 'wp' , 'wp_loaded', 'init'                                                                                                                                  
+*/
+add_action('plugins_loaded', 'my_plugin_name__function_name');
+
+----
 
 == How to Create a WP Theme ?
 === Useful Links
