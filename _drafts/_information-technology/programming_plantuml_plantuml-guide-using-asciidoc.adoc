@@ -8,6 +8,65 @@ http://plantuml.com/
 
 
 ---
+=== Simple Class Diagram Example
+[plantuml,x,svg]
+----
+class ClassA {
+ + PublicProperty
+ # ProtectedProperty
+ - Private Property
+
+ + PublicMethod()
+ # ProtectedMethod()
+ - PrivateMethod()
+}
+class ClassB {
+
+  + PublicMethod()
+}
+abstract class ClassC {
+
+}
+interface  ClassD {
+
+}
+class ClassS << (S,#FF7700) Singleton >>
+
+ClassA --> ClassB : class to class relation.
+ClassA::PublicMethod --> ClassC : method to class relation.
+ClassA::ProtectedMethod -- ClassB::PublicMethod : method to method relation.
+
+note right of ClassA:  A note added to the right of ClassA
+note right of ClassC:  Abstract Class
+note right of ClassD:  Interface
+note right of ClassS:  Custom spot with custom background color & letter .
+
+----
+---
+
+
+=== Full Demo
+[plantuml,x,svg]
+----
+Class09 -- Class10
+Class05 o-- Class06
+Class03 *-- Class04
+Class01 <|-- Class02
+Class07 .. Class08
+
+Class11 <|.. Class12
+Class13 <-- Class14
+Class15 <.. Class16
+Class19 <--* Class20
+
+Class21 #-- Class22
+Class23 x-- Class24
+Class25 }-- Class26
+Class27 +-- Class28
+Class29 ^-- Class30
+----
+---
+
 
 === Association
 [plantuml,x,svg]
@@ -84,28 +143,22 @@ end note
 ----
 ---
 
-
-=== Full Demo
+=== Usage Dependency (Creation)
 [plantuml,x,svg]
 ----
-Class09 -- Class10
-Class05 o-- Class06
-Class03 *-- Class04
-Class01 <|-- Class02
-Class07 .. Class08
+ClassA <.. ClassB : creates
+note right of ClassA
+  ClassB creates ClassA
+  ---
 
-Class11 <|.. Class12
-Class13 <-- Class14
-Class15 <.. Class16
-Class19 <--* Class20
-
-Class21 #-- Class22
-Class23 x-- Class24
-Class25 }-- Class26
-Class27 +-- Class28
-Class29 ^-- Class30
+end note
 ----
 ---
+
+
+=== Credits & Sources
+- https://www.uml-diagrams.org/class-reference.html
+- https://plantuml.com/class-diagram
 
 === Credits & Sources
 - https://www.uml-diagrams.org/class-reference.html
