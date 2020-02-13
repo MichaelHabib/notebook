@@ -25,17 +25,27 @@ WordPress (WordPress.org) is a content management system (CMS) written in PHP ..
 
 
 == Recomended Plugins
- 
+
+
+
 === Security
+
+
 
 === Backup & Maintenance
 
 === SEO
 - Yoast SEO
+
+
 === Social Media Integration
 
 - Monarch
+
+
 === Authentication & User Mangement
+
+
 
 === Visual Website Builders
 
