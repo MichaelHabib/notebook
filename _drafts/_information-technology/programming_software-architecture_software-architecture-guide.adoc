@@ -15,6 +15,36 @@
 
 ==== Design
 
+===== Common Architectural Designs
+
+|===
+| Category | Architectual Design
+
+| Communication 
+a| 
+- Message Bus
+- Server Oriented Archtecutre
+
+| Deployment
+a|
+- Client / Server
+- 3 tier or N Tier 
+
+| Domain
+a|
+- Domain Driven Design
+
+| Structure 
+a|
+- Componenet Based
+- Layered
+- Object Oriented
+
+
+|===
+
+
+
 ==== Quality Attributes
 Quality Attributes are system properties that are separate from the functionality of the system. 
 
@@ -24,14 +54,14 @@ Reflect the structure of the system and organization, e.g : modularity, testabil
 ===== Dynamic / Evolution Quality Attributes
 Reflect the behaviour of a system durting its excution, e.g : throughput, robustness, scalability , etc ...
 
-===== Common QUality Attributes
-- Design Qualitites
-- Runtime Qualities
-- System Qualities 
-- User Qualities
-- Architecture Qualities
-- Non-Runtime Qualities
-- Business Quality Attributes
+===== Common Quality Categories & Attributes
+- Design Qualitites : Conceptual Integrity, Maintainability, Resuability .
+- Runtime Qualities : Interoperbality, Manageability, Reliability, Scalability, Security, Performance, Availability.
+- System Qualities : Suppotability, Testability.
+- User Qualities : Usability .
+- Architecture Qualities : Correctness .
+- Non-Runtime Qualities : Portability, Integrality, Modifiability.
+- Business Quality Attributes : Cost and Schedule, Marketability.
 
 
 ==== IT Environment
