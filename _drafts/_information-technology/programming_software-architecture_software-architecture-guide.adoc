@@ -7,6 +7,9 @@
 
 == Temp Notes
 
+=== How to find the most important qualities to work on ?
+- find the feature that is both the most important feature for stakeholders & hardest for developers to create . 
+
 ---
 === Conponenets of a Software Architecture 
 
@@ -14,6 +17,22 @@
 
 ==== Quality Attributes
 Quality Attributes are system properties that are separate from the functionality of the system. 
+
+===== Static / Excution Quality Attributes
+Reflect the structure of the system and organization, e.g : modularity, testability, maintainability, etc ...
+
+===== Dynamic / Evolution Quality Attributes
+Reflect the behaviour of a system durting its excution, e.g : throughput, robustness, scalability , etc ...
+
+===== Common QUality Attributes
+- Design Qualitites
+- Runtime Qualities
+- System Qualities 
+- User Qualities
+- Architecture Qualities
+- Non-Runtime Qualities
+- Business Quality Attributes
+
 
 ==== IT Environment
 
@@ -31,10 +50,13 @@ Quality Attributes are system properties that are separate from the functionalit
 === Data Modle 
 - https://www.guru99.com/data-modelling-conceptual-logical.html
 
+== Recommended Books
 
+- Just Enough Software Architecture
+- 
 
 == Useful Links
-
+- https://en.wikipedia.org/wiki/Non-functional_requirement
 - https://www.tutorialspoint.com/software_architecture_design/introduction.htm
 - https://www.interaction-design.org/literature/article/we-think-therefore-it-is-conceptual-modelling-for-mobile-applications
 - https://medium.com/@semika[Semi Koen - Writer with interesting articles on Software Architecture]
