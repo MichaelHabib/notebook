@@ -13,9 +13,9 @@
 
 == What's Included in each Project Cycle ?
 
-== Initiation:
+=== Initiation:
 
-== Planning:
+=== Planning:
 
 === Excution:
 
