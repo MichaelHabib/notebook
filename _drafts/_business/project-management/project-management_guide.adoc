@@ -4,12 +4,21 @@
 
 == Project Cycle
 
-=== Initiation
+- Initiation
+- Planning
+- Excution 
+- Monitoring & Control
+- Closure
 
-=== Planning
 
-=== Excution 
+== What's Included in each Project Cycle ?
 
-=== Monitoring & Control
+== Initiation:
 
-=== Closure
+== Planning:
+
+=== Excution:
+
+=== Monitoring:
+
+=== Closure:
