@@ -22,7 +22,7 @@
 
 ----
 
-== Mail Templates
+=== Mail Templates
 ----
 From: [your-name] <[your-email]>
 Subject: [your-subject]
@@ -51,3 +51,14 @@ Message Body:
 
 
 ----
+
+=== Additional Settings
+
+==== Mail Headers
+----
+Reply-To: [email]
+
+
+----
+
+
