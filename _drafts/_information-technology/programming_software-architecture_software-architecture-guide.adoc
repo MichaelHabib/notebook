@@ -10,7 +10,15 @@
 === How to find the most important qualities to work on ?
 - find the feature that is both the most important feature for stakeholders & hardest for developers to create . 
 
----
+
+
+=== Types of Enterprise Architecture
+- Business Architecture : 
+- Application / Software Architecture : 
+- Information Architecture : 
+- Information Technology / IT Architecture : 
+
+
 === Conponenets of a Software Architecture 
 
 ==== Design
