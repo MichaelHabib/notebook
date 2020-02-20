@@ -54,7 +54,7 @@ name    = "John"       # A string
 a,b,c = 1,2,"john" #Multiple assignments
 days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
 
-#blocks
+#Control Flow Tools
 
 if expression : 
    suite
@@ -62,6 +62,11 @@ elif expression :
    suite 
 else : 
    suite
+   
+   
+words = ['cat', 'window', 'defenestrate']
+for w in words:
+   print(w, len(w))
 ----
 
 [source,python]
