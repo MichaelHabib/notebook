@@ -98,6 +98,9 @@ Lists are the most versatile of Python's compound data types. A list contains it
 #!/usr/bin/python
 
 list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]
+list[5] = '5th item'
+list.append('appended value')
+
 tinylist = [123, 'john']
 
 print list          # Prints complete list
