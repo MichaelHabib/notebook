@@ -1,5 +1,12 @@
 = Beautiful Soup
 
+== Installation
+
+.Via pip
+----
+pip3 install beautifulsoup4
+----
+
 == Examples
 
 .Web Scrapping
@@ -10,16 +17,20 @@ import subprocess
 from requests import get
 from bs4 import BeautifulSoup
 
+urls = []
+urls.append('http://example.com')
 
-url = 'http://www.imdb.com/search/title?release_date=2017&sort=num_votes,desc&page=1'
-response = get(url)
-print(response.text[:10])
+for url in urls:
+    print(url)
+    response = get(url)
+    print(response.text[:100])
 
-html_soup = BeautifulSoup(response.text, 'html.parser')
-type(html_soup)
+    html_soup = BeautifulSoup(response.text, 'html.parser')
+    print(type(html_soup))
 
-items = html_soup.find_all('div', class_ = 'container')
-print(len(items))
+    items = html_soup.find_all('head', class_ = '')
+    print(len(items))
+
 ----
 
 == Useful Links
