@@ -100,6 +100,12 @@ WordPress (WordPress.org) is a content management system (CMS) written in PHP ..
 - Aimed at developers.
 
 === WordPress Themes & Plugins Marketplaces
+
+==== WPMUDEV Plugins
+- Smush
+- HummingBird
+- Defender
+
 ==== https://themefuse.com (premium) 
 - Pricing:
 ** $60 for single site
@@ -280,7 +286,13 @@ https://codex.wordpress.org/Plugin_API/Action_Reference
  
 
  
-
+== WP Optimisation
+- Use PHP 7.2 with Opcache
+- GZip
+- Convert images to .webp then compress 
+- Image lazy loading
+- Long term file cache by adding expiry headers.
+- 
  
 
  
