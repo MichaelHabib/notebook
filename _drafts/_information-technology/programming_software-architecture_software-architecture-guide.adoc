@@ -93,6 +93,11 @@ Reflect the behaviour of a system durting its excution, e.g : throughput, robust
 - Just Enough Software Architecture
 - 
 
+== 12 Factor 
+
+https://12factor.net/
+
+
 == Useful Links
 - https://en.wikipedia.org/wiki/Non-functional_requirement
 - https://www.tutorialspoint.com/software_architecture_design/introduction.htm
