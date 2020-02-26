@@ -1,0 +1,13 @@
+= SED
+
+|===
+|-e | exrpression ? is it needed ?
+|-i | esit inplace (realtime)
+|s/ | define the seperator. Can be anything, such as s# or s%
+|===
+----
+sed -i -e 's/original/replacement/g' filename.ext;
+
+
+
+----
