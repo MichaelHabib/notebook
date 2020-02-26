@@ -13,7 +13,7 @@ find . -name  "*.java"
 # find all files modified within the last 30 days & over 50 MB
 find /home/ -type f -mtime -30 -size 50M
 
-sudo find /home/ -type f -mtime -300 -size 5M -exec ls -lshog --time-style="+%Y-%m-%d-%H:%M:%S" {} \; | sort -k 4 > _disk-report-$(date +'%Y-%m-%d-%H-%M-%S').txt;
+sudo find /home/ -type f -mtime -300 -size 5M -exec ls -lshog --time-style="+%Y-%m-%d-%H:%M:%S" {} \; | sort -k 1 > _disk-report-$(date +'%Y-%m-%d-%H-%M-%S').txt;
 
 
 find  "${PWD}" -type f -exec echo "message" \; 
