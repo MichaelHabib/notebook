@@ -1,0 +1,15 @@
+= ls command guide
+
+== Options
+- o = remove user column
+- g = remove group column
+- h = human readable file size
+- 
+---
+# list human readable
+ls -lh
+
+# List file with custom date format, hide user name & user group 
+ls -lshog --time-style="+%Y-%m-%d-%H:%M:%S"
+
+---
