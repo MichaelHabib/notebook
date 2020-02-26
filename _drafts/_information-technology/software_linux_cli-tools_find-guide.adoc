@@ -1,0 +1,20 @@
+= Find Command Guide
+
+== Explanations
+
+The format is as follows 
+
+`find FolderName -OptionName OptionValue`
+
+== Code Samples
+----
+find . -name  "*.java"  
+
+# find all files modified within the last 10 days & over 50 MB
+find /home/ -type f -ctime 240 -size 50M
+
+find  "${PWD}" -type f -exec echo "message" \; 
+find "${PWD}" -maxdepth 1 -type d -exec echo "\"wpackagist-plugin/{}\" : \"*\" , " >> "_fileList.txt" \;
+
+----
+
