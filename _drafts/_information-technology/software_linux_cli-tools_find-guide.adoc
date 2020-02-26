@@ -10,8 +10,11 @@ The format is as follows
 ----
 find . -name  "*.java"  
 
-# find all files modified within the last 10 days & over 50 MB
-find /home/ -type f -ctime 240 -size 50M
+# find all files modified within the last 30 days & over 50 MB
+find /home/ -type f -mtime -30 -size 50M
+
+sudo find /home/ -type f -mtime -300 -size 5M -exec ls -lshog --time-style="+%Y-%m-%d-%H:%M:%S" {} \; | sort -k 4 > _disk-report-$(date +'%Y-%m-%d-%H-%M-%S').txt;
+
 
 find  "${PWD}" -type f -exec echo "message" \; 
 find "${PWD}" -maxdepth 1 -type d -exec echo "\"wpackagist-plugin/{}\" : \"*\" , " >> "_fileList.txt" \;
