@@ -131,6 +131,33 @@ WordPress (WordPress.org) is a content management system (CMS) written in PHP ..
 
 == How to Install & Configure WP ?
 
+=== Example Config in `wp-config.php`
+
+Note: Config bleow are used in test environment, it's highlight recommended you change them as needed for live websites.
+[source,php]
+----
+// Load test environment config based on requested domain, else load SAFE live site config
+if (
+	key_exists('HTTP_HOST', $_SERVER) &&
+   (($_SERVER['HTTP_HOST'] == "testing-domain.example.com.com") ||
+	!($_SERVER['SERVER_ADDR']))
+) {
+define('WP_SITEURL', 'https://example.com');
+define('WP_HOME', WP_SITEURL);
+define('WP_DEBUG', true); 
+define('WP_DEBUG_DISPLAY', true);
+define('WP_DEBUG_LOG', true);
+define('WP_DISABLE_FATAL_ERROR_HANDLER', false);
+define('SCRIPT_DEBUG', true);
+define('DISALLOW_FILE_EDIT', false);
+define('DISALLOW_FILE_MODS', false);
+ini_set('display_errors', 1);
+
+}else{
+// Load SAFE live site config .
+}
+----
+
 === Setting File permission
 The recommedned file permissions are  `755` for folders & `644` for files. 
 
