@@ -15,7 +15,14 @@ find . -maxdepth 1 -type f \
 	-regextype 'egrep' -iregex '\./.+\.(?:jpg|JPG|jpeg|JPEG|png|PNG)$' \
 	-exec convert "{}" -resize "${ImagesWidth}x" -quality 80% -set filename:f '%[f]-%[t]-%[w].%[e]' "${ImagesFolder}/%[filename:f]" \;
 	
-	
+----
+
+== Failed attempts
+
+.Trying to use created date in filname, failed !.
+[source,bash]
+----
+
 for f in *.JPG; do
 	mkdir -p ./_temp;
     	printf "Resizing $f\n started ...";
@@ -23,13 +30,6 @@ for f in *.JPG; do
         printf "Resizing $f\n complete.";
 done
 
-
-
-----
-
-== Failed attempts
-.Trying to use created date in filname, failed !.
-----
 for f in *.JPG; do
  
         img_date=$(identify -format "%[EXIF:DateTime]" $f);
@@ -42,19 +42,26 @@ for f in *.JPG; do
 done
 
 
+find . -maxdepth 1 -name "*.jpg"  -exec convert -resize 1200x -quality 80%  -set filename:f '%[t]-%[w]x%[h].%[e]' {} temp/'%[filename:f]' \;
 
+mogrify -path . -resize 1920x1920 -format "_resized-1920x1920.jpg" -quality 80 *.jpg
+convert "*.jpg" -resize 1200x1200 -set filename:new "%t_w1200" %[filename:new].jpg
+mogrify -path ./temp -resize 1920x -set filename:f '%[t]-w%[w]h%[h].%[e]' -format "%[filename:f]" -quality 80 ./*.{jpg,png}
+
+
+find . -maxdepth 1 -type f -regextype 'egrep' -iregex '\./.+\.(?:jpg|JPG|jpeg|JPEG|png|PNG)$' \
+-exec \
+printf "Resizing ${}\n started ..." && \
+convert "{}" -resize 1200x -quality 80% -set filename:f '%[f]-%[t]-%[w]x%[h].%[e]' _temp/'%[filename:f]' &&
+printf "Resizing ${}\n complete." \
+\;
 ----
 
 .With find & echo 
 ----
        
        
-       	find . -maxdepth 1 -type f -regextype 'egrep' -iregex '\./.+\.(?:jpg|JPG|jpeg|JPEG|png|PNG)$' \
-        -exec \
-	printf "Resizing ${}\n started ..." && \
-	convert "{}" -resize 1200x -quality 80% -set filename:f '%[f]-%[t]-%[w]x%[h].%[e]' _temp/'%[filename:f]' &&
-        printf "Resizing ${}\n complete." \
-	\;
+
 
 ----
 
@@ -64,15 +71,4 @@ http://www.imagemagick.org/script/command-line-processing.php
 - Sample ImageMagic wrapper on github:
 ** https://github.com/streamio/streamio-magick
 ** https://github.com/superevil6/imageMagickShrink
-
-
-
-
-== Temp & Sample Code
-```
-find . -maxdepth 1 -name "*.jpg"  -exec convert -resize 1200x -quality 80%  -set filename:f '%[t]-%[w]x%[h].%[e]' {} temp/'%[filename:f]' \;
-
-mogrify -path . -resize 1920x1920 -format "_resized-1920x1920.jpg" -quality 80 *.jpg
-convert "*.jpg" -resize 1200x1200 -set filename:new "%t_w1200" %[filename:new].jpg
-mogrify -path ./temp -resize 1920x -set filename:f '%[t]-w%[w]h%[h].%[e]' -format "%[filename:f]" -quality 80 ./*.{jpg,png}
-```
+ 
