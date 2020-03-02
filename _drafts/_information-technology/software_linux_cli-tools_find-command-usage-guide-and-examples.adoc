@@ -1,4 +1,4 @@
-= Find Command Guide
+= Find Command Usage Guide & Examples
 
 == Explanations
 
