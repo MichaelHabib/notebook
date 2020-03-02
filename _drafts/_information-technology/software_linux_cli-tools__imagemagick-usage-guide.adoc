@@ -1,5 +1,5 @@
 	
-= Cheatsheet : imagemagick
+= Imagemagick Usage Guide
 Sample code & useful links related to imagemagick
 
 
