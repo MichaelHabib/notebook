@@ -1,0 +1,24 @@
+= Jira Guide
+
+== How to create a custom ticket filter URL
+- Base URL : https://jimsgroup.atlassian.net/issues?&jql={{QueryHere}}
+- Check code examples below to create your own query .
+
+== Code Examples
+
+---
+assignee=currentUser()
+(assignee is EMPTY OR assignee != currentUser())
+resolution not in("Unresolved") 
+sprint in openSprints ()
+sprint in("SprintName")
+labels = "label1" AND labels = "label2"
+key in (WEB-173,IT-70888)
+text ~"stringA" AND text ~"stringB"
+watcher = currentUser()
+ORDER BY updatedDate DESC
+ORDER BY priority DESC, updatedDate DESC 
+((project in (WEB) AND sprint in openSprints ()) or (project in (IT))) 
+
+---
+
