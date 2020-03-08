@@ -180,10 +180,18 @@ https://github.blog/2016-02-01-working-with-submodules/
 
 == Generic .gitignore template
 ----
-# Project Ignore Rules
-**/node_modules_local
+# gitignore Template by MichaelHabib
+# www.michaelhabib.name
 
-# IDE & Dev Tools File to ignore
+## Project Specific Rules
+##################################################
+**/node_modules_local
+**/vendor_local
+
+
+## IDE & Dev Tools File to ignore
+##################################################
+
 **/nbproject
 **/*.sublime-*
 **/.project
@@ -191,28 +199,37 @@ https://github.blog/2016-02-01-working-with-submodules/
 **/.vagrant*
 **/.idea/
 
-# PHP files and folders
+## PHP files and folders
+##################################################
+
 **/vendor
 
-# Common developer tools
+## Common developer tools
+##################################################
+
 **/composer.phar
 **/php-cs-fixer.phar
 **/scrutinizer.phar
 
-# Node & Front-end Dev
+## Node & Front-end Dev##################################################
+
+##################################################
+
 **/.sass-cache
 **/bower_components
 **/node_modules
 **/npm-debug.log
 
-# File-system cruft and temporary files
+## File-system cruft and temporary files
+##################################################
+
 **/.*.swp
 **/.buildpath
 **/.swp
 **/__*
 
 
-# OS generated files #
+## OS generated files #
 ##################################################
 **/.DS_Store
 **/.DS_Store?
@@ -222,7 +239,7 @@ https://github.blog/2016-02-01-working-with-submodules/
 **/ehthumbs.db
 **/Thumbs.db
 
-# Packages #
+## Packages #
 ##################################################
 # it's better to unpack these files and commit the raw source
 # git has its own built in compression methods
@@ -237,9 +254,9 @@ https://github.blog/2016-02-01-working-with-submodules/
 
 
 
-# Credit & Sources
-## https://gist.github.com/octocat/9257657
-## https://stackoverflow.com/questions/18393498/gitignore-all-the-ds-store-files-in-every-folder-and-subfolder
+## Credit & Sources
+## - https://gist.github.com/octocat/9257657
+## -https://stackoverflow.com/questions/18393498/gitignore-all-the-ds-store-files-in-every-folder-and-subfolder
 
 
 ----
