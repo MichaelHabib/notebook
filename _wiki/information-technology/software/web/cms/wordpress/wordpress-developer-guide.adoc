@@ -243,6 +243,7 @@ wp plugin install \
 woocommerce \
 cc-child-pages \
 contact-form-7 \
+flamingo \
 easy-wp-smtp \
 post-smtp \
 simple-image-sizes \
@@ -253,6 +254,9 @@ all-in-one-wp-security-and-firewall \
 user-role-editor \
 duplicate-post \
 wp-force-login \
+hummingbird-performance \
+defender-security \
+smartcrawl-seo \
 query-monitor
 ----
 
