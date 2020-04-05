@@ -1,0 +1,112 @@
+= Project Management Notes
+
+== To Read
+- https://www.sinnaps.com/en/project-management-blog/types-of-project
+
+
+== Notes
+
+- Treat everything as project. Every task is part of project ?
+** In this case, is there a difference between a project and a process ?
+
+
+
+- Create an index of all projects . Currently using AirTable to create a PM system that contains this list.
+- Projects should contains information about every project stage .
+- Project should list all dependencies if applicable .
+- Project type & objectives change based on perspective !
+
+
+== Project Cycle
+
+- Initiation
+- Planning
+- Execution
+- Monitoring & Control
+- Closure
+
+
+== What's Included in each Project Cycle ?
+
+
+=== Initiation: Set goal, resources & contract .
+
+=== Planning: Gather requirements, create all plans, list & allocate resources, draw diagrams, set purpose, vision, etc .
+
+=== Execution: Implement the plans !
+
+=== Monitoring: Track project progress & ensure deliverables are being worked on.
+- Could this include accounting, billing, as described in service project -> Account & Bill ?
+
+=== Closure: This can include initiating a spinoff project, analysing the work & extracting artifacts; delivering the project; project handover .
+- Could this include calculating margins/profits as described in professional service project -> Analyse
+
+
+
+== Project Types
+
+=== Project Types : By Purpose ?
+** Manufacturing Projects
+** Management Projects
+** Construction Projects
+** Research Projects
+** Software Development Project ?
+** Educational ?
+** Professional Service ?
+** Deisgn & Branding ?
+** Design of Plans
+** Equipment / System Installation
+** New Product Developments
+** Product Improvement ?
+
+=== 4 Project Types : based on available info
+|===
+| Type | Know How ? | Know What ?
+| Fog | No | No
+| Movie | Yes | No
+| Quest | No | Yes
+| Painting By Numbers | Yes | Yes
+|===
+
+== Software Project Requirements
+
+- Functional Requirements
+
+- Non-functional Requirements / Quality Attributes
+
+
+== PM Documents
+
+- Information Plan
+- Time Management Plan
+- HR Plan
+- Work Management Plan
+- Risk Management Plan
+- Cost Management Plan
+-
+
+== PM Standards
+- PMBok
+- PRINCE2
+- CCPM
+- Agile
+- Iso 21500
+
+== Project Validation
+
+The process of confirming
+- Stability
+- Risk
+- Type of work (blue vs white collar)
+- Importance of time
+- Importance of cost
+- Is it a series of projects or a one-off ?
+- Form of communications with stakeholders . Could be different for each group of stakeholders
+- Level of details in the plan .
+- Other variables : size, duration, sector, geography, staff number, cost, urgency, complexity, organisational design .
+
+
+
+== Quotes
+
+- "One of the reasons behind this massive shift is that projects are the best, and the only model, that can exploit creativity and innovation on one side, as well as structure and discipline on the other" https://www.cio.com/article/3227006/is-everything-becoming-a-project.html[source]
