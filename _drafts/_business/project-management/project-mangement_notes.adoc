@@ -16,8 +16,13 @@
 - Project should list all dependencies if applicable .
 - Project type & objectives change based on perspective !
 
+== Vocabulary 
 
-== Project Cycle
+- Project Phase : One of the key 4-5 project phases such as initiation, planning , etc ..
+- Project Stage : A collection of milestones, when completed, the project warents a re-assessment of next steps & deliverables .
+- Project Milestone : is a deliverable in the excution phase of a project.  
+
+== Project Cycles (Option A )
 
 - Initiation
 - Planning
@@ -26,20 +31,38 @@
 - Closure
 
 
-== What's Included in each Project Cycle ?
+=== What's Included in each Project Cycle ?
 
 
-=== Initiation: Set goal, resources & contract .
+==== Initiation: Set goal, resources & contract .
 
-=== Planning: Gather requirements, create all plans, list & allocate resources, draw diagrams, set purpose, vision, etc .
+==== Planning: Gather requirements, create all plans, list & allocate resources, draw diagrams, set purpose, vision, etc .
 
-=== Execution: Implement the plans !
+==== Execution: Implement the plans !
 
-=== Monitoring: Track project progress & ensure deliverables are being worked on.
+==== Monitoring: Track project progress & ensure deliverables are being worked on.
 - Could this include accounting, billing, as described in service project -> Account & Bill ?
 
-=== Closure: This can include initiating a spinoff project, analysing the work & extracting artifacts; delivering the project; project handover .
+==== Closure: This can include initiating a spinoff project, analysing the work & extracting artifacts; delivering the project; project handover .
 - Could this include calculating margins/profits as described in professional service project -> Analyse
+
+
+== Project Types & Cycles (Option B)
+
+source : https://www.mavenlink.com/resources/what-is-the-professional-services-project-life-cycle
+
+- Standard Project Cycle 
+- Service Project Cycle
+
+=== Standard Project Cycle 
+
+- Initiation / Conceptualization Phase : Is the starting point of any project or idea. There must be a need for the project or service . At this phase, we must be define the project goals and confirm the availability of resources to complete and maintain the project.  
+
+-  Planning Phase: Determine resource availability, create a budget and begin allowcating tasks & resources .
+
+
+=== Service Project Cycle
+
 
 
 
