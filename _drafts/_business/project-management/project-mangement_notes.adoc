@@ -57,8 +57,9 @@ source : https://www.mavenlink.com/resources/what-is-the-professional-services-p
 === Standard Project Cycle 
 
 - Initiation / Conceptualization Phase : Is the starting point of any project or idea. There must be a need for the project or service . At this phase, we must be define the project goals and confirm the availability of resources to complete and maintain the project.  
-
 -  Planning Phase: Determine resource availability, create a budget and begin allowcating tasks & resources .
+- Execution Phase : This is when the work is done; resources, budgets and time are tracked; resources planning can be optimized and major roadblocks are identified and dealt with .
+- Termination / Closure Phase : Confirm project completion criteria are met, generate closure report; collect project artifacts; and plan any spinogg / post-mortem projects .
 
 
 === Service Project Cycle
