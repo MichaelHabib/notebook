@@ -7,12 +7,16 @@ Sample code & useful links related to imagemagick
 
 [source,bash]
 ----
-ResizedImageWidth=2000;
+# Resize Images In This Folder
+# Resource : https://github.com/MichaelHabib/notebook/blob/master/_drafts/_information-technology/software_linux_cli-tools__imagemagick-usage-guide-and-examples.adoc
+# Resource http://www.imagemagick.org/script/command-line-processing.php#geometry
+function riitf(){
+ResizedImageGeometryOptions=2000x;
 ResizedImageQuality="90%";
-ResizedImageFolder="_resized/${ResizedImageWidth}";
+ResizedImageFolder="_resized/${ResizedImageGeometryOptions}";
 
 echo "- Starting 'Resize Images In This Folder'";
-echo -e "|- Resized Image Width = ${ResizedImageWidth}";
+echo -e "|- Resized Image Geometry Options = ${ResizedImageGeometryOptions}";
 echo -e "|- Resized Image Quality = ${ResizedImageQuality}";
 echo -e "|- Resized Image Folder = ${ResizedImageFolder}";
 echo "|- Resizing the following images :";
@@ -22,7 +26,11 @@ mkdir -p $ResizedImageFolder;
 find . -maxdepth 1 -type f \
 	-regextype 'egrep' -iregex '\./.+\.(?:jpg|JPG|jpeg|JPEG|png|PNG)$' \
 	-exec echo " |- {} " \; \
-	-exec convert "{}" -resize "${ResizedImageWidth}x" -quality ${ResizedImageQuality} -set filename:f '%[f]-%[t]-w%[w].%[e]' "${ResizedImageFolder}/%[filename:f]" \;
+	-exec convert "{}" -resize "${ResizedImageGeometryOptions}" -quality ${ResizedImageQuality} -set filename:f '%[f]-%[t]-w%[w].%[e]' "${ResizedImageFolder}/%[filename:f]" \;
+
+
+
+}
 
 
 	
