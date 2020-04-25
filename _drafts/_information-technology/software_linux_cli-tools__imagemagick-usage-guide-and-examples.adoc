@@ -7,6 +7,7 @@ Sample code & useful links related to imagemagick
 
 [source,bash]
 ----
+
 # Resize Images In This Folder
 # Resource : https://github.com/MichaelHabib/notebook/blob/master/_drafts/_information-technology/software_linux_cli-tools__imagemagick-usage-guide-and-examples.adoc
 # Resource : http://www.imagemagick.org/script/command-line-processing.php#geometry
@@ -14,11 +15,12 @@ Sample code & useful links related to imagemagick
 function riitf(){
 
 
-local ResizedImageGeometryOptions=2000x;
+local ImageFindingRegex='\./.+\.(?:jpg|JPG|jpeg|JPEG|png|PNG)$';
+
 local ResizedImageQuality="90%";
 local ResizedImageIsCropped=0
 
-while getopts ":g:c:q:" opt; do
+while getopts "g:q:c" opt; do
   case $opt in
     g) local ResizedImageGeometryOptions="$OPTARG"
     ;;
@@ -34,9 +36,15 @@ echo
 
 local ResizedImageFolder="_resized/${ResizedImageGeometryOptions}";
 
+if [ -v "$ResizedImageGeometryOptions"]
+then
+local ResizedImageGeometryOptions=2000x;
+fi
+
 echo "- Starting 'Resize Images In This Folder'";
 echo -e "|- Resized Image Geometry Options = ${ResizedImageGeometryOptions}";
 echo -e "|- Resized Image Quality = ${ResizedImageQuality}";
+echo -e "|- Resized Image Is Cropped = ${ResizedImageIsCropped}";
 echo -e "|- Resized Image Folder = ${ResizedImageFolder}";
 echo "|- Resizing the following images :";
 
@@ -44,16 +52,29 @@ echo "|- Resizing the following images :";
 mkdir -p $ResizedImageFolder;
 
 
-find . -maxdepth 1 -type f \
-	-regextype 'egrep' -iregex '\./.+\.(?:jpg|JPG|jpeg|JPEG|png|PNG)$' \
-	-exec echo " |- {} " \; \
-	-exec convert "{}" -resize "${ResizedImageGeometryOptions}" -quality ${ResizedImageQuality} -set filename:f \'%[f]-%[t]-%[w]x%[h].%[e]\' "${ResizedImageFolder}/%[filename:f]" \;
+if [ "$ResizedImageIsCropped"==0 ]
+then
+
+	find . -maxdepth 1 -type f \
+		-regextype 'egrep' -iregex ${ImageFindingRegex} \
+		-exec echo " |- {} " \; \
+		-exec convert "{}" -resize "${ResizedImageGeometryOptions}" -quality ${ResizedImageQuality} \
+			-set filename:f \'%[f]-%[t]-%[w]x%[h].%[e]\' "${ResizedImageFolder}/%[filename:f]" \;
+else
+
+	find . -maxdepth 1 -type f \
+			-regextype 'egrep' -iregex ${ImageFindingRegex} \
+			-exec echo " |- {} " \; \
+			-exec convert "{}" -crop "${ResizedImageGeometryOptions}" -quality ${ResizedImageQuality} \
+				-set filename:f \'%[f]-%[t]-%[w]x%[h].%[e]\' "${ResizedImageFolder}/%[filename:f]" \;
+fi
 
 
+echo " ... executing 'bash' as a workaround for function variables not resetting after function execution !!!";
+
+bash
 
 }
-
-
 	
 ----
 
