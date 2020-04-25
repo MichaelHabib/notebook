@@ -13,7 +13,8 @@ ImagesFolder="_resized/${ImagesWidth}";
 mkdir -p $ImagesFolder;
 find . -maxdepth 1 -type f \
 	-regextype 'egrep' -iregex '\./.+\.(?:jpg|JPG|jpeg|JPEG|png|PNG)$' \
-	-exec convert "{}" -resize "${ImagesWidth}x" -quality 80% -set filename:f '%[f]-%[t]-%[w].%[e]' "${ImagesFolder}/%[filename:f]" \;
+	-exec echo "... found {} , now resizing ." \; \
+	-exec convert "{}" -resize "${ImagesWidth}x" -quality 80% -set filename:f '%[f]-%[t]-w%[w].%[e]' "${ImagesFolder}/%[filename:f]" \;
 	
 ----
 
