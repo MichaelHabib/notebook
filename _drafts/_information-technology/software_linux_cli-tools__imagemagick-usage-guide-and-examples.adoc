@@ -7,14 +7,24 @@ Sample code & useful links related to imagemagick
 
 [source,bash]
 ----
+ResizedImageWidth=2000;
+ResizedImageQuality="90%";
+ResizedImageFolder="_resized/${ResizedImageWidth}";
 
-ImagesWidth=2000; 
-ImagesFolder="_resized/${ImagesWidth}"; 
-mkdir -p $ImagesFolder;
+echo "- Starting 'Resize Images In This Folder'";
+echo -e "|- Resized Image Width = ${ResizedImageQuality}";
+echo -e "|- Resized Image Quality = ${ResizedImageWidth}";
+echo -e "|- Resized Image Folder = ${ResizedImageFolder}";
+echo "|- Resizing the following images :";
+
+
+mkdir -p $ResizedImageFolder;
 find . -maxdepth 1 -type f \
 	-regextype 'egrep' -iregex '\./.+\.(?:jpg|JPG|jpeg|JPEG|png|PNG)$' \
-	-exec echo "... found {} , now resizing ." \; \
-	-exec convert "{}" -resize "${ImagesWidth}x" -quality 80% -set filename:f '%[f]-%[t]-w%[w].%[e]' "${ImagesFolder}/%[filename:f]" \;
+	-exec echo " |- {} " \; \
+	-exec convert "{}" -resize "${ResizedImageWidth}x" -quality ${ResizedImageQuality} -set filename:f '%[f]-%[t]-w%[w].%[e]' "${ResizedImageFolder}/%[filename:f]" \;
+
+
 	
 ----
 
