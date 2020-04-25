@@ -9,11 +9,30 @@ Sample code & useful links related to imagemagick
 ----
 # Resize Images In This Folder
 # Resource : https://github.com/MichaelHabib/notebook/blob/master/_drafts/_information-technology/software_linux_cli-tools__imagemagick-usage-guide-and-examples.adoc
-# Resource http://www.imagemagick.org/script/command-line-processing.php#geometry
+# Resource : http://www.imagemagick.org/script/command-line-processing.php#geometry
+# Resource : https://unix.stackexchange.com/questions/129391/passing-named-arguments-to-shell-scripts
 function riitf(){
-ResizedImageGeometryOptions=2000x;
-ResizedImageQuality="90%";
-ResizedImageFolder="_resized/${ResizedImageGeometryOptions}";
+
+
+local ResizedImageGeometryOptions=2000x;
+local ResizedImageQuality="90%";
+local ResizedImageIsCropped=0
+
+while getopts ":g:c:q:" opt; do
+  case $opt in
+    g) local ResizedImageGeometryOptions="$OPTARG"
+    ;;
+    c) local ResizedImageIsCropped=1
+    ;;
+    q) local ResizedImageQuality="$OPTARG"
+    ;;
+    \?) echo "Invalid option -$OPTARG" >&2
+    ;;
+  esac
+done
+echo 
+
+local ResizedImageFolder="_resized/${ResizedImageGeometryOptions}";
 
 echo "- Starting 'Resize Images In This Folder'";
 echo -e "|- Resized Image Geometry Options = ${ResizedImageGeometryOptions}";
@@ -23,10 +42,12 @@ echo "|- Resizing the following images :";
 
 
 mkdir -p $ResizedImageFolder;
+
+
 find . -maxdepth 1 -type f \
 	-regextype 'egrep' -iregex '\./.+\.(?:jpg|JPG|jpeg|JPEG|png|PNG)$' \
 	-exec echo " |- {} " \; \
-	-exec convert "{}" -resize "${ResizedImageGeometryOptions}" -quality ${ResizedImageQuality} -set filename:f '%[f]-%[t]-w%[w].%[e]' "${ResizedImageFolder}/%[filename:f]" \;
+	-exec convert "{}" -resize "${ResizedImageGeometryOptions}" -quality ${ResizedImageQuality} -set filename:f \'%[f]-%[t]-%[w]x%[h].%[e]\' "${ResizedImageFolder}/%[filename:f]" \;
 
 
 
