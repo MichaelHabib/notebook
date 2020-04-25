@@ -12,8 +12,8 @@ ResizedImageQuality="90%";
 ResizedImageFolder="_resized/${ResizedImageWidth}";
 
 echo "- Starting 'Resize Images In This Folder'";
-echo -e "|- Resized Image Width = ${ResizedImageQuality}";
-echo -e "|- Resized Image Quality = ${ResizedImageWidth}";
+echo -e "|- Resized Image Width = ${ResizedImageWidth}";
+echo -e "|- Resized Image Quality = ${ResizedImageQuality}";
 echo -e "|- Resized Image Folder = ${ResizedImageFolder}";
 echo "|- Resizing the following images :";
 
