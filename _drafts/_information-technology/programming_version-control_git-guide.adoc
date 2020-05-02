@@ -10,7 +10,7 @@ git commis -m "<message>"
 git commit --amend
 git diff
 ----
-== Impotant Configurations
+== Important Configurations
 ----
 git config --global core.excludesfile ~/.config/git/.gitignore
 
