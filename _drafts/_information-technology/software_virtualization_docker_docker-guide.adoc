@@ -1,0 +1,25 @@
+= Docker Guide
+
+
+https://docs.docker.com/
+https://docs.docker.com/engine/reference/run/
+https://docker-curriculum.com/
+
+== Concepts
+
+- An image is a blueprint to be used for creating container instances. Images are NOT ran directly, they're only used for creating containers.
+- A container is an instance of an image. Removing a container removes the instance only, but keeps the image available for future creation of new containers.
+
+
+== Code Examples
+
+|===
+a|Code a|Description
+
+| `docker run [options] <image-name>` |
+| `docker ps -a --format "table {{.ID}}\t{{.Image}}\t{{.Size}}\t{{.Status}}\t{{.CreatedAt}}` |List all available containers with a custom format.
+| `docker rm $(docker ps -a -q -f status=exited)` | Delete all existed containers .
+| `docker run --rm -it --name "new hello world container" hello-world:$version` | `--rm` removed the container when existed, `-it` attaches interactive tty into the container , the rest is self-explanatory.
+|===
+
+

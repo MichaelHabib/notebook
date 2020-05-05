@@ -1,0 +1,209 @@
+= Git Guide
+
+== Commonly Used Commands
+----
+git init <dir>
+git clone <repoURL>
+git config user.name <name>
+git add <file or dir>
+git commit -m "<message>"
+git commit --amend
+git tag -a TagName -m "TagMessage"
+----
+
+
+== Important Configurations
+----
+Use a global `.gitignore` file:
+`git config --global core.excludesfile ~/.config/git/.gitignore`
+
+Set Git User details:
+`git config --global user.name "Michael Habib"`
+`git config --global user.email 1233256+MichaelHabib@users.noreply.github.com`
+
+`git config --global push.default simple`
+
+----
+== Command Samples
+
+`git status && git add -A && git commit -a -m "updated ..." && git push _origin _master`
+
+`git pull origin master --allow-unrelated-histories` Pull remote with unrelated histories into a local repo. (follow with `git push origin master -f` to force upload to remote.
+
+=== Basic Snapshotting
+
+[cols="a,a",separator="~"]
+|===
+~ Command ~ Description
+
+~ `git status` ~ Check status
+~ `git add [file-name.txt]` ~ Add a file to the staging area
+~ `git add -A` ~ Add all new and changed files to the staging area
+~ `git commit -m "[commit message]"` ~ Commit changes
+~ `git rm -r [file-name.txt]` ~ Remove a file (or folder)
+~ `git reset [file-name]` ~ Remove all files or specified file.
+~ `git rm -r --cached fileOrFolder` ~ Untrack file or folder.
+|===
+
+
+=== Branching & Merging
+
+[cols="a,a",separator="~"]
+|===
+~ Command ~ Description
+
+~ `git branch` ~ List branches (the asterisk denotes the current branch)
+~ `git branch -a` ~ List all branches (local and remote)
+~ `git branch [branch name]` ~ Create a new branch
+~ `git branch -d [branch name]` ~ Delete a branch
+~ `git push origin --delete [branchName]` ~ Delete a remote branch
+~ `git checkout -b [branch name]` ~ Create a new branch and switch to it
+~ `git checkout -b [branch name] origin/[branch name]` ~ Clone a remote branch from `origin` and switch to it
+~ `git checkout [branch name]` ~ Switch to a branch
+~ `git checkout -` ~ Switch to the branch last checked out
+~ `git checkout -- [file-name.txt]` ~ Discard changes to a file
+~ `git merge [branch name]` ~ Merge a branch into the active branch
+~ `git merge [source branch] [target branch]` ~ Merge a branch into a target branch
+~ `git stash` ~ Stash the changes in a dirty working directory away
+~ `git stash clear` ~ Remove all the stashed states
+|===
+
+
+=== Sharing & Updating Projects
+
+[cols="a,a",separator="~"]
+|===
+~ Command ~ Description 
+
+~ `git push origin [branch name]` ~ Push a branch to your remote repository 
+~ `git push -u origin [branch name]` ~ Push changes to remote repository (and remember the branch) 
+~ `git push` ~ Push changes to remote repository (remembered branch) 
+~ `git push origin --delete [branch name]` ~ Delete a remote branch 
+~ `git pull` ~ Update local repository to the newest commit 
+~ `git pull origin [branch name]` ~ Pull changes from remote repository 
+~ `git remote add origin ssh://git@github.com/[username]/[repository-name].git` ~ Add a remote repository 
+~ `git remote set-url origin ssh://git@github.com/[username]/[repository-name].git` ~ Set a repository's origin branch to SSH 
+|===
+
+=== Tags & Releases
+
+[cols="a,a",separator="~"]
+|===
+~ Command ~ Description 
+~ `git tag -a TagName -m "TagMessage"` ~ add tag locally only
+~ `git push --tags` ~push all tags
+~ `git push origin <tag_name>` ~ push a specific tag
+~ `git tag -d TagName` ~ Delete *local* tag
+~ `git push --delete TagName` ~ Delete *REMOTE* tag
+|===
+
+
+=== Submudules
+sample `.gitmodules` files
+----
+
+
+----
+
+
+==== More about Git Submodules
+- https://github.blog/2016-02-01-working-with-submodules/
+
+
+=== Inspection & Comparison
+
+[cols="a,a",separator="~"]
+|===
+~ Command ~ Description 
+
+~ `git log` ~ View changes 
+~ `git log --summary` ~ View changes (detailed) 
+~ `git diff [source branch] [target branch}` ~ Preview changes before merging 
+|===
+
+== Global `.gitignore` Template
+----
+# gitignore Template by MichaelHabib
+# www.michaelhabib.name
+
+## Project Specific Rules
+##################################################
+**/node_modules_local
+**/vendor_local
+
+
+## IDE & Dev Tools File to ignore
+##################################################
+
+**/nbproject
+**/*.sublime-*
+**/.project
+**/Vagrantfile
+**/.vagrant*
+**/.idea/
+
+## PHP files and folders
+##################################################
+
+**/vendor
+
+## Common developer tools
+##################################################
+
+**/composer.phar
+**/php-cs-fixer.phar
+**/scrutinizer.phar
+
+## Node & Front-end Dev
+##################################################
+
+**/.sass-cache
+**/bower_components
+**/node_modules
+**/npm-debug.log
+
+## File-system cruft and temporary files
+##################################################
+
+**/.*.swp
+**/.buildpath
+**/.swp
+**/__*
+
+
+## OS generated files #
+##################################################
+**/.DS_Store
+**/.DS_Store?
+**/._*
+**/.Spotlight-V100
+**/.Trashes
+**/ehthumbs.db
+**/Thumbs.db
+
+## Packages #
+##################################################
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+**/*.7z
+**/*.dmg
+**/*.gz
+**/*.iso
+**/*.jar
+**/*.rar
+**/*.tar
+**/*.zip
+
+
+## Credit & Sources
+## - https://gist.github.com/octocat/9257657
+## - https://stackoverflow.com/questions/18393498/gitignore-all-the-ds-store-files-in-every-folder-and-subfolder
+
+----
+
+
+== Useful Links & Sources
+- https://itnext.io/become-a-git-pro-in-just-one-blog-a-thorough-guide-to-git-architecture-and-command-line-interface-93fbe9bdb395
+- Dynamic git message : https://stackoverflow.com/questions/35010953/how-to-automatically-generate-commit-message
+- https://github.com/joshnh/Git-Commands/blob/master/README.md
+
