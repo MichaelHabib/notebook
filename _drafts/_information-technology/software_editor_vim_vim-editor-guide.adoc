@@ -8,30 +8,29 @@
 a|Code |Description
 | `!bashCommand params` | use `!` followed by a coomand to temporarily switch to the CLI & excute said command.
 |`mkdir -p %:h` | Auto generate parent folders of current file.
-
+|===
 
 == Installation & Setup
 
-== Recommended Addons:
+== Vim Plugin Manager : Vim-Plug
 
-Add to `~/.vimrc`
+https://github.com/junegunn/vim-plug
+
+== Recommended Vim Plugins:
+Vim-Plug plugin installation code below can be added to `~/.vimrc`
 ----
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'tpope/vim-eunuch'
-Plugin 'scrooloose/nerdtree'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'mattn/emmet-vim'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'tpope/vim-eunuch'
+Plug 'scrooloose/nerdtree'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'tpope/vim-fugitive'
+Plug 'mattn/emmet-vim'
 ----
-== Config Samples
 
-
-== Shortcust
-
-=== Default Vim
-
+== Plugin Usage Instructions
 === NERD Tree
 
 |====
@@ -40,8 +39,7 @@ Plugin 'mattn/emmet-vim'
 | kbd:[C+R] |redo
 |====
 
-== Remapped Keys and Usage
- 
+
 == Useful Links:
 
 .Vim Alternitaves
