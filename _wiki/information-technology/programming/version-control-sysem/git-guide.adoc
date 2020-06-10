@@ -214,6 +214,7 @@ This will remove the files but will *NOT* alter the repo history, which means th
 
 
 == Useful Links & Sources
+- Gitignore.io : https://www.toptal.com/developers/gitignore
 - https://itnext.io/become-a-git-pro-in-just-one-blog-a-thorough-guide-to-git-architecture-and-command-line-interface-93fbe9bdb395
 - Dynamic git message : https://stackoverflow.com/questions/35010953/how-to-automatically-generate-commit-message
 - https://github.com/joshnh/Git-Commands/blob/master/README.md
