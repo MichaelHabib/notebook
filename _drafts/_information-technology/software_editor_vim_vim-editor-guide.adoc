@@ -2,12 +2,27 @@
 :experimental:
 :iconfont:
 
-== Examples
+== Keymapping & Modes
 
+=== Command Mode ?
 |===
 a|Code |Description
 | `!bashCommand params` | use `!` followed by a coomand to temporarily switch to the CLI & excute said command.
 |`mkdir -p %:h` | Auto generate parent folders of current file.
+| `i` | switch to insert / edit mode. Press `ESC` to return to visual selection mode.
+|===
+
+=== Visual Selection Mode
+|===
+a|Code |Description
+|===
+=== Editing Mode
+|===
+a|Code |Description
+|===
+=== Selection Mode
+|===
+a|Code |Description
 |===
 
 == Installation & Setup
