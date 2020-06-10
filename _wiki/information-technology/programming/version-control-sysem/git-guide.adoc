@@ -98,13 +98,12 @@ Set Git User details:
 |===
 
 
-=== Submudules
+=== Git Submudules
 sample `.gitmodules` files
 ----
 
 
 ----
-
 
 ==== More about Git Submodules
 - https://github.blog/2016-02-01-working-with-submodules/
@@ -120,6 +119,18 @@ sample `.gitmodules` files
 ~ `git log --summary` ~ View changes (detailed) 
 ~ `git diff [source branch] [target branch}` ~ Preview changes before merging 
 |===
+
+== Scinarios 
+
+=== Delete repo files 
+
+To remove any file or folder from a local or remote branch
+- run `git rm -r --cached LocalFileOrFolderName` to remove the files
+- commit then push to remote branch .
+This will remove the files but will *NOT* alter the repo history, which means the files will be accessable from previous commits & branches .
+
+
+
 
 == Global `.gitignore` Template
 ----
