@@ -120,7 +120,7 @@ sample `.gitmodules` files
 ~ `git diff [source branch] [target branch}` ~ Preview changes before merging 
 |===
 
-== Scinarios 
+== Scenarios 
 
 === Delete repo files 
 
