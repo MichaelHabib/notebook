@@ -4,34 +4,18 @@
 
 == Examples
 
-.Auto generate parent folders of current file.
-----
-mkdir -p %:h
-----
+|===
+a|Code |Description
+| `!bashCommand params` | use `!` followed by a coomand to temporarily switch to the CLI & excute said command.
+|`mkdir -p %:h` | Auto generate parent folders of current file.
+
 
 == Installation & Setup
-Install Vundle plugin manager:
-https://github.com/VundleVim/Vundle.vim
-----
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-----
-----
-set nocompatible
-filetype off             
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-"Add Pllugins Here
-
-call vundle#end() 
-filetype plugin indent on 
-----
 
 == Recommended Addons:
 
 Add to `~/.vimrc`
 ----
-
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'nathanaelkane/vim-indent-guides'
@@ -43,20 +27,7 @@ Plugin 'mattn/emmet-vim'
 ----
 == Config Samples
 
-.key mapping
-- nmap, nnoremap, nunmap          Normal mode
-- imap, inoremap, iunmap          Insert and Replace mode
-- vmap, vnoremap, vunmap          Visual and Select mode
-- xmap, xnoremap, xunmap          Visual mode
-- smap, snoremap, sunmap          Select mode
-- cmap, cnoremap, cunmap          Command-line mode
-- omap, onoremap, ounmap          Operator pending mode
 
-----
-:unmap <F8>
-:unmap! <F8>
-
-----
 == Shortcust
 
 === Default Vim
@@ -70,11 +41,7 @@ Plugin 'mattn/emmet-vim'
 |====
 
 == Remapped Keys and Usage
-|====
-|New Key | Original Ky | Usage
-
-
-|====
+ 
 == Useful Links:
 
 .Vim Alternitaves
