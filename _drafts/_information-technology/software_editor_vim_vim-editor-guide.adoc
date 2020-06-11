@@ -1,6 +1,7 @@
 = Vim Editor Guide
 :experimental:
-:iconfont:
+:icons: font
+
 
 == Keymapping & Modes
 
@@ -12,9 +13,10 @@ a|Code |Description
 | `i` | switch to insert / edit mode. Press `ESC` to return to visual selection mode.
 |===
 
-=== Visual Selection Mode
+=== Normal Mode
 |===
 a|Code |Description
+| kbd[h] kbd[l] kbd[j] kbd[k] | 
 |===
 === Editing Mode
 |===
