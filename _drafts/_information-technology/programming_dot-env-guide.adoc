@@ -1,0 +1,21 @@
+= DotEnv (.env) Guide
+
+
+== What is a DotEnv / `.env` file ?
+
+
+
+== DotEnv Libraries
+
+- PHP:
+** https://github.com/vlucas/phpdotenv
+**
+
+- JS / Node JS
+** https://www.npmjs.com/package/dotenv
+
+
+- Python
+
+- Bash
+** https://direnv.net/
