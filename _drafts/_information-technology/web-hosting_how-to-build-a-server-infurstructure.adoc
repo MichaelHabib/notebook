@@ -1,0 +1,22 @@
+= How to Build a Server infrastructure?
+
+== Terms
+- End User = whoever ends up using the server, being the client or web developer.
+
+
+== Cloud Linux OS
+https://www.cloudlinux.com/all-products/product-overview/cloudlinuxos
+
+
+== CPanel/WHM Server with Physical Redundancy
+
+=== Pros
+- Cpanel provinces
+** Easy GUI for the end user
+** East integration
+
+
+== Plesk Server with Physical Redundancy
+https://www.plesk.com/blog/various/plesk-vs-cpanel/
+
+== Load Balancer with CloudLinux OS
