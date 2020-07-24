@@ -1,0 +1,51 @@
+= JQuery Guide
+
+https://jquery.com/
+
+== Quick Start
+----
+<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+----
+
+[source,javascript]
+----
+
+$(function(){
+ $("body").on("DOMSubtreeModified","#mount_0_0",(x)=>{
+     console.log('change detected');
+     let feedItems = $("div[role=feed] > div");
+     feedItems.each((i,feedItem)=>{
+
+         let sponderedEl = $(feedItem).find("span[aria-label=Sponsored");
+         console.log(sponderedEl.length);
+         if(sponderedEl.length > 0){
+             $(feedItem).css({
+                 "border" : "2px solid #f00",
+                 "height" : "10px",
+                 "margin" : "10px 0",
+                 "overflow" : "hidden",
+                 "visability" : "none"
+        });
+         }
+     });
+
+ });
+});
+
+
+----
+
+
+.Avoid Conflict
+----
+
+var jq = $.noConflict();            
+jq(document).ready(function(){
+
+});
+
+----
+
+== Cheat Sheets
+- https://htmlcheatsheet.com/jquery/
+- 
