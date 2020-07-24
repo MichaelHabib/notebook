@@ -3,17 +3,17 @@
 Sample code & useful links related to imagemagick
 
 
-== Working code examples
+== Working Example : Resize Images In This Folder A.K.A RIITF
 
+Adding the code blow into a script or bash aliases then executing `riitf()` will resize all images in the current folder .
 [source,bash]
 ----
 
-# Resize Images In This Folder
-# Resource : https://github.com/MichaelHabib/notebook/blob/master/_drafts/_information-technology/software_linux_cli-tools__imagemagick-usage-guide-and-examples.adoc
+# Resize Images In This Folder - Simple function to resize images .
 # Resource : http://www.imagemagick.org/script/command-line-processing.php#geometry
 # Resource : https://unix.stackexchange.com/questions/129391/passing-named-arguments-to-shell-scripts
-function riitf(){
 
+function riitf(){
 
 local ImageFindingRegex='\./.+\.(?:jpg|JPG|jpeg|JPEG|png|PNG)$';
 
@@ -78,9 +78,9 @@ bash
 	
 ----
 
-== Failed attempts
+== Failed attempts for refrence.
 
-.Trying to use created date in filname, failed !.
+.Trying to use created date in filname !.
 [source,bash]
 ----
 
@@ -116,14 +116,6 @@ printf "Resizing ${}\n started ..." && \
 convert "{}" -resize 1200x -quality 80% -set filename:f '%[f]-%[t]-%[w]x%[h].%[e]' _temp/'%[filename:f]' &&
 printf "Resizing ${}\n complete." \
 \;
-----
-
-.With find & echo 
-----
-       
-       
-
-
 ----
 
 == Useful Links
