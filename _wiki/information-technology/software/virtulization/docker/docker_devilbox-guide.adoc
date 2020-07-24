@@ -1,0 +1,17 @@
+= Docker: DevilBox Guide
+
+http://devilbox.org/
+
+
+
+== Minimal DevBox Setup Notes
+
+=== LAMP Stack setup
+After completing the installation as recommended on http://devilbox.org/ 
+
+- Adjust services' image / version in the `.env` file
+- Startup essential services by running
++
+----
+docker-compose up php httpd bind mysql
+----
