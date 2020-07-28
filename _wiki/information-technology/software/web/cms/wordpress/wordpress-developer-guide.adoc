@@ -6,79 +6,21 @@
 WordPress (WordPress.org) is a content management system (CMS) written in PHP ...  https://en.wikipedia.org/wiki/WordPress[Source : Wikipidia]
 
 
-
 == Useful Links
 === General Information
 - https://wordpress.org/[Project website : Wordpress.org] 
 - https://wordpress.org/support/[Wordpress Documentation]
 - https://developer.wordpress.org/[WordPress Developer Documentation]
-- https://www.codeinwp.com/blog/best-free-wordpress-themes/ 
-- https://www.freshdesignweb.com/free-bootstrap-wordpress-themes/
-- https://premium.wpmudev.org/blog/essential-wordpress-plugins/?utm_expid=3606929-105.kKHVTz43T_CV513Vo9oSow.0&utm_referrer=https%3A%2F%2Fwww.google.com.au%2F
-
-- Michael habib's Favorited items on wordpress.org : https://profiles.wordpress.org/michaelhabib16#content-favorites
+- https://profiles.wordpress.org/michaelhabib16#content-favorites[Michael habib's Favorited items on wordpress.org]
 
 === Repos of Plugins & Frameworks (Not listed on WordPress marketplace)
 - https://github.com/jessuppi
 - http://wppb.io/
-- Sage / roots
+- https://roots.io/sage/[Sage - WordPress starter theme with a modern development workflow]
 
 
-== Recomended Plugins
-
-
-
-=== Security
-
-
-
-=== Backup & Maintenance
-
-=== SEO
-- Yoast SEO
-
-
-=== Social Media Integration
-
-- Monarch
-
-
-=== Authentication & User Mangement
-
-
-
-=== Visual Website Builders
-
-=== Forms
-- Contact Form 7
-- Bloom - Email opt-in plugin.
-
-=== Enhancements & Additional Features 
-- Sidebar manager
-- ManageWP 
-
-== Recomended Themes
-
-=== SiteOrigin Vantage (Free)
-- Works well with SiteOrigin Page Builder
-
-
-=== Sparkling (Free)
-
-- Free theme with all color & layout options included.
-
-
-=== Divi (Paid) 
-- Provided by Elegant Themes. 
-
-=== Avada (Paid) 
-- Priced at $60 with over 300,000 sales. (ToDo) Test & Provide more info.
-
-
-=== Customizr (Freemium)
-
-
-=== Sage Theme Framework
+== Recommended Themes
+=== Sage Theme Framework (Free)
 - Aimed at developers.
 - Sage is a WordPress starter theme with a modern development workflow.
 - https://github.com/roots/sage
@@ -90,36 +32,30 @@ WordPress (WordPress.org) is a content management system (CMS) written in PHP ..
 - Controller for passing data to Blade templates
 - CSS framework (optional): Bootstrap 4, Bulma, Foundation, Tachyons, Tailwind
 
-
+=== SiteOrigin Vantage (Freemium)
+- Works well with SiteOrigin Page Builder
+=== Avada (Paid)
+- Priced at $60 with over 300,000 sales. (ToDo) Test & Provide more info.
+=== Components.underscores.me theme generator by WP
+- Aimed at developers.
 === UnderStrap: Underscores starter theme + Bootstrap (Free)
 - Aimed at developers.
 - Has a sample child theme to get started quickly.
 - Aimed at developers and does not include pretty css for production sites.
 
-=== Components.underscores.me theme generator by WP
-- Aimed at developers.
 
-=== WordPress Themes & Plugins Marketplaces
+== Recommended Plugins
+- Listed in a WP CLI command below for now.
 
-==== WPMUDEV Plugins
-- Smush
-- HummingBird
-- Defender
+== Recommended Themes & Plugins Marketplaces
 
-==== https://themefuse.com (premium) 
-- Pricing:
-** $60 for single site
-** $100 for all themes and unlimited sites.
-** $250 life time access & updates.
-
-==== Elegent Themes 
-- Pricing:
-** $70 for access to all themes and updates for a year.
-** $90 Access to all themes & plugins with updates for one year
-** $250 lifetime access & updates.
-** Also checkout Elegant market Place: https://elegantmarketplace.com/
-
-- Third Party Elegant Themes Software:
+=== Elegent Themes
+- Pricing : $250 USD lifetime access & updates. Other options available.
+- Included Themes
+** Divi Theme
+- Included Plugins
+** Bloom
+- Third Party Elegant Themes:
 ** http://www.divithemeexamples.com/divi-layouts/
 ** http://www.divithemeexamples.com/divi-showcase-category/free-divi-child-themes/
 ** https://divi.space/
@@ -129,105 +65,25 @@ WordPress (WordPress.org) is a content management system (CMS) written in PHP ..
 ** https://besuperfly.com/shop/
 ** https://quiroz.co/divi-tutorials-much/divi-layout-kits/
 
-== How to Install & Configure WP ?
+=== WPMUDEV Plugins (Freemium)
+- Smush
+- HummingBird
+- Defender
 
-=== Example Config in `wp-config.php`
+=== https://themefuse.com (premium)
+- Pricing: $250 life time access & updates. Other options available.
 
-Note: Config bleow are used in test environment, it's highlight recommended you change them as needed for live websites.
-[source,php]
-----
-// Load test environment config based on requested domain, else load SAFE live site config
-if (
-	key_exists('HTTP_HOST', $_SERVER) &&
-   (($_SERVER['HTTP_HOST'] == "testing-domain.example.com.com") ||
-	!($_SERVER['SERVER_ADDR']))
-) {
-define('WP_SITEURL', 'https://example.com');
-define('WP_HOME', WP_SITEURL);
-define('WP_DEBUG', true); 
-define('WP_DEBUG_DISPLAY', true);
-define('WP_DEBUG_LOG', true);
-define('WP_DISABLE_FATAL_ERROR_HANDLER', false);
-define('SCRIPT_DEBUG', true);
-define('DISALLOW_FILE_EDIT', false);
-define('DISALLOW_FILE_MODS', false);
-ini_set('display_errors', 1);
 
-}else{
-// Load SAFE live site config .
-}
-----
+== Working with WP CLI (WordPress Command Line Interface)
 
 === Setting File permission
-The recommedned file permissions are  `755` for folders & `644` for files. 
+The recommended file permissions are  `755` for folders & `644` for files.
 
 To correct WordPress file permission, you can run the following commands in the terminal at the root level of the project (Usually `public_html/`)
 ----
 find . -type d -exec chmod 755 {} +
 find . -type f -exec chmod 644 {} +
 ----
-
-
-== How to Create a WP Plugin?
-=== Simple Plugin
-- Create a file under WP root `/wp-content/plugins/my-plugin-name/my-plugin-name.php`
-- Add then modify the following code as needed
-+
-[source,php]
-----
-<?php
-
-/**
- * Plugin Name: MyPluginName
- * Plugin URI: mypluginname.com
- * Description: myplugindescription
- * Version: 0.1.0
- * Author: My Name
- * Author URI: https://mywebsite.com
- * */
-
-// Function containing my code
-my_plugin_name__function_name(){
-
-}
-/*
-- When to run the above function ? below example excutes the function on the plugins_loaded action hook.
-- Check out the WP Filter & Action Hooks section .
-- Other action hooks to condier are : 'wp' , 'wp_loaded', 'init'                                                                                                                                  
-*/
-add_action('plugins_loaded', 'my_plugin_name__function_name');
-
-----
-
-== How to Create a WP Theme ?
-=== Useful Links
-- https://codex.wordpress.org/Theme_Development 
-- https://codex.wordpress.org/Site_Design_and_Layout 
-- https://codex.wordpress.org/Child_Themes
-
-== How to Create a WP Child Theme ?
-
-== WordPress Coding Standards
-I'll only cover the important points, the rest can be found on https://make.wordpress.org/core/handbook/best-practices/coding-standards/
-=== PHP Coding Standards
-
-.Naming Convention
-[source,php]
-----
-class Class_Name {
-
-   private $variable_name = ""
-   const CONSTANT_NAME = ""
-   
-   public function function_name($some_variable){
-      
-   }
-}
-----
-
-
-
-== Working with WP CLI (WordPress Command Line Interface)
 
 === WP CLI Commands
 https://developer.wordpress.org/cli/commands/
@@ -240,6 +96,8 @@ wp core download
 .Install recommended plugins using WP CLI
 ----
 wp plugin install \
+worker \
+custom-sidebars
 woocommerce \
 cc-child-pages \
 contact-form-7 \
@@ -257,6 +115,7 @@ wp-force-login \
 hummingbird-performance \
 defender-security \
 smartcrawl-seo \
+wordpress-seo \
 query-monitor
 ----
 
@@ -281,6 +140,94 @@ wp menu create "Footer Menu"
 
 ----
 
+
+
+== WordPress Coding Standards
+I'll only cover the important points, the rest can be found on https://make.wordpress.org/core/handbook/best-practices/coding-standards/
+=== PHP Coding Standards
+
+.Naming Convention
+[source,php]
+----
+class Class_Name {
+
+   private $variable_name = ""
+   const CONSTANT_NAME = ""
+
+   public function function_name($some_variable){
+
+   }
+}
+----
+
+
+== How to Create a WP Plugin?
+=== Sample Plugin
+- Create a file under WP root `/wp-content/plugins/my-plugin-name/my-plugin-name.php`
+- Add then modify the following code as needed
++
+[source,php]
+----
+<?php
+
+/**
+ * Plugin Name: MyPluginName
+ * Plugin URI: mypluginname.com
+ * Description: myplugindescription
+ * Version: 0.1.0
+ * Author: My Name
+ * Author URI: https://mywebsite.com
+ * */
+
+// Function containing my code
+my_plugin_name__function_name(){
+
+}
+
+add_action('plugins_loaded', 'my_plugin_name__function_name');
+
+----
+
+== How to Create a WP Theme ?
+=== Useful Links
+- https://codex.wordpress.org/Theme_Development 
+- https://codex.wordpress.org/Site_Design_and_Layout 
+- https://codex.wordpress.org/Child_Themes
+
+
+== WP Configuration
+
+=== Sample `wp-config.php`
+
+Note: Config below are used in test environment, it's highly recommended you change them as needed for live websites.
+[source,php]
+----
+// Load test environment config based on requested domain, else load SAFE live site config
+if (
+	key_exists('HTTP_HOST', $_SERVER) &&
+   (($_SERVER['HTTP_HOST'] == "testing-domain.example.com.com") ||
+	!($_SERVER['SERVER_ADDR']))
+) {
+define('WP_SITEURL', 'https://example.com');
+define('WP_HOME', WP_SITEURL);
+define('WP_DEBUG', true);
+define('WP_DEBUG_DISPLAY', true);
+define('WP_DEBUG_LOG', true);
+define('WP_DISABLE_FATAL_ERROR_HANDLER', false);
+define('SCRIPT_DEBUG', true);
+define('DISALLOW_FILE_EDIT', false);
+define('DISALLOW_FILE_MODS', false);
+ini_set('display_errors', 1);
+
+}else{
+// Load SAFE live site config .
+}
+----
+
+=== WP Settings
+- Enable Pretty URL
+- Disable comments or at least limit them to loggin users till anti spam measures are taken.
+
 == WP REST API
 === Links
 - https://developer.wordpress.org/rest-api
@@ -289,11 +236,13 @@ wp menu create "Footer Menu"
 
 === Code Samples
 ----
-DominName/wp-json/wp/v2/posts?per_page=3&orderby=date&order=desc&status=publish
+example.com/wp-json/wp/v2/posts?per_page=3&orderby=date&order=desc&status=publish
 ----
 
 == Understanding WP Action & Filter Hooks 
-
+=== Useful Links
+https://adambrown.info/p/wp_hooks/hook
+https://codex.wordpress.org/Plugin_API/Action_Reference
 
 === Commonly used action hooks.
 ----
@@ -304,26 +253,20 @@ wp_loaded
 wp
 ----
 
-.Commonly used filter hooks.
+=== Commonly used filter hooks.
 ----
 
 
 ----
- 
-
-=== Useful Links
-https://adambrown.info/p/wp_hooks/hook
-https://codex.wordpress.org/Plugin_API/Action_Reference
- 
 
  
 == WP Optimisation
 - Use PHP 7.2 with Opcache
 - GZip
-- Convert images to .webp then compress 
+- Convert images to .webp
 - Image lazy loading
 - Long term file cache by adding expiry headers.
-- 
+
  
 
  
