@@ -20,6 +20,7 @@ WordPress (WordPress.org) is a content management system (CMS) written in PHP ..
 
 
 == Recommended Themes
+
 === Sage Theme Framework (Free)
 - Aimed at developers.
 - Sage is a WordPress starter theme with a modern development workflow.
@@ -34,10 +35,13 @@ WordPress (WordPress.org) is a content management system (CMS) written in PHP ..
 
 === SiteOrigin Vantage (Freemium)
 - Works well with SiteOrigin Page Builder
+
 === Avada (Paid)
 - Priced at $60 with over 300,000 sales. (ToDo) Test & Provide more info.
+
 === Components.underscores.me theme generator by WP
 - Aimed at developers.
+
 === UnderStrap: Underscores starter theme + Bootstrap (Free)
 - Aimed at developers.
 - Has a sample child theme to get started quickly.
@@ -97,7 +101,8 @@ wp core download
 ----
 wp plugin install \
 worker \
-custom-sidebars
+duplicate-post \
+custom-sidebars \
 woocommerce \
 cc-child-pages \
 contact-form-7 \

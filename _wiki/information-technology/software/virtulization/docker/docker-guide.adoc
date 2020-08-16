@@ -16,16 +16,39 @@ https://docker-curriculum.com/
 **
 
 
-
 == `Docker` Examples
 
 |===
-a|Code a|Description
+a| Pseudo Code a| Description a| Code Examples
 
-| `docker run [options] <image-name>` |
-| `docker ps -a --format "table {{.ID}}\t{{.Image}}\t{{.Size}}\t{{.Status}}\t{{.CreatedAt}}` |List all available containers with a custom format.
-| `docker rm $(docker ps -a -q -f status=exited)` | Delete all existed containers .
-| `docker run --rm -it --name "new hello world container" hello-world:$version` | `--rm` removed the container when existed, `-it` attaches interactive tty into the container , the rest is self-explanatory.
+| `docker run [options] <image-name> <command>`
+| Create then start a container.
+|
+`docker run -i -t -p 8080:4000 $Container_Name bash`
+- `-p 8080:4000` binds the container's port `4000` to port `8080` on the host OS
+
+| `docker run --rm -it --name "new hello world container" hello-world:$version`
+| `--rm` removes the container when existed, `-it` attaches interactive tty into the container.
+|
+
+| `docker start [options] <container-name>`
+| Starts one or more stopped existing container by name or id.
+|
+
+
+| `docker exec [OPTIONS] CONTAINER COMMAND `
+| Execute a command in an already running container.
+| `docker exec -it $Container_Name bash`
+
+
+| `docker ps -a --format "table {{.ID}}\t{{.Image}}\t{{.Size}}\t{{.Status}}\t{{.CreatedAt}}`
+| List all available containers with a custom format.
+|
+
+| `docker rm $(docker ps -a -q -f status=exited)`
+| Delete all exited/stopped containers .
+|
+
 |===
 
 == `Docker-Compose` Examples

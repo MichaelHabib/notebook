@@ -4,12 +4,12 @@
 
 == Grub2 Bootloader
 === Manually Installing grub2
-```
+----
 bootfolder="/home/michael/media/multiboot_ext4/boot/"
 bootdev="/dev/sda"
 sudo grub-install $bootdev --root-directory=$bootfolder
 sudo grub-mkconfig -o $bootfolder
-```
+----
 
 === Example by Pysis868 / grub.cfg
 https://gist.github.com/Pysis868/27203177bdef15fbb70c
