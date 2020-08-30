@@ -102,26 +102,33 @@ wp core download
 wp plugin install \
 worker \
 duplicate-post \
-custom-sidebars \
-woocommerce \
-cc-child-pages \
 contact-form-7 \
 flamingo \
+simple-image-sizes \
+wordpress-seo \
+updraftplus \
+wp-force-login
+
+
+wp plugin install \
+custom-sidebars \
+cc-child-pages \
 easy-wp-smtp \
 post-smtp \
-simple-image-sizes \
 imagemagick-engine \
 w3-total-cache \
-updraftplus \
-all-in-one-wp-security-and-firewall \
-user-role-editor \
-duplicate-post \
-wp-force-login \
+all-in-one-wp-security-and-firewall
+
+
+wp plugin install \
 hummingbird-performance \
 defender-security \
 smartcrawl-seo \
-wordpress-seo \
+user-role-editor \
 query-monitor
+
+wp plugin install \
+woocommerce
 ----
 
 .Generate pages using WP CLI

@@ -14,7 +14,10 @@ https://docker-curriculum.com/
 **
 **
 **
-
+- Docker `--volume` vs `--mount`
+** `--mount type=bind,source="$(pwd)",target=/app` : binds a local directory to the target location inside the container.
+** `--mount type=volume,source="$(pwd)",target=/app`
+** `--volume="$PWD:/app"` : mounts the specified host folder at the specified container location.
 
 == `Docker` Examples
 
@@ -24,7 +27,12 @@ a| Pseudo Code a| Description a| Code Examples
 | `docker run [options] <image-name> <command>`
 | Create then start a container.
 |
-`docker run -i -t -p 8080:4000 $Container_Name bash`
+----
+docker run -i -t \
+-p 8080:4000 \
+--mount=type=bind,source="$(pwd)",target=/app \
+$Container_Name bash
+----
 - `-p 8080:4000` binds the container's port `4000` to port `8080` on the host OS
 
 | `docker run --rm -it --name "new hello world container" hello-world:$version`

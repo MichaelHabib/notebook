@@ -1,21 +1,138 @@
 = OS & ISO Bootloaders
 
-
-
 == Grub2 Bootloader
+
 === Manually Installing grub2
+
 ----
-bootfolder="/home/michael/media/multiboot_ext4/boot/"
-bootdev="/dev/sda"
-sudo grub-install $bootdev --root-directory=$bootfolder
-sudo grub-mkconfig -o $bootfolder
+$DriveName=DriveNameHere
+BootDevice="/dev/sda"
+BootFolder="/home/${USER}/media/$DriveName/boot/"
+
+sudo grub-install $BootDevice --root-directory=$BootFolder
+
+# Auto generate boot config or manually create custom.cfg as explained below.
+sudo grub-mkconfig -o $BootFolder
+----
+
+=== Examples by Michael Habib
+
+Sample `custom.cfg` that loads other files for different purposes
+
+----
+if [ -f  ${config_directory}/custom_myoss.cfg ]; then
+    source ${config_directory}/custom_myoss.cfg
+fi
+
+if [ -f  ${config_directory}/custom_installers.cfg ]; then
+    source ${config_directory}/custom_installers.cfg
+fi
+
+if [ -f  ${config_directory}/custom_tests.cfg ]; then
+    source ${config_directory}/custom_tests.cfg
+fi
+
+----
+
+Sample `custom_installers.cfg`
+
+----
+	menuentry "xubuntu-18.04.2-desktop-amd64" {
+		set isofile="/iso/xubuntu-18.04.2-desktop-amd64.iso"
+		loopback loop (hd0,msdos2)$isofile
+		#set root="(hd0,msdos2)"
+		linux (loop)/casper/vmlinuz iso-scan/filename=$isofile noeject boot=casper
+		initrd (loop)/casper/initrd
+	}
+
+    
+
+----
+
+----
+menuentry "PupBionic18 FRUGAL ToRam" {
+    insmod part_msdos
+    insmod ntfs
+    #set root=$iso_partition_id
+    #set root=${iso_partition_id}
+    set root=hd0,2
+    set OSPath="/os/PupBionic18"
+    linux $OSPath/vmlinuz pkeys=us psubdir=$OSPath/ pfix=ram,copy
+    initrd $OSPath/initrd.gz
+}
+
+	menuentry "XenialDog_64bit Porteus Boot toram save-on-exit" {
+		insmod part_msdos
+		insmod ntfs
+		set root='hd0,2'
+		set OSPath="/os/XenialDog_64bit-openbox_jwm-2017-01-22-firmware-all"
+		linux $OSPath/casper/vmlinuz  root=UUID=$usb_uuid noauto from=$OSPath/ copy2ram changes=EXIT:$OSPath/save/changes1/
+		initrd $OSPath/casper/initrd1.xz
+	}
+
+	menuentry "PuppyTahr6_MyOS FRUGAL" {
+		insmod part_msdos
+		insmod ntfs
+		set root='(hd0,1)'
+		set OSPath="/os/PuppyTahr6_MyOS"
+		#linux /os/PuppyTahr6_MyOS/vmlinuz pkeys=us psubdir=/os/PuppyTahr6_MyOS/
+		#initrd /os/PuppyTahr6_MyOS/initrd.gz
+		linux $OSPath/vmlinuz pfix=copy pkeys=us psubdir=$OSPath/
+		initrd $OSPath/initrd.gz
+	}
+
+
+	menuentry "Chain Load MH-PC Kubuntu OS" {
+		insmod part_msdos
+		insmod chain
+		chainloader (hd0,3)+1
+	}
+
+
+	menuentry "Super GRUB2 Disk" {
+		search --no-floppy --label boot --fs-uuid --set=root $iso_hd_uuid
+		set isofile="/iso/super_grub2_disk_hybrid_2.02s9.iso"
+		loopback loop $isofile
+		configfile (loop)/boot/grub/loopback.cfg
+	}
+
+menuentry "Windows Password Recovery" {
+        set isofile="/iso/chntpw.iso"
+        loopback loop $isofile
+        linux (loop)/VMLINUZ. iso-scan/filename=$isofile
+        initrd (loop)/initrd.cgz
+    }
+    menuentry 'Windows 7 (loader) Edit root if needed ...' {
+        insmod part_msdos
+        insmod ntfs
+        set root='hd0,msdos1'
+        parttool ${root} hidden-
+        chainloader +1
+    }
+
+    menuentry "Android x86" {
+        set isofile="/iso/android-x86-4.4-r2.iso"
+        loopback loop (hd0,1)/$isofile
+        linux (loop)/kernel iso-scan/filename=$isofile noprompt noeject
+        initrd (loop)/initrd.img
+
+    }
+
+    menuentry "Android x86 chainloader +1" {
+        set isofile="/iso/android-x86-4.4-r2.iso"
+        loopback loop (hd0,1)/$isofile
+        set root=(hd0,1)
+        chainloader +1
+
+    }
 ----
 
 === Example by Pysis868 / grub.cfg
+
 https://gist.github.com/Pysis868/27203177bdef15fbb70c
 
 
 
-== Windows Bootloaders
+
 
 
