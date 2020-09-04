@@ -1,0 +1,120 @@
+= Recommended Ubuntu Packages
+
+
+== Updated List of Recommended Ubuntu Packages
+[source,bash]
+----
+#!/bin/sh
+
+echo "= Installing Recommended Software"
+
+echo "== Installing CLI & Build Tools"
+sudo apt -y install terminator
+sudo apt -y install gcc g++ make jq curl gnupg build-essential autoconf
+sudo apt -y install busybox tree xdotool xclip
+
+echo "== Installing Editors"
+sudo apt -y install mousepad vim-gtk vi
+
+echo "== Installing Terminal File Managers"
+sudo apt -y install mc vfm
+
+echo "== Installing SSH Tools"
+sudo apt -y install sshfs openssh-server openssh-client
+
+echo "== Installing Packages, Archiving & Compression Tools"
+sudo apt -y install p7zip-full gdebi unison
+
+
+echo "== Installing Hardware & Disk Monitoring & Management Tools"
+sudo apt -y install hardinfo conky-all gsmartcontrol gparted
+
+echo "== Installing NFS & Network Tools"
+sudo apt -y install nfs-common nfs-kernel-server samba autofs telnet arp-scan hostapd
+
+echo "== Installing VNC & Remote Access Tools"
+sudo apt -y install x11vnc
+
+echo "== Installing en_AU support"
+sudo apt -y install `check-language-support -l en_AU`
+
+echo "== Installing Audio & Media Tools"
+sudo apt -y install pavucontrol vlc
+
+
+echo "== installing Oracle Java 8:"
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt update
+sudo apt install oracle-java8-installer
+echo "=== Cheecking Java Config:"
+sudo update-alternatives --config java
+
+
+echo "== project & tasks management tools"
+sudo apt -y install taskwarrior
+
+
+
+----
+
+== Other Packages for web development.
+
+This list is no longer updated & abandoned in favour of using docker images. I might create an all-inclusive custom docker image.
+----
+
+
+echo "= Installing LAMP Server Software"
+echo "installing composer & add-ons"
+sudo apt -y install composer
+
+
+echo "installing grunt-cli"
+sudo npm install -g grunt-cli
+echo "installing global npm packages"
+sudo npm install -g sync-exec
+sudo npm install -g grunt webpack bower yarn
+
+echo "== Installing latest YARN "
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update && sudo apt install yarn
+
+
+echo "= installing nodejs & npm"
+sudo apt -y install nodejs npm
+echo "= installing latest nodejs "
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt install -y nodejs
+echo "for ubuntu, ln -s /usr/bin/nodejs /usr/bin/node"
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+echo "update npm"
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+
+echo "== Installing NodeJS Software"
+
+
+
+echo "= Installing Python's Essential Packages "
+sudo apt install python-software-properties
+sudo apt -y install python-pip
+sudo apt -y install exuberant-ctags
+
+echo "= Installing Python Software"
+echo "== installing AsciiDoc & Dependencies"
+sudo apt -y install xsltproc
+sudo apt -y install asciidoc
+
+echo "= Installing Python Software"
+echo "== Installing YoutubeDL & requirements"
+sudo -H pip install --upgrade youtube-dl
+sudo apt -y install atomicparsley
+
+
+echo "= Installing Ruby"
+sudo apt -y install ruby-full
+
+
+
+----

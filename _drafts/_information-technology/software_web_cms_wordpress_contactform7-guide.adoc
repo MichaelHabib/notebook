@@ -2,8 +2,67 @@
 
 
 
-== Examples
-=== Forms
+== Form Example 1
+[source,html]
+----
+
+<div id="myform-inner">
+
+<div class="form-group">
+     [text* full-name class:form-control placeholder "Full Name *"]
+</div>
+
+<div class="form-group">
+     [email* email class:form-control placeholder "Email *"]
+</div>
+<div class="form-group">
+     [number* phone-number class:form-control placeholder "Phone Number *"]
+</div>
+<div class="form-group">
+[textarea message class:form-control placeholder "Message"]
+</div>
+
+<div class="text-center">
+ [submit class:btn class:btn-primary class:submit "Submit"]
+</div>
+
+</div>
+
+
+----
+
+----
+
+From: [full-name] <[email]>
+
+Full Name: [full-name]
+Phone-number: [phone-number]
+
+Message:
+[message]
+
+-- 
+This e-mail was sent from a contact form on [_url]
+-- 
+
+- Website & Page Info
+[_site_title]
+[_site_url]
+[_url]
+
+
+[_date]
+[_time]
+[_user_login] 
+
+Submission #: [_serial_number]
+
+
+----
+
+
+
+== Form Example 2
 [source,html]
 ----
 
@@ -27,7 +86,7 @@
 <div class="form-group">
      [text* city class:form-control placeholder "City*"]
 </div>
- 
+
 <div class="form-group">
 <label>Where did you hear about us ?</label>
  [select where-did-you-heard-about-us class:form-control include_blank "Trailer" "Google" "Online - Website" "Print" "Referral"]
@@ -38,57 +97,50 @@
 </div>
 
 <div class="text-center">
- [submit class:btn class:btn-primary class:bg-orange "Get FREE Quote"]
+ [submit class:btn class:btn-primary class:submit "Submit"]
 </div>
 
 </div>
-<style>.bg-orange{background:orange;}</style>
+
 
 ----
 
-=== Mail Templates
 ----
 From: [first-name] [last-name] <[email]>
 
-First Name: [first-name] 
-Last Name: [last-name] 
-Phone-number: [phone-number] 
-Address: [address] 
-City: [city] 
-Where did you heard about us [where-did-you-heard-about-us] 
+First Name: [first-name]
+Last Name: [last-name]
+Phone-number: [phone-number]
+Address: [address]
+City: [city]
+Where did you heard about us [where-did-you-heard-about-us]
 
-Message Body:
-
+Message:
 [message]
 
--- 
+--
 This e-mail was sent from a contact form on [_url]
--- 
+--
 
 - Website & Page Info
-[_url]
-
 [_site_title]
 [_site_url]
-[_site_admin_email]
-[_post_id]
-[_post_url]
+[_url]
 
-- User Info
-[_remote_ip]
+
 [_date]
 [_time]
-[_user_login] 
+[_user_login]
 
-- Submission Info
-[_serial_number]
+Submission #: [_serial_number]
 
 
 ----
 
-=== Additional Settings
 
-==== Mail Headers
+
+== Settings
+=== Mail Headers
 ----
 Reply-To: [email]
 
