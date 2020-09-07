@@ -1,0 +1,4 @@
+= Social Media Manager
+
+I'm in the process of setting up https://contentstudio.io/ to manage my social media accounts & posts. I intend on making more of my code available on github & articles around new tech related discoveries available on my social media accounts .
+Who else uses similar tools to manage their social media presence ? Comment below 👇👇👇 with any tips you got for me 
