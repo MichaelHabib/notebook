@@ -1,0 +1,5 @@
+= AirTable: Task management System
+
+Building a small Task Management system using https://airtable.com/ , work in progress but getting there.
+Next steps include adding a form for capturing support requests then reminder automation with 
+https://zapier.com/  
