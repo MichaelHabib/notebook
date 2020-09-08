@@ -1,0 +1,6 @@
+= KVM Guide
+
+== Installation Notes
+
+- install the following packages: `apt install libgnutls28-dev`
+
