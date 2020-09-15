@@ -2,6 +2,18 @@
 The purpose of this document is to showcase methods of sharing & possibly mounting folders across networks.
 
 
+== SSHFS
+
+=== SSHFS Linux Client
+
+
+
+=== SSHFS Windows Client
+https://github.com/billziss-gh/sshfs-win[sshfs-win] is the recommended software to mount linux files on windows over SSH. A GUI client can be uses, such as https://github.com/evsar3/sshfs-win-manager[SSHFS Win Manager].
+
+==== Issues :
+- sshfs.exe doesnt mount remote folder ? https://github.com/billziss-gh/sshfs-win/issues/74#issuecomment-484709177[Add 'C:\Program Files\SSHFS-Win\bin' to your PATH] 
+
 == Using FTP:
 
 - install `sudo apt install curlftpfs`
@@ -57,8 +69,6 @@ read only = no
 
 # Restart the service
 sudo service smbd restart
-
-
 
 ----
 
