@@ -39,5 +39,28 @@ The purpose of this document is to showcase methods of sharing & possibly mounti
 Sample code for mounting NFS folder:
 `sudo mount -t nfs4 -o proto=tcp,port=2049 192.168.0.112:/ /home/michael/_mh-pc2_media`
 
+=== Samba
+
+https://help.ubuntu.com/community/How%20to%20Create%20a%20Network%20Share%20Via%20Samba%20Via%20CLI%20%28Command-line%20interface/Linux%20Terminal%29%20-%20Uncomplicated,%20Simple%20and%20Brief%20Way!
+
+----
+sudo apt-get install samba
+
+sudo smbpasswd -a <user_name>
+
+# Edit smb.conf then add the config below
+sudo vi /etc/samba/smb.conf
+[<folder_name>]
+path = /home/<user_name>/<folder_name>
+valid users = <user_name>
+read only = no
+
+# Restart the service
+sudo service smbd restart
+
+
+
+----
+
 
 
