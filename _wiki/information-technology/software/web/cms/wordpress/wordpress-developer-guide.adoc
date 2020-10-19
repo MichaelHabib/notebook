@@ -103,6 +103,7 @@ wp plugin install \
 classic-editor \
 worker \
 duplicate-post \
+easy-wp-smtp \
 contact-form-7 \
 flamingo \
 simple-image-sizes \
@@ -110,26 +111,25 @@ wordpress-seo \
 updraftplus \
 wp-force-login
 
-
-wp plugin install \
-custom-sidebars \
-cc-child-pages \
-easy-wp-smtp \
-post-smtp \
-imagemagick-engine \
-w3-total-cache \
-all-in-one-wp-security-and-firewall
-
-
 wp plugin install \
 hummingbird-performance \
 defender-security \
-smartcrawl-seo \
+smartcrawl-seo
+
+wp plugin install \
 user-role-editor \
 query-monitor
 
 wp plugin install \
 woocommerce
+
+# Alternitaves
+wp plugin install custom-sidebars
+wp plugin install cc-child-pages
+wp plugin install imagemagick-engine
+wp plugin install post-smtp
+wp plugin install w3-total-cache
+
 ----
 
 .Generate pages using WP CLI
