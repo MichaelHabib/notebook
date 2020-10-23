@@ -101,6 +101,7 @@ wp core download
 ----
 wp plugin install \
 classic-editor \
+shortcodes-ultimate \
 worker \
 duplicate-post \
 easy-wp-smtp \
@@ -112,6 +113,7 @@ updraftplus \
 wp-force-login
 
 wp plugin install \
+wp-smushit \
 hummingbird-performance \
 defender-security \
 smartcrawl-seo
