@@ -195,7 +195,7 @@ class Class_Name {
  * */
 
 // Function containing my code
-my_plugin_name__function_name(){
+function my_plugin_name__function_name(){
 
 }
 
@@ -214,7 +214,7 @@ add_action('plugins_loaded', 'my_plugin_name__function_name');
 
 === Sample `wp-config.php`
 
-Note: Config below are used in test environment, it's highly recommended you change them as needed for live websites.
+Note: Configs below used in test environment, it's highly recommended you change them as needed for live websites.
 [source,php]
 ----
 // Load test environment config based on requested domain, else load SAFE live site config
