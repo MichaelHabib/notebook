@@ -110,6 +110,7 @@ flamingo \
 simple-image-sizes \
 wordpress-seo \
 updraftplus \
+duplicator \
 wp-force-login
 
 wp plugin install \
