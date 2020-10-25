@@ -44,7 +44,7 @@ a|
 
 | Structure 
 a|
-- Componenet Based
+- Component Based
 - Layered
 - Object Oriented
 
@@ -56,7 +56,7 @@ a|
 ==== Quality Attributes
 Quality Attributes are system properties that are separate from the functionality of the system. 
 
-===== Static / Excution Quality Attributes
+===== Static / Execution Quality Attributes
 Reflect the structure of the system and organization, e.g : modularity, testability, maintainability, etc ...
 
 ===== Dynamic / Evolution Quality Attributes
@@ -74,14 +74,13 @@ Reflect the behaviour of a system durting its excution, e.g : throughput, robust
 
 ==== IT Environment
 
-==== Human Dynaamics
+==== Human Dynamics
 
-==== Business Login 
+==== Business Logic
 
 
 ---
 === Conceptual Model
-
 
 
 
@@ -93,12 +92,12 @@ Reflect the behaviour of a system durting its excution, e.g : throughput, robust
 - Just Enough Software Architecture
 - 
 
-== 12 Factor 
+=== 12 Factor
 
 https://12factor.net/
 
 
-== Useful Links
+=== Useful Links
 - https://en.wikipedia.org/wiki/Non-functional_requirement
 - https://www.tutorialspoint.com/software_architecture_design/introduction.htm
 - https://www.interaction-design.org/literature/article/we-think-therefore-it-is-conceptual-modelling-for-mobile-applications
