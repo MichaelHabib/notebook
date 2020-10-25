@@ -1,29 +1,27 @@
-= Software Architecutre Guide
+= Software Architecture Guide
 
 == What is Software Architecture ?
 
 "The architecture of a system describes its major components, their relationships, and how they interact with each other .
 
 
-== Temp Notes
-
-=== How to find the most important qualities to work on ?
+== How to find the most important qualities to work on ?
 - find the feature that is both the most important feature for stakeholders & hardest for developers to create . 
 
 
 
-=== Types of Enterprise Architecture
+== Types of Enterprise Architecture
 - Business Architecture : 
 - Application / Software Architecture : 
 - Information Architecture : 
 - Information Technology / IT Architecture : 
 
 
-=== Conponenets of a Software Architecture 
+== Components of a Software Architecture
 
-==== Design
+=== Design
 
-===== Common Architectural Designs
+==== Common Architectural Designs
 
 |===
 | Category | Architectual Design
@@ -53,16 +51,16 @@ a|
 
 
 
-==== Quality Attributes
+=== Quality Attributes
 Quality Attributes are system properties that are separate from the functionality of the system. 
 
-===== Static / Execution Quality Attributes
+==== Static / Execution Quality Attributes
 Reflect the structure of the system and organization, e.g : modularity, testability, maintainability, etc ...
 
-===== Dynamic / Evolution Quality Attributes
+==== Dynamic / Evolution Quality Attributes
 Reflect the behaviour of a system durting its excution, e.g : throughput, robustness, scalability , etc ...
 
-===== Common Quality Categories & Attributes
+==== Common Quality Categories & Attributes
 - Design Qualitites : Conceptual Integrity, Maintainability, Resuability .
 - Runtime Qualities : Interoperbality, Manageability, Reliability, Scalability, Security, Performance, Availability.
 - System Qualities : Suppotability, Testability.
@@ -72,29 +70,24 @@ Reflect the behaviour of a system durting its excution, e.g : throughput, robust
 - Business Quality Attributes : Cost and Schedule, Marketability.
 
 
-==== IT Environment
+=== IT Environment
 
-==== Human Dynamics
+=== Human Dynamics
 
-==== Business Logic
+=== Business Logic
 
 
 ---
 === Conceptual Model
 
 
-
 === Data Modle 
 - https://www.guru99.com/data-modelling-conceptual-logical.html
 
-== Recommended Books
 
-- Just Enough Software Architecture
-- 
+== Further research topics
 
-=== 12 Factor
-
-https://12factor.net/
+- https://12factor.net/
 
 
 === Useful Links
