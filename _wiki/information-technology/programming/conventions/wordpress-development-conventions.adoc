@@ -1,0 +1,19 @@
+= Wordpress Development Conventions
+
+I'll only cover the important points, the rest can be found on https://make.wordpress.org/core/handbook/best-practices/coding-standards/
+
+=== PHP Coding Standards
+
+.Naming Convention
+[source,php]
+----
+class Class_Name {
+
+   private $variable_name = ""
+   const CONSTANT_NAME = ""
+
+   public function function_name($some_variable){
+
+   }
+}
+----
