@@ -7,6 +7,9 @@ I'll only cover the important points, the rest can be found on https://make.word
 .Naming Convention
 [source,php]
 ----
+// Optional SubNamespace
+namespace Vendor\Package\SubNamespace;
+
 class Class_Name {
 
    private $variable_name = ""
@@ -16,4 +19,23 @@ class Class_Name {
 
    }
 }
+----
+
+
+=== Plugin Folder Structure (with Composer)
+
+----
+/
+    plugin-name.php
+    composer.json
+    src/ : Application specific code.
+        ComponentName1/
+        ComponentName2/
+    vendors/
+    vendors_dev/ : In-development packages.
+
+    node_modules/
+    node_modules_dev/ : In-development packages.
+
+
 ----
