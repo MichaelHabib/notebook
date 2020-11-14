@@ -3,6 +3,8 @@
 
 
 == Form Example 1
+
+.Form Template
 [source,html]
 ----
 
@@ -31,6 +33,8 @@
 
 ----
 
+.Email Template
+[source,html]
 ----
 
 From: [full-name] <[email]>

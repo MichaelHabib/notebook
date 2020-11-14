@@ -1,2 +1,2 @@
 = Information Technology
-:page-layout: wiki/namespace/index
+:page-layout: default

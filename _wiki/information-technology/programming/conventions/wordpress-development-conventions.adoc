@@ -2,7 +2,7 @@
 
 I'll only cover the important points, the rest can be found on https://make.wordpress.org/core/handbook/best-practices/coding-standards/
 
-=== PHP Coding Standards
+== PHP Coding Standards
 
 .Naming Convention
 [source,php]
@@ -22,7 +22,7 @@ class Class_Name {
 ----
 
 
-=== Plugin Folder Structure (with Composer)
+== Plugin Folder Structure (with Composer)
 
 ----
 /
