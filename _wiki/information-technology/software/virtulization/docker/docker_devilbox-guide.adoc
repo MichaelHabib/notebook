@@ -15,3 +15,15 @@ After completing the installation as recommended on http://devilbox.org/
 ----
 docker-compose up php httpd bind mysql
 ----
+
+== Enabling Devilbox DNS Resolver
+
+- Follow these steps : https://devilbox.readthedocs.io/en/latest/intermediate/setup-auto-dns.html
+- Notes for Ubuntu setup:
++
+----
+sudo systemctl disable systemd-resolved
+sudo systemctl restart NetworkManager
+----
++
+edit `sudo vim /etc/resolv.conf` and ensure only the Devilbox IP is listed
