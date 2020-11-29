@@ -19,11 +19,22 @@ docker-compose up php httpd bind mysql
 == Enabling Devilbox DNS Resolver
 
 - Follow these steps : https://devilbox.readthedocs.io/en/latest/intermediate/setup-auto-dns.html
-- Notes for Ubuntu setup:
-+
+
+=== Notes for Ubuntu setup:
+
+Disable default DNS resolver then restart network manager:
+
 ----
 sudo systemctl disable systemd-resolved
 sudo systemctl restart NetworkManager
 ----
-+
-edit `sudo vim /etc/resolv.conf` and ensure only the Devilbox IP is listed
+
+Ensure all dns IPs are commended out, excluding `127.0.1.1`:
+
+----
+sudo vim /etc/resolv.conf`
+----
+Set `dns=default` in
+----
+sudo vim /etc/NetworkManager/NetworkManager.conf
+----
