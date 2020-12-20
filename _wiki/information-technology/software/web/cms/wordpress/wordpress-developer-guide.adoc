@@ -74,6 +74,10 @@ WordPress (WordPress.org) is a content management system (CMS) written in PHP ..
 - HummingBird
 - Defender
 
+=== YI Themes
+https://yithemes.com/
+
+
 === https://themefuse.com (premium)
 - Pricing: $250 life time access & updates. Other options available.
 
