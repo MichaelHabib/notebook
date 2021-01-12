@@ -14,7 +14,7 @@ sudo apt -y install gcc g++ make jq curl gnupg build-essential autoconf
 sudo apt -y install busybox tree xdotool xclip
 
 echo "== Installing Editors"
-sudo apt -y install mousepad vim-gtk vi
+sudo apt -y install mousepad vim geany geany-plugins
 
 echo "== Installing Terminal File Managers"
 sudo apt -y install mc vfm
@@ -50,10 +50,11 @@ echo "=== Cheecking Java Config:"
 sudo update-alternatives --config java
 
 
-echo "== project & tasks management tools"
+echo "== Project & Tasks Management Tools"
 sudo apt -y install taskwarrior
 
-
+echo "== Office Tools"
+sudo snap install drawio
 
 ----
 
