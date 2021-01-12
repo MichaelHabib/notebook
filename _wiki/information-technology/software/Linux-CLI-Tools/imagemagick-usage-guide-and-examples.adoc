@@ -78,7 +78,7 @@ bash
 	
 ----
 
-== Failed attempts for refrence.
+== Failed attempts for reference.
 
 .Trying to use created date in filname !.
 [source,bash]
