@@ -1,2 +1,0 @@
-= Subject : Testing flat hierarchy wiki
-:page-layout: default
