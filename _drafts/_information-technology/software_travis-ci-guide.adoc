@@ -1,0 +1,8 @@
+= Travic CI Guide
+
+== Generate Secure Env Variables
+
+e.g: Adding a GitHub Access Token to allow a build process to push the back to a repo
+----
+travis encrypt GH_TOKEN=TOKEN_HERE --add --com --override
+----

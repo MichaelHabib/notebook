@@ -1,0 +1,25 @@
+= Ruby Installation Guide
+
+
+== Multiple Versions of Ruby using RBEnv
+
+== Install:
+https://github.com/rbenv/rbenv
+
+----
+# list latest stable versions:
+rbenv install -l
+
+# list all local versions:
+rbenv install -L
+
+----
+== Switch Ruby Version
+[source,sh]
+----
+# Locally
+rbenv local 2.2.7
+
+# Globally
+rbenv global 3.0.0
+----
