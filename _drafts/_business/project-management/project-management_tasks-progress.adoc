@@ -1,0 +1,7 @@
+= Project Management : Tasks Progress
+
+== Common Task Statuses 
+
+- Backlog : List of tasks without a clear starting date in mind. Usually discussed with the Project Manager before moved to To Do.
+
+- Blocked : Used to mark tasks that are stuch for one reason or another, such as waiting on a reply from a customer or needing to do more reasearch.
