@@ -1,14 +1,16 @@
-= Web Dev Tools
+= List of Web Design & Development Tools
 
 == Editors / IDEs
-
+- PHPStorm
+- Netbeans
+- Arom
 
 == Planning Tools
 - https://draw.io
+- XMind & XMind.works
 
 
-
-== SEO
+== SE & SM Tools
 - Google Web Master :
 - Google Analytics : 
 - Facebook Business Manager :
