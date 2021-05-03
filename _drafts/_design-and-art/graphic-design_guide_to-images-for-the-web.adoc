@@ -1,1 +1,17 @@
-﻿check google drfive mh.name/business-op/templ;ates ...
+= Image Sized for the Web
+
+
+== To Do
+- check google drfive mh.name/business-op/templ;ates ...
+
+
+== Recommendations 
+Default Image Size: 1920x1080 , 1920x1920 if square . Maintain this 16:9 ratio when scaling up or down.
+Small Image: 960x540 (1/2 default image size)
+Banners : 1920x540. 16:4.5 Ratio (1/2 height of default image).
+Thin Banners : 1920x360. 16:3 Ratio (1/3 height of default image).
+Default Thumbnail : 640x360 (1/3 default image size)
+Thin Thumbnail : 640x240 (2/3 height of default thumbnail).
+
+
+
