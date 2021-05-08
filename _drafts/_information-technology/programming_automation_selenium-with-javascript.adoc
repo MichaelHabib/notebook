@@ -1,7 +1,24 @@
 = Selenium with JavaScript
 
-[source,javascript]
+[source,sh]
+----
+npm install selenium-webdriver
+npm install -g chromedriver
 ----
 
+[source,javascript]
+----
+const webdriver = require('selenium-webdriver');
+const chrome = require('selenium-webdriver/chrome');
+const firefox = require('selenium-webdriver/firefox');
+const chromedriver = require('chromedriver');
 
+chrome.setDefaultService(new chrome.ServiceBuilder(chromedriver.path).build());
+
+let driver = new webdriver.Builder()
+    .forBrowser('chrome')
+    .setChromeOptions(/* ... */)
+    .setFirefoxOptions(/* ... */)
+	  .withCapabilities(webdriver.Capabilities.chrome())
+    .build();
 ----
