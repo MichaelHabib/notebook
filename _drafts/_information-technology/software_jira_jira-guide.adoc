@@ -22,3 +22,6 @@ ORDER BY priority DESC, updatedDate DESC 
 
 ---
 
+== Project Setup : Kanplan
+"Kanplan is a mixed methodology for practicing agile software development. Like scrumban, it combines features from both scrum and kanban. Kanplan is ideal for teams who want the ability to backlog groom, but don’t want to work in sprints. " https://www.atlassian.com/agile/kanban/kanplan[source]
+
