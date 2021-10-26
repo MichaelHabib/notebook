@@ -32,8 +32,11 @@ Set Linux EOL
 git config --global core.autocrlf false
 git config --global core.eol lf
 ---
-This also requires the use of the `.gitattributes` file below.
 
+Use a global `.gitattributes` file:
+----
+git config --global core.attributesfile ~/.config/git/.gitattributes
+----
 == Command Samples
 
 `git status && git add -A && git commit -a -m "updated ..." && git push _origin _master`
