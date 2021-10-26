@@ -27,6 +27,12 @@ git config --global push.default simple
 git config --global core.editor vim
 ----
 
+Set Linux EOL 
+----
+git config --global core.autocrlf false
+git config --global core.eol lf
+---
+This also requires the use of the `.gitattributes` file below.
 
 == Command Samples
 
@@ -213,9 +219,23 @@ This will remove the files but will *NOT* alter the repo history, which means th
 ## Credit & Sources
 ## - https://gist.github.com/octocat/9257657
 ## - https://stackoverflow.com/questions/18393498/gitignore-all-the-ds-store-files-in-every-folder-and-subfolder
-
+instructuins
 ----
 
+== Global .gitattributes template
+----
+*        text=auto
+
+*.cs     text diff=csharp
+*.java   text diff=java
+*.html   text diff=html
+*.css    text
+*.js     text
+*.sql    text
+
+*.csproj text merge=union
+
+----
 
 == Useful Links & Sources
 - Gitignore.io : https://www.toptal.com/developers/gitignore
