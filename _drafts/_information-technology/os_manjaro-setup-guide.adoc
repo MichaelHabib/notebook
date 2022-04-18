@@ -1,0 +1,47 @@
+= Arch Setup Notes
+
+== Package Manager Guide
+- update system : `sudo pacman -Syu`
+
+
+== Essential Packages
+
+sudo pacman -S --needed base-devel
+sudo pacman -S linux-headers
+sudo pacman -S yay
+sudo pacman -S pinta krita
+== Dealing with AUR pacakges
+
+=== With YAY helper
+download & install YAY from https://aur.archlinux.org/packages/yay/ 
+if not available in repo with `sudo pacman -S yay`, download & install manually:
+----
+sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+----
+
+
+== 32 Bit repos??
+
+https://wiki.archlinux.org/title/Official_repositories#.5Bmultilib.5D
+
+----
+
+/etc/pacman.conf
+
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+----
+----
+pacman -Sl multilib
+----
+
+== Adding Users
+
+----
+sudo useradd -m UserName -p PassWord
+sudo passwd UserName
+
+----
+Sources:
+- https://linuxhint.com/add_users_arch_linux/
+- 
