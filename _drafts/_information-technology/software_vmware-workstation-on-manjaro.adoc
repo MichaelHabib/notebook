@@ -1,0 +1,59 @@
+= VMware Workstation 14 Installation on Arch / Manjaro 
+
+== System Update
+
+
+----
+sudo pacman -Syy 
+sudo pacman -Su
+----
+- READ https://wiki.archlinux.org/title/VMware
+- Manual install the library ncurses-compat-libs: https://aur.archlinux.org/packages/ncurses5-compat-libs/
+- `sudo ln -s /usr/lib64/libncursesw.so.6 /usr/lib64/libncursesw.so.5` ???\
+- Manually install vmware-keymaps : https://aur.archlinux.org/packages/vmware-keymaps/
+- install https://aur.archlinux.org/packages/vmware-openrc/  ??? NO for now ( check conflict with systemd)
+- Run `modprobe -a vmw_vmci vmmon` to load the modules before starting a VM 
+- run `sudo pacman -S $(pacman -Qsq "^linux" | grep "^linux[0-9]*[-rt]*$" | awk '{print $1"-headers"}' ORS=' ')` to install the correct headers.
+- `sudo vmware-modconfig --console --install-all`
+
+== Resolving Dependency Issues (when using AUR Package)
+
+https://aur.archlinux.org/packages/vmware-workstation14/
+
+Use the `--overwrite "*"` argument with pacman when you find file conflict / already existing files.
+
+== Resolving Dependency Issues ? (when using .bundle)
+
+
+----
+sudo mv /usr/lib/vmware/lib/libgobject-2.0.so.0/libgobject-2.0.so.0 /usr/lib/vmware/lib/libgobject-2.0.so.0/libgobject-2.0.so.0.old
+
+sudo ln -s /usr/lib/x86_64-linux-gnu/libgobject-2.0.so /usr/lib/vmware/lib/libgobject-2.0.so.0/libgobject-2.0.so.0
+
+                                                                                
+
+sudo mv /usr/lib/vmware/lib/libstdc++.so.6/libstdc++.so.6 /usr/lib/vmware/lib/libstdc++.so.6/libstdc++.so.6.old
+
+sudo ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /usr/lib/vmware/lib/libstdc++.so.6/libstdc++.so.6
+
+                                                                                
+
+sudo mv /usr/lib/vmware/lib/libglib-2.0.so.0/libglib-2.0.so.0 /usr/lib/vmware/lib/libglib-2.0.so.0/libglib-2.0.so.0.old
+
+sudo ln -s /usr/lib/x86_64-linux-gnu/libglib-2.0.so /usr/lib/vmware/lib/libglib-2.0.so.0/libglib-2.0.so.0        
+
+----
+Source: https://communities.vmware.com/t5/VMware-Workstation-Pro/vmware-workstation-stopped-working-in-ubuntu-16-04-1-libgio/td-p/1807775
+
+
+
+
+== Enable Services
+----
+sudo systemctl enable --now vmware-networks.service
+sudo systemctl enable --now vmware-usbarbitrator.service
+
+sudo systemctl enable --now vmware-hostd.service
+----
+Source : https://communities.vmware.com/t5/VMware-Workstation-Pro/could-no-connect-ethernet-0-to-virtual-network-dev-vmnet0-arch/td-p/1382337
+
