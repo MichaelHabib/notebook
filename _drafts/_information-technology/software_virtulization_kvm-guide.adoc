@@ -1,6 +1,96 @@
-= KVM Guide
+= Setting up KVM
 
-== Installation Notes
+== KMV & VertManager installation 
+=== Packages
+----
 
-- install the following packages: `apt install libgnutls28-dev`
 
+----
+
+=== User Setup & Permissions
+https://computingforgeeks.com/use-virt-manager-as-non-root-user/
+
+=== Networking
+Autostart KVM Default Network
+----
+sudo virsh net-autostart default
+----
+
+
+
+
+
+= Reorganize Info Blow
+== KVM GPU Passthrough
+Look into https://github.com/BigAnteater/KVM-GPU-Passthrough
+
+== Nested VMS
+
+=== Resouces
+https://docs.fedoraproject.org/en-US/quick-docs/using-nested-virtualization-in-kvm/
+
+
+=== Enable for Intel
+    Shut down all running VMs and unload the kvm_probe module:
+
+    sudo modprobe -r kvm_intel
+
+    Activate the nesting feature:
+
+    sudo modprobe kvm_intel nested=1
+
+    Nested virtualization is enabled until the host is rebooted. To enable it permanently, add the following line to the /etc/modprobe.d/kvm.conf file:
+
+    options kvm_intel nested=1
+
+
+
+=== Enable for AMD
+
+
+To enable nested virtualization for AMD processors:
+
+    Shut down all running VMs and unload the kvm_amd module:
+
+    sudo modprobe -r kvm_amd
+
+    Activate the nesting feature:
+
+    sudo modprobe kvm_amd nested=1
+
+    Nested virtualization is enabled until the host is rebooted. To enable it permanently, add the following line to the /etc/modprobe.d/kvm.conf file:
+
+=== Set VM CPU config
+
+Set the CM CPU to `host-passthrough`
+
+
+=== Attempt 1
+
+https://haefelfinger.ch/posts/2018/2018-03-21-InstallingSpiceAgentOnArchBasedLinux/
+
+----
+pacman -S xf86-video-qxl
+yaourt -S spice-vdagent-git
+----
+
+`sudo vi /usr/share/X11/xorg.conf.d/50-qxl.conf`
+----
+Section "Device"
+Identifier "qxl"
+Driver "qxl"
+Option "ENABLE_SURFACES" "False"
+EndSection
+----
+
+=== Attempt 2
+https://www.modio.se/accelerated-dual-screen-vm-on-linux.html
+
+Install virt-viewer to connect to multiple display heads: `sudo pacman -S virt-viewer`
+
+
+== KVM Linked Clones 
+
+=== ToDo : Resources
+https://superuser.com/questions/958739/create-linked-clone-or-layered-shared-disks-with-qemu
+https://fabianlee.org/2018/09/24/kvm-implementing-linked-clones-with-a-backing-file/
