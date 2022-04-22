@@ -1,0 +1,10 @@
+= Virtual Box Guide
+
+== Disk Types
+
+VDI : Virtual Box format
+
+
+== Disk config
+
+Write through : write directly to the vdisk & exclude from snapshots.
