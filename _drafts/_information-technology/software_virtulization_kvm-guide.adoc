@@ -24,6 +24,13 @@ sudo virsh net-autostart default
 == KVM GPU Passthrough
 Look into https://github.com/BigAnteater/KVM-GPU-Passthrough
 
+== Start & Storage Access Permissions
+
+- Edit /etc/libvirt/qemu.conf file:
+- Find the user and group directives. By default, both are set to "root".
+- Uncomment both lines and replace root with your username and group with libvirt as shown below:
+- Source: https://ostechnix.com/solved-cannot-access-storage-file-permission-denied-error-in-kvm-libvirt/
+
 == Nested VMS
 
 === Resouces
