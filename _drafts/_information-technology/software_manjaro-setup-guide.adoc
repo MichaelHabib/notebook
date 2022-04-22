@@ -1,4 +1,4 @@
-= Arch Setup Notes
+= Manjaro Setup Notes
 
 == Package Manager Guide
 - update system : `sudo pacman -Syu`
