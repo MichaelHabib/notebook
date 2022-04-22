@@ -9,14 +9,19 @@
 sudo pacman -S --needed base-devel
 sudo pacman -S linux-headers
 sudo pacman -S yay
+
 sudo pacman -S pinta krita
+
+yay -S jre8 jre14
+
+
 == Dealing with AUR pacakges
 
 === With YAY helper
 download & install YAY from https://aur.archlinux.org/packages/yay/ 
 if not available in repo with `sudo pacman -S yay`, download & install manually:
 ----
-sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+sudo pacman -S --needed git base-devel yay
 ----
 
 
