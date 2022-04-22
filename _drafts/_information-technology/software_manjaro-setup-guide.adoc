@@ -5,7 +5,7 @@
 
 
 == Essential Packages
-
+----
 sudo pacman -S --needed base-devel
 sudo pacman -S linux-headers
 sudo pacman -S yay
@@ -13,7 +13,7 @@ sudo pacman -S yay
 sudo pacman -S pinta krita
 
 yay -S jre8 jre14
-
+----
 
 == Dealing with AUR pacakges
 
