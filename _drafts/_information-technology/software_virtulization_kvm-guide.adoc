@@ -23,6 +23,8 @@ sudo virsh net-autostart default
 = Reorganize Info Blow
 == KVM GPU Passthrough
 Look into https://github.com/BigAnteater/KVM-GPU-Passthrough
+VBios download from https://www.techpowerup.com/vgabios/197302/gigabyte-gtx1050-2048-170518
+
 
 == Start & Storage Access Permissions
 
