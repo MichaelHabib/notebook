@@ -1,0 +1,8 @@
+= Online Marketing Guide
+
+== Main Tasks
+- Setup tracking tools such as FB Pixel & Google Analytics
+- Social Media Targetting Stratigies
+** Track online & offline customer activities
+** Target new & existing customer seperatly
+** Target specific geographical regions separatly. E.g: target local suburbs, nearby subrubs, national & international separatly.
