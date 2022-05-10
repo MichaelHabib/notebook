@@ -18,7 +18,7 @@
 
 == Vocabulary 
 
-- Project Phase : One of the key 4-5 project phases such as initiation, planning , etc ..
+- Project Phase : One of the key 5 project phases such as initiation, planning , excution, control and closure. 
 - Project Stage : A collection of milestones, when completed, the project warents a re-assessment of next steps & deliverables .
 - Project Milestone : is a deliverable in the excution phase of a project.  
 
