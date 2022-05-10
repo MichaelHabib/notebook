@@ -119,6 +119,7 @@ source : https://www.mavenlink.com/resources/what-is-the-professional-services-p
 == Project Validation
 
 The process of confirming
+
 - Stability
 - Risk
 - Type of work (blue vs white collar)
