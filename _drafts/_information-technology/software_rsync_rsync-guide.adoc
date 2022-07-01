@@ -1,0 +1,11 @@
+= RSync Guide
+
+== Samples
+
+
+----
+rsync -vr username@domain-or-ip:/path/to/remote/files /local/storage/path
+
+
+
+----
