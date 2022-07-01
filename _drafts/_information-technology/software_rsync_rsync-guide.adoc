@@ -4,7 +4,7 @@
 
 
 ----
-rsync -vr username@domain-or-ip:/path/to/remote/files /local/storage/path
+rsync -arv --info=progress2 username@domain-or-ip:/path/to/remote/files /local/storage/path
 
 
 
