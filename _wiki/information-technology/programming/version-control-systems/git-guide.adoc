@@ -143,6 +143,14 @@ To remove any file or folder from a local or remote branch
 This will remove the files but will *NOT* alter the repo history, which means the files will be accessable from previous commits & branches .
 
 
+To remove sensitive files from repo history, you'll need an external tool or git add-on. `git filter-repo` is one such tool.
+Add the unwted files to .gitignore so they're not re-added later, then run the commands below.
+more details in : https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
+----
+git filter-repo --invert-paths --path PATH-TO-YOUR-FILE-WITH-SENSITIVE-DATA-GIT-ROOT-RELATIVE 
+
+git push origin --force --all
+----
 
 
 == Global `.gitignore` Template
