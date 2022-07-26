@@ -1,6 +1,16 @@
 = Bash Guide
 
-Assign command output to a variable
+== For Loop
+
+=== Loop over lines
+----
+cat file-to-read.txt | while IFS="" read -r line;
+do
+  echo "$line"
+done
+----
+
+== Assign command output to a variable
 ----
 OUTPUT=$(command)
 ----
