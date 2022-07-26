@@ -1,0 +1,6 @@
+= Bash Guide
+
+Assign command output to a variable
+----
+OUTPUT=$(command)
+----
