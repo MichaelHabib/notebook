@@ -5,6 +5,12 @@ https://docs.docker.com/
 https://docs.docker.com/engine/reference/run/
 https://docker-curriculum.com/
 
+== Installation
+
+Most distros have docker available in their package manager. 
+
+to run docker without root, execute `sudo usermod -aG docker $USER` to add your user to the docker group.
+
 == Key Concepts
 
 - An image is a blueprint to be used for creating container instances. Images are NOT ran directly, they're only used for creating containers.
