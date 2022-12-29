@@ -27,6 +27,13 @@ Redirect 301 /root-relative-path/ https://example/new-path/
 # Redirect to new path & use regex group capture to pass on information to the new path . 
 RewriteRule /old-directory/(.*)$ /new-directory/$1 [R=301,L]
 
+#  Redirect all urls to specific url
+RewriteEngine on 
+RewriteRule ^(.*)$ https://example.com [R=301,L]
+
+
+
+
 # Force SSL on any domain
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
