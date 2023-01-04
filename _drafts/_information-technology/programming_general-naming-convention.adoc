@@ -1,1 +1,44 @@
+= General Naming Convention
+How should varialbes, functions, classes and namespaces should be named ?
 
+
+== Namin convention based on Laravel
+https://laravel.com/api/9.x/
+
+=== Namespaces and Class Names 
+- Auth
+** Access
+- Cache
+- Bus ?
+- Config
+- Console
+- Container
+- Cookie
+- Database
+- Encryption
+- Events
+- Filesystem
+- Mail
+- Http
+- Notificaitons
+- Queue
+- Routing
+- Session
+- Support ?
+- Validation 
+- View
+- 
+
+=== Class Name Keywords
+- Factory
+- Adabter
+- Decorator
+- Strategy
+- Facade
+- View
+- Response
+- Parser
+- Provider
+- Transformer / XFromY
+- Validator 
+- 
