@@ -70,3 +70,13 @@ https://laravel.com/api/9.x/
 
 - Validator 
 - 
+=== Function Name Keywords
+- Get
+- Set
+- Save
+- Delete
+- update
+- Notify
+- generate
+- process : for queues
+- 
