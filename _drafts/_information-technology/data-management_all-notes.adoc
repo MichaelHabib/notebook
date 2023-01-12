@@ -1,4 +1,5 @@
 = Data Management : All Notes !
+:TOC:
 
 == Types of Information
 
@@ -123,3 +124,23 @@ ClientOrBrandNameWithinCompany
 -- movies
 
 ----
+
+
+== Document Formats
+- list
+- guide
+- manual
+- tutorial
+- case study
+- changelog
+- review
+- artifact ?
+- plan
+- overview
+- stats
+- template
+- infographic
+- data visuals ?
+- image
+- report
+- 
