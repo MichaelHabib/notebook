@@ -8,7 +8,11 @@
 -- code
 -- config
 -- data
-
+- Templates
+- Educational Info
+-- Guides & Manuals
+-- Infographics
+-- 
 
 == Storage Device Breakdown
 ----
