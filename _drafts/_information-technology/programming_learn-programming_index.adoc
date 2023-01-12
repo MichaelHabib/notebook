@@ -1,0 +1,9 @@
+= Learn Programming
+
+== Intro
+
+== Common Programming Priciples 
+
+== Languages, Tools, Libraries & Frameworks
+
+== Design Parterns & Software Architecture
