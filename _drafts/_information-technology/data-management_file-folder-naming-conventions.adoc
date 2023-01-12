@@ -9,11 +9,46 @@ project-name_category_sub-category_short-desc_v.ext
 
 == Folders
 
+.Business
 ----
 - AccountName
 -- Resources
 -- DepartmentName
 -- BranchName
 -- 
+
+----
+
+.Personal
+----
+- gaming
+-- games
+-- gaming-tools
+-- other-apps
+
+- art
+-- Collection
+-- Tools
+
+
+- music
+-- collection
+--- AR
+--- EN
+--- playlists
+--- tools
+---- media-player
+
+-- DJ
+-- Composing
+
+- photography
+-- photos_raw
+-- photos_processed
+
+-- 
+- media
+-- family-archive
+-- movies
 
 ----
