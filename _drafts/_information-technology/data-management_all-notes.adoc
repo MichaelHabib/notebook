@@ -50,11 +50,29 @@ project-name_category_sub-category_short-desc_v.ext
 
 .Business
 ----
-- AccountName
--- Resources
--- DepartmentName
--- BranchName
--- 
+- AccountName (prefix own accounts with underscore)
+-- dep_DepartmentName
+-- br_BranchName
+
+----
+
+.Example
+----  
+ClientOrBrandNameWithinCompany
+-- dep_IT
+-- dep_Marketing
+-- dep_Finance
+-- dep_Legal
+-- dep_HR
+-- dep_CustomerService
+-- dep_Production
+-- dep_Operations
+-- dep_RnD
+-- dep_ProductDevelopment
+-- br_SydneyOffice
+-- br_SheppertonOffice
+
+
 
 ----
 
