@@ -1,4 +1,4 @@
-= Data Management : File & Folder Naming Conventions
+= Data Management : All Notes !
 
 == Types of Information
 
@@ -13,6 +13,14 @@
 -- Guides & Manuals
 -- Infographics
 
+== Data Storage Locations
+- Git platforms (github, gitlab, etc..)
+- 
+- Chat Platforms (Slack, Temas, Discord, etc ...)
+- Email
+- Local Storage Devices (HDD, SSD, NAS, Mobile, etc ...)
+- Cloud File Storage (Google Drive, OneDrive, DropBox, etc )
+- Cloud Data Management & Storage ( Google Sheets, Google Docs, Excel Online, AirTable, etc ...)
 
 == Storage Device Breakdown
 
