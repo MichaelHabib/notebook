@@ -1,6 +1,6 @@
 = Data Management : File & Folder Naming Conventions
 
-== Types of Information ??
+== Types of Information
 
 - Logs
 - Media (Images, music, videos)
@@ -12,9 +12,10 @@
 - Educational Info
 -- Guides & Manuals
 -- Infographics
--- 
+
 
 == Storage Device Breakdown
+
 ----
 - business
 - edu
@@ -30,6 +31,7 @@
 ----
 
 == Files
+
 ----
 timestamp_category_sub-category_short-desc_v.ext
 category_sub-category_short-desc_v.ext
