@@ -1,5 +1,30 @@
 = Data Management : File & Folder Naming Conventions
 
+== Types of Information ??
+
+- Logs
+- Media (Images, music, videos)
+- Software
+-- code
+-- config
+-- data
+
+
+== Storage Device Breakdown
+----
+- business
+- edu
+- side-projects
+- personal
+- arhcives
+- env
+-- env_managmenet_tools
+-- vms
+-- data
+
+
+----
+
 == Files
 ----
 timestamp_category_sub-category_short-desc_v.ext
@@ -19,8 +44,17 @@ project-name_category_sub-category_short-desc_v.ext
 
 ----
 
-.Personal
+.EDU & Side Projects
+
 ----
+- edu
+-- industry
+--- subject
+
+- side-projects
+-- industry
+--- subject
+
 - gaming
 -- games
 -- gaming-tools
@@ -32,9 +66,10 @@ project-name_category_sub-category_short-desc_v.ext
 
 
 - music
--- collection
---- AR
+-- collection-by-language
 --- EN
+--- AR
+
 --- playlists
 --- tools
 ---- media-player
@@ -46,7 +81,11 @@ project-name_category_sub-category_short-desc_v.ext
 -- photos_raw
 -- photos_processed
 
--- 
+----
+
+.Personal
+----
+
 - media
 -- family-archive
 -- movies
