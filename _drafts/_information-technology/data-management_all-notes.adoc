@@ -16,7 +16,6 @@
 
 == Data Storage Locations
 - Git platforms (github, gitlab, etc..)
-- 
 - Chat Platforms (Slack, Temas, Discord, etc ...)
 - Email
 - Local Storage Devices (HDD, SSD, NAS, Mobile, etc ...)
@@ -91,7 +90,7 @@ ClientOrBrandNameWithinCompany
 - gaming
 -- games
 -- gaming-tools
--- other-apps
+-- bin: for Java binaries and any other dependencies for gaming apps
 
 - art
 -- Collection
