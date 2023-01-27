@@ -265,21 +265,76 @@ example.com/wp-json/wp/v2/posts?per_page=3&orderby=date&order=desc&status=publis
 https://adambrown.info/p/wp_hooks/hook
 https://codex.wordpress.org/Plugin_API/Action_Reference
 
-=== Commonly used action hooks.
+=== WP Hooks
+
+.Commonly Used
 ----
 muplugins_loaded
-plugin_loaded`
+plugin_loaded
+setup_theme
+after_setup_theme
 init
 wp_loaded                          
 wp
+wp_head
+wp_body_open
+wp_footer
+shutdown
 ----
 
-=== Commonly used filter hooks.
+.Important Hooks
 ----
-
-
+muplugins_loaded
+registered_post_type
+plugins_loaded
+woocommerce_loaded
+set_current_user
+setup_theme
+after_setup_theme
+init
+before_woocommerce_init
+woocommerce_init
+wp_default_scripts
+register_sidebar
+wp_sitemaps_init
+wp_default_styles
+wp_loaded
+parse_term_query
+pre_get_terms
+set_transient_$transient_key
+generate_rewrite_rules
+parse_request
+send_headers
+parse_tax_query
+parse_query
+pre_get_posts
+posts_selection
+wp
+woocommerce_set_cart_cookies
+template_redirect
+admin_bar_init
+add_admin_bar_menus
+get_header
+wp_head
+wp_enqueue_scripts
+the_post
+wp_print_styles
+wp_print_scripts
+wp_body_open
+admin_bar_menu
+wp_before_admin_bar_render
+wp_after_admin_bar_render
+get_template_part_$template_name
+loop_start
+loop_end
+get_footer
+dynamic_sidebar_before
+dynamic_sidebar
+dynamic_sidebar_after
+wp_footer
+wp_print_footer_scripts
+shutdown
 ----
-
  
 == WP Optimisation
 - Use PHP 7.2 with Opcache
