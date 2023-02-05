@@ -3,7 +3,6 @@
 == Examples
 
 ----
-# Find string and remove duplicates
-grep pattern files | sort -t: -u -k1,1
-
+# Find string and sort results
+grep PATTERN FILENAME_GLOB | sort -u > results-$(date +%Y%m%d-%H%M%S).txt
 ----
