@@ -1,0 +1,9 @@
+= Date command Guide
+
+== Examples
+----
+
+# Show current date in specific format (year month day - hour minute seconds , eg 20230206-101711)
+date +%Y%m%d-%H%M%S
+
+----
