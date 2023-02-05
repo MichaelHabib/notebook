@@ -1,0 +1,9 @@
+= Grep Guide
+
+== Examples
+
+----
+# Find string and remove duplicates
+grep pattern files | sort -t: -u -k1,1
+
+----
