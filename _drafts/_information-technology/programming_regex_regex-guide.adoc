@@ -13,6 +13,7 @@
 - `gr[ae]y` matches gray or grey . [] creates a character class.
 - `[0-9]` matches a single character between 0 and 9, using the range `-` in the character class `[]`
 - [a-z0-9] One character that is in the range of a-z *OR* 0-9 : https://stackoverflow.com/questions/3789417/whats-the-difference-between-and-in-regular-expression-patterns[source]
+- Positive Lookahead : `?=X` means the `X` must be at that position but it's not included in the captured match. e.g : `\b(([a-z]{3,10}[0-9]*(?=[\-\_])?)+)\b` allows optional `- _` in SKUs .
 
 
 - `arm[^y]` negate the the character class . Matches `armies` but not `army'
