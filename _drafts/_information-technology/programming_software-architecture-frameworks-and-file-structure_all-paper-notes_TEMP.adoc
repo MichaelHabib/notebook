@@ -1,5 +1,7 @@
-= 
+= ALL NOTES TEP
+
 == WP Dev Framework notes
+
 === WP COncepts and tools to prepare
 - Post Type
 - CRUD
