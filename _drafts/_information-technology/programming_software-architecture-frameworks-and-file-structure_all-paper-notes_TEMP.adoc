@@ -1,0 +1,58 @@
+= 
+== WP Dev Framework notes
+=== WP COncepts and tools to prepare
+- Post Type
+- CRUD
+- CRUD GUI Scafolding
+- Plugin
+- Plugin Extension / Extension 
+- Theme / Child Theme
+- Widgets
+- Meta Boxes
+- ShortCode
+- Templates
+- WP Admin Pages / Settings Pages
+- WP Admin Menu
+- FE Sidebars
+- 
+
+
+== Expected compoenents for common web dev frameworks
+- Front end & backend GUI
+- CRUD framework w/o GUI
+- DB / Flat File DB
+- routing
+- config
+- templates
+- MVC / MVP pattern?
+- ORM ?
+- Plugins / Addons / Modules / Components 
+- Scheduling system / Event Management 
+- API Client 
+- Cache 
+- Validation
+- Error Handling / Excaptions
+- File / Class Autoloader
+- Loggin
+- IoC Container (Inversion of Control Container)
+- 
+
+== Software Architecure
+
+=== Keywords ?
+- Quality Attrivutes = non-functional requirements = Constraints = Non behavioural requirements 
+- Macroscope VS Microscope
+- Big Design UpFront BDUF
+- Item Potency VS Mutation
+- Conceptual Model
+
+
+=== C4 Model
+- Context
+- Containers
+- Components
+- Code
+
+== MVC / MVP
+MVC is a UI pattern . Not the same things as code architecure !
+
