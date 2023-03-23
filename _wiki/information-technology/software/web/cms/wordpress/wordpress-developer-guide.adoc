@@ -91,6 +91,10 @@ To correct WordPress file permission, you can run the following commands in the 
 ----
 find . -type d -exec chmod 755 {} +
 find . -type f -exec chmod 644 {} +
+find . -type f -path "./wp-config**" -exec chmod 400 {} +
+find . -type f -path "./wp-config/*" -exec chmod 400 {} +
+find . -type f -name  "*.log" -exec chmod 600 {} +
+find . -type f -name  "*error_log*" -exec chmod 600 {} +
 ----
 
 === WP CLI Commands
