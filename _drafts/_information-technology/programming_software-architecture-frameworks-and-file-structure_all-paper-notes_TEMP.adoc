@@ -56,3 +56,8 @@
 == MVC / MVP
 MVC is a UI pattern . Not the same things as code architecure !
 
+== JS Notes
+- Declaritive vs expressive statements
+- Lambda expression / Arrow Function
+- JS hoisting
+- Execution Context Stack 
