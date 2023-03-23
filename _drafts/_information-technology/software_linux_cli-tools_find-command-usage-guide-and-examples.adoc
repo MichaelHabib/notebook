@@ -15,11 +15,15 @@ find . -name  "*.jpg"
 find . \( -iname  "*.jpg"  -o -iname  "*.png" -o -iname  "*.png" \) -exec echo "{}" \; 
 
 # Find files by case-insensitive name patterns and format output
-find . \( -iname  "*.jpg"  -o -iname  "*.jpeg" -o -iname  "*.png" \) -printf '%p - %s - %t \n'
+find . \( -iname  "*.jpg"  -o -iname  "*.jpeg" -o -iname  "*.png" \) -printf '%p - %k - %t \n'
 
 
 # find all files modified within the last 30 days & over 50 MB
 find /home/ -type f -mtime -30 -size 50M
+
+
+# find all images above 1m
+find . -maxdepth 4 \( -iname  "*.jpg"  -o -iname  "*.jpeg" -o -iname  "*.png" \) -type f  -size +600k -printf '%p , %k , %t \n' > _images-too-large.csv
 
 # find files and output name & file encoding . Helps in finding wrong files extensions.
 find  "${PWD}" -type f -exec bash -c 'seperator=`echo " , "`; file_type=`file -bi {}`; echo "{} $seperator $file_type"' \; > log_all-file-types.log
