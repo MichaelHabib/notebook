@@ -36,11 +36,3 @@ asciidoc:
   ext: asciidoc,adoc,ad
 
 asciidoctor: {}
-
-include:
-  - content/_wiki
-exclude:
-  - .idea
-  - content/.git
-  - src/content/.git
-  - vendor
