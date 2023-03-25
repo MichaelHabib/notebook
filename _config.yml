@@ -49,10 +49,8 @@ exclude:
   - src/content/.git
   - vendor
 
-  collections:
+collections:
   wiki:
     output: true
     categories: true
-    permalink: /wiki/:path:output_ext
-
-    
+    permalink: /:path:output_ext
