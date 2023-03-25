@@ -48,3 +48,11 @@ exclude:
   - content/.git
   - src/content/.git
   - vendor
+
+  collections:
+  wiki:
+    output: true
+    categories: true
+    permalink: /wiki/:path:output_ext
+
+    
