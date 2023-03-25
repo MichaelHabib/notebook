@@ -41,3 +41,10 @@ asciidoc:
 
 asciidoctor: {}
 
+include:
+  - _wiki
+exclude:
+  - .idea
+  - content/.git
+  - src/content/.git
+  - vendor
