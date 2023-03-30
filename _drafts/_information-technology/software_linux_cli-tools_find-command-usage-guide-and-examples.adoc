@@ -9,49 +9,49 @@ The format is as follows
 == Code Samples
 ----
 # Find files by case-sensitive name pattern
-find "${PWD}" -name  "*.jpg"  
+find "${ROOT_DIR}" -name  "*.jpg"  
 
 # Find files by case-insensitive name patterns
-find "${PWD}" \( -iname  "*.jpg"  -o -iname  "*.png" -o -iname  "*.png" \) -exec echo "{}" \; 
+find "${ROOT_DIR}" \( -iname  "*.jpg"  -o -iname  "*.png" -o -iname  "*.png" \) -exec echo "{}" \; 
 
 # Find files by case-insensitive name patterns and format output
-find "${PWD}" \( -iname  "*.jpg"  -o -iname  "*.jpeg" -o -iname  "*.png" \) -printf '%p - %k - %t \n'
+find "${ROOT_DIR}" \( -iname  "*.jpg"  -o -iname  "*.jpeg" -o -iname  "*.png" \) -printf '%p - %k - %t \n'
 
 
 # find all files modified within the last 30 days & over 50 MB
-find "${PWD}" -type f -mtime -30 -size 50M
+find "${ROOT_DIR}" -type f -mtime -30 -size 50M
 
 # find all non-images 
-find "${PWD}" -maxdepth 4 ! \( -iname  "*.jpg"  -o -iname  "*.jpeg" -o -iname  "*.png" -o -iname  "*.avif"  -o -iname  "*.gif"  -o -iname  "*.webp" \) -type f -printf '%p , %k , %t \n' > unwanted-file-formats.csv
+find "${ROOT_DIR}" -maxdepth 4 ! \( -iname  "*.jpg"  -o -iname  "*.jpeg" -o -iname  "*.png" -o -iname  "*.avif"  -o -iname  "*.gif"  -o -iname  "*.webp" \) -type f -printf '%p , %k , %t \n' > unwanted-file-formats.csv
 
 # Find all folders with more than 1 image.
-find "$ROOT_DIR" -type d -exec sh -c 'num_images=$(find "$0" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) | wc -l); if [ "$num_images" -gt 1 ]; then find "$0" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) -printf "%h ,  %f \n"; fi' {} \; > folders-with-more-than-1-image.csv
+find "${ROOT_DIR}" -type d -exec sh -c 'num_images=$(find "$0" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) | wc -l); if [ "$num_images" -gt 1 ]; then find "$0" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) -printf "%h ,  %f \n"; fi' {} \; > folders-with-more-than-1-image.csv
 
 # Find all folders called "images" then list folder that DO NOT have a file containing "_1" . Useful for confirming file naming conventions
-find "$ROOT_DIR" -maxdepth 4 -type d -name "images" -exec sh -c 'num_images=$(find "$0" -maxdepth 1 -type f -iname "*image_1*" | wc -l); if [ "$num_images" -lt 1 ]; then folder_found=$0; other_files_found=$(find "$0" -maxdepth 1 -type f -iname "*" -printf "%f, "); echo "${0} , ${other_files_found}"; fi' {} \; > images-folder-without-image1.csv
+find "${ROOT_DIR}" -maxdepth 4 -type d -name "images" -exec sh -c 'num_images=$(find "$0" -maxdepth 1 -type f -iname "*image_1*" | wc -l); if [ "$num_images" -lt 1 ]; then folder_found=$0; other_files_found=$(find "$0" -maxdepth 1 -type f -iname "*" -printf "%f, "); echo "${0} , ${other_files_found}"; fi' {} \; > images-folder-without-image1.csv
 
 
 # find all images above 500kb
-find "${PWD}" -maxdepth 4 \( -iname  "*.jpg"  -o -iname  "*.jpeg" -o -iname  "*.png" -o -iname  "*.avif"  -o -iname  "*.gif"  -o -iname  "*.webp" \) -type f  -size +500k -printf '%p , %k , %t \n' > images-too-large.csv
+find "${ROOT_DIR}" -maxdepth 4 \( -iname  "*.jpg"  -o -iname  "*.jpeg" -o -iname  "*.png" -o -iname  "*.avif"  -o -iname  "*.gif"  -o -iname  "*.webp" \) -type f  -size +500k -printf '%p , %k , %t \n' > images-too-large.csv
 
 # find all images above 500k, back them up then resize, one at a time.
-find "${PWD}" -maxdepth 4 \( -iname  "*.jpg"  -o -iname  "*.jpeg" -o -iname  "*.png" -o -iname  "*.avif"  -o -iname  "*.gif"  -o -iname  "*.webp" \) -type f  -size +500k -exec echo "{}" \; -exec cp "{}" "${PWD}/products_too-large-backups/" \; -exec convert "{}" -resize "1200" -set filename:f '%[t].%[e]' "${PWD}/resized/%[filename:f]" \; 
+find "${PWD}/products" -maxdepth 4 \( -iname  "*.jpg"  -o -iname  "*.jpeg" -o -iname  "*.png" -o -iname  "*.avif"  -o -iname  "*.gif"  -o -iname  "*.webp" \) -type f  -size +500k -exec echo "{}" \; -exec cp "{}" "${PWD}/products_too-large-backups/" \; -exec convert "{}" -resize "1200" {} \; 
 
 # find all images above 1200px width, back them up then resize, one at a time.
-find "${PWD}" -maxdepth 4 \( -iname  "*.jpg"  -o -iname  "*.jpeg" -o -iname  "*.png" -o -iname  "*.avif"  -o -iname  "*.gif"  -o -iname  "*.webp" \) -type f  -size +1000k -exec echo "{}" \; -exec cp "{}" "${PWD}/products_too-large-backups/" \; -exec convert "{}" -resize "1200" -set filename:f '%[t].%[e]' "${PWD}/resized/%[filename:f]" \; 
+find "${PWD}/products" -maxdepth 4 \( -iname  "*.jpg"  -o -iname  "*.jpeg" -o -iname  "*.png" -o -iname  "*.avif"  -o -iname  "*.gif"  -o -iname  "*.webp" \) -type f  -size +1000k -exec echo "{}" \; -exec cp "{}" "${PWD}/products_too-large-backups/" \; -exec convert "{}" -resize "1200" -set filename:f '%[t].%[e]' "${PWD}/products_resized/%[filename:f]" \; 
 
 # find files and output name & file encoding . Helps in finding wrong files extensions.
-find  "${PWD}" -type f -exec bash -c 'seperator=`echo " , "`; file_type=`file -bi {}`; echo "{} $seperator $file_type"' \; > log_all-file-types.log
+find  "${ROOT_DIR}" -type f -exec bash -c 'seperator=`echo " , "`; file_type=`file -bi {}`; echo "{} $seperator $file_type"' \; > log_all-file-types.log
 
 # find images and output name & file encoding . Helps in finding wrong images extensions.
-find  "${PWD}" -type f \( -iname  "*.jpg"  -o -iname  "*.jpeg" -o -iname  "*.png" -o -iname  "*.avif"  -o -iname  "*.gif"  -o -iname  "*.webp" \) -exec bash -c 'seperator=`echo " , "`; file_type=`file -bi {}`; echo "{} $seperator $file_type"' \; > log_all-image-types.log
+find  "${ROOT_DIR}" -type f \( -iname  "*.jpg"  -o -iname  "*.jpeg" -o -iname  "*.png" -o -iname  "*.avif"  -o -iname  "*.gif"  -o -iname  "*.webp" \) -exec bash -c 'seperator=`echo " , "`; file_type=`file -bi {}`; echo "{} $seperator $file_type"' \; > log_all-image-types.log
 
 # Find out folder usage size 
-sudo find "${PWD}" -type f -mtime -300 -size 5M -exec ls -lshog --time-style="+%Y-%m-%d-%H:%M:%S" {} \; | sort -k 1 > _disk-report-$(date +'%Y-%m-%d-%H-%M-%S').txt;
+sudo find "${ROOT_DIR}" -type f -mtime -300 -size 5M -exec ls -lshog --time-style="+%Y-%m-%d-%H:%M:%S" {} \; | sort -k 1 > _disk-report-$(date +'%Y-%m-%d-%H-%M-%S').txt;
 
 ## Other Samples
-find "${PWD}" -type f -exec echo "message" \; 
-find "${PWD}" -maxdepth 1 -type d -exec echo "\"wpackagist-plugin/{}\" : \"*\" , " >> "_fileList.txt" \;
+find "${ROOT_DIR}" -type f -exec echo "message" \; 
+find "${ROOT_DIR}" -maxdepth 1 -type d -exec echo "\"wpackagist-plugin/{}\" : \"*\" , " >> "_fileList.txt" \;
 
 ----
 
