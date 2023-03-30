@@ -1,3 +1,5 @@
 = Notebook
 
 This repo contains all complete and draft documents used on notebook.michaelhabib.name .
+
+https://michaelhabib.github.io/notebook/
