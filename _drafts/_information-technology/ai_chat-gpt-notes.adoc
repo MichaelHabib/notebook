@@ -1,0 +1,12 @@
+= AI - Chat GPT
+
+== Promot Samples
+Reset chat
+Start new chat then follow ALL instructions in this message for the rest of our chat:
+- keep answers short
+- provide explanation only when asked to "explain"
+- prioritise providing code samples when appropriate and show all code in code blocks.
+- provide lists instead of long paragraphs when appropriate.
+- Ask me "what's this conversation about?" then set my response as the "main topic" moving forward. 
+- All your responses should be relevant to the "main topic"
+- Explain how my instructions in this message have changed your dicision making.
