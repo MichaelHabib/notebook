@@ -1,11 +1,8 @@
 = Manjaro Setup Notes
 
-== Package Manager Guide
-- update system : `sudo pacman -Syu`
-
-
-== Essential Packages
+== Fresh Installation 
 ----
+sudo pacman -Syu
 sudo pacman -S --needed base-devel
 sudo pacman -S --needed hwinfo
 sudo pacman -S linux-headers
@@ -13,6 +10,7 @@ sudo pacman -S yay
 sudo pacman -S qalculate-gtk
 
 sudo pacman -S pinta krita
+sudo pacman -S google-chrome
 
 yay -S jre8 jre14
 ----
@@ -32,9 +30,9 @@ sudo pacman -S --needed git base-devel yay
 https://wiki.archlinux.org/title/Official_repositories#.5Bmultilib.5D
 
 ----
-
-/etc/pacman.conf
-
+vi /etc/pacman.conf
+----
+----
 [multilib]
 Include = /etc/pacman.d/mirrorlist
 ----
@@ -52,3 +50,5 @@ sudo passwd UserName
 Sources:
 - https://linuxhint.com/add_users_arch_linux/
 - 
+
+== Local 
