@@ -15,6 +15,8 @@ sudo pacman -S google-chrome
 yay -S jre8 jre14
 ----
 
+
+
 == Dealing with AUR pacakges
 
 === With YAY helper
