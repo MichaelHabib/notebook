@@ -7,7 +7,9 @@
 - CRUD
 - CRUD GUI Scafolding
 - Plugin
-- Plugin Extension / Extension 
+- Plugin APP : Holds all buisness related cusomozations instead of creating mulriple plugins.
+- Plugin Addon : Adds features to exsiting plugin.
+- Plugin Module ?? : 
 - Theme / Child Theme
 - Widgets
 - Meta Boxes
@@ -147,3 +149,21 @@ https://laravel.com/api/9.x/
 - generate
 - process : for queues
 - 
+
+
+== Docker CODE SAMPLES
+
+[bash]
+----
+export Image_Name=mhart/alpine-node
+export Image_Version=latest
+export Container_Name=$(basename $PWD)
+
+alias ss="source .docker.env"
+alias dnew='docker run -it --name $Container_Name -p 35729:35729 --volume="$PWD:/mnt/app" $Image_Name:$Image_Version sh'
+alias dstart='docker start -a $Container_Name'
+alias dattach='docker exec -it $Container_Name sh'
+alias dstop='docker stop $Container_Name'
+alias ddelete='docker stop $Container_Name && docker rm $Container_Name'
+
+----
