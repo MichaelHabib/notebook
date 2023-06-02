@@ -1,0 +1,10 @@
+= IP Blocking & Security a Web Server
+
+
+
+== Lightspeed Server with WHM / CPanel
+
+WHM provides a way to allow/block IPs using the Firewall . Otherwise, you can use .htaccess rules to block by IP.
+
+If the server is behind a Proxy, some LightSpeed config changes might be needed. One key option to check is "Use Client IP from Header", if it's set to YES, then the REMOTE_ADDR will be changes to match X-FORWARDED-FOR header .
+PHP will also create the ENV Variable PROXY_REMOTE_ADDR when it detects an X-FORWARDED-FOR header .
