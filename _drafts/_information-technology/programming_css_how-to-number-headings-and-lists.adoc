@@ -1,0 +1,3 @@
+= CSS : How to Number Headings & Lists ?
+
+WE can use CSS counters to track specific elements and use that to generate a text counter.
