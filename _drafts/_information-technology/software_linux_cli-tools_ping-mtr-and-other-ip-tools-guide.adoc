@@ -1,0 +1,18 @@
+# Linux Ping & MTR Commands Guide
+A guide to testing domain, IP & network issues in relation to web hosting.
+
+## Ping
+
+----
+
+ping  -v -c 10000 -i 0.1 $IP $2> "ping-test_${IP}_$(date +%Y%m%d-%H%M%S).log"
+
+----
+
+
+## MTR
+----
+
+mtr -c 100  -i 1 -rwbz ${IP} $2> "mtr-test_${IP}_$(date +%Y%m%d-%H%M%S).log"
+
+----
