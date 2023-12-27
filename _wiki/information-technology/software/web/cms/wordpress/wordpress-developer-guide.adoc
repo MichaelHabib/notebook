@@ -108,18 +108,36 @@ wp core download
 .Install recommended plugins using WP CLI
 ----
 wp plugin install \
-classic-editor \
-shortcodes-ultimate \
-worker \
-duplicate-post \
-easy-wp-smtp \
-contact-form-7 \
-flamingo \
-simple-image-sizes \
-wordpress-seo \
 updraftplus \
-duplicator \
-wp-force-login
+wordfence \
+worker \
+classic-editor \
+classic-widgets \
+coblocks \
+cc-child-pages \
+duplicate-post \
+wps-menu-exporter \
+simple-image-sizes \
+enable-media-replace \
+wp-force-login \
+user-role-editor \
+import-users-from-csv-with-meta \
+user-switching \
+redirection \
+wordpress-seo \
+google-site-kit \
+wp-crontrol \
+query-monitor 
+
+wp plugin install \
+post-smtp \
+contact-form-7 \
+cf7-conditional-fields \
+contact-form-7-dynamic-text-extension \
+drag-and-drop-multiple-file-upload-contact-form-7 \
+flamingo
+
+
 
 wp plugin install \
 wp-smushit \
@@ -128,18 +146,11 @@ defender-security \
 smartcrawl-seo
 
 wp plugin install \
-user-role-editor \
-query-monitor
+woocommerce \
+mailchimp-for-woocommerce \
+taxonomy-terms-order
 
-wp plugin install \
-woocommerce
 
-# Alternitaves
-wp plugin install custom-sidebars
-wp plugin install cc-child-pages
-wp plugin install imagemagick-engine
-wp plugin install post-smtp
-wp plugin install w3-total-cache
 
 ----
 
