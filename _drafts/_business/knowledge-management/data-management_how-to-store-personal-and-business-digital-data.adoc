@@ -54,3 +54,52 @@ For a page with the title "How to access Wordpress & edit content guide", add ta
 - https://www.convinceandconvert.com/content-marketing/content-to-fill-calendar/[ 105 Types of Content to Fill Up Your Editorial Calendar]
 - https://contentmarketinginstitute.com/2016/04/fresh-content-formats[8 Ways to Take a Fresh Approach to Content Formats]
 
+
+== other Notes
+
+https://en.wikipedia.org/wiki/Organization
+https://en.wiktionary.org/wiki/process
+https://en.wikipedia.org/wiki/Function_model
+https://en.wikipedia.org/wiki/Data
+http://www.exadox.com/en/articles/file-naming-convention-ten-rules-best-practice
+http://library.stanford.edu/research/data-management-services/data-best-practices/best-practices-file-naming
+
+
+=== File Naming - Thought Processes:
+* What(type), From Whom(Target), Why, When(DateStamp), Version (Version Control)
+** Example(this document filename)
+** process_for-admin_data-organization_v1_2017-6-28
+* What’s involved ?
+** people
+** process
+** technology
+** content
+* Types of Data  ?
+** Tasks
+** Binding Documents / Legal
+** T & C
+** Contracts
+** Policies
+** Docs
+** Tutorials
+** Guides
+** Manuals
+** Processes
+** Research Notes ?
+** Analysis ?
+** Reports ?
+** Entity:
+*** Contact/ Person
+*** Customers
+*** Staff
+*** Business / Organization
+* Metadata
+** Tags
+** Categories
+** Version
+** Date / Time / DateTime
+** Meta Description
+** User(s) name
+** Sub-Type / Type of info? Lookup correct terminology:
+** Questions
+
