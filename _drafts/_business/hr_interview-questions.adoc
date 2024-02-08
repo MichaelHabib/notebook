@@ -1,0 +1,28 @@
+= HR : Interview Questions
+
+== WP & WC Web Developer
+
+* Can you describe your experience with custom theme development in WordPress?
+* How do you approach optimizing WordPress sites for speed and performance?
+* What is your process for creating a custom plugin in WordPress? Can you provide an example?
+* How do you ensure security in your WordPress projects?
+* Can you explain how you handle version control for WordPress development?
+* What are your strategies for responsive design and cross-browser compatibility in WordPress?
+* How do you manage and optimize the database for a WordPress site?
+* What is your experience with integrating third-party APIs into WordPress sites?
+* How do you approach SEO optimization in WordPress development?
+* Can you describe a challenging WordPress project you've worked on and how you solved it?
+* What tools and plugins do you find indispensable for WordPress development?
+* How do you stay updated with the latest WordPress developments and trends?
+* Can you explain the differences between developing a site with a pre-built theme vs. a custom theme?
+* How do you approach website migration and deployment in WordPress?
+* What are your experiences with WordPress multisite networks?
+* How do you use custom post types and taxonomies in WordPress?
+* Can you discuss a time when you optimized a WordPress site and saw significant performance improvements?
+* How do you handle client feedback and changes during the development process?
+* What is your approach to backup and disaster recovery for WordPress sites?
+* How do you measure the success of a WordPress project after it goes live?
+
+
+
+== 
